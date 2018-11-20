@@ -1,0 +1,257 @@
+Version = 1.9.4.30080;
+CParticleEffect	$LOCAL$/Resource
+{
+	EditorInfosPosition = int2(73, 52);
+	OnSpawn = "$LOCAL$/Spawner";
+	CustomAttributes = "$LOCAL$/_GlobalAttributes";
+	Autostart = true;
+}
+CActionFactoryParticleSpawnerBase	$LOCAL$/Link_lerpFunction
+{
+	EditorInfosPosition = int2(-288, -61);
+	Descriptor = "$LOCAL$/CParticleDescriptor_AE135B2A";
+	Infinite = true;
+	DurationInSeconds = 2.0000000e+000;
+	SpawnCount = 2.0000000e+002;
+}
+CParticleDescriptor	$LOCAL$/CParticleDescriptor_AE135B2A
+{
+	EditorInfosPosition = int2(-392, -44);
+	Renderer = "$LOCAL$/CParticleRenderer_Ribbon_8301E75F";
+	CustomFields = 
+	{
+		"$LOCAL$/CParticleFieldDeclaration_58015AE9",
+		"$LOCAL$/CParticleFieldDeclaration_B775D1A3",
+	};
+	SpawnEvaluator = "$LOCAL$/CCompilerSyntaxNodeExpression_5566F5E7";
+	States = 
+	{
+		"$LOCAL$/CParticleState_3AF8190E",
+	};
+}
+CActionFactoryWithChilds	$LOCAL$/Spawner
+{
+	EditorInfosPosition = int2(-162, -81);
+	ChildList = 
+	{
+		"$LOCAL$/Link_lerpFunction",
+		"$LOCAL$/Others",
+	};
+}
+CParticleRenderer_Ribbon	$LOCAL$/CParticleRenderer_Ribbon_8301E75F
+{
+	CustomName = "Ribbon";
+	BillboardingMaterial = Additive_Soft;
+	Diffuse = "Textures/Fx/SymmetricGradient.dds";
+}
+CCompilerSyntaxNodeExpression	$LOCAL$/CCompilerSyntaxNodeExpression_5566F5E7
+{
+	EditorInfosPosition = int2(-508, 22);
+	Expression = "function void	Eval()
+{
+	Life = 0.2;
+	Size = Thickness;
+
+}
+";
+}
+CParticleState	$LOCAL$/CParticleState_3AF8190E
+{
+	EditorInfosPosition = int2(-508, 65);
+	StateName = "State_0";
+	Evolvers = 
+	{
+		"$LOCAL$/LocalSpace_1",
+	};
+}
+CParticleAttributeList	$LOCAL$/_GlobalAttributes
+{
+	EditorInfosPosition = int2(-599, -20);
+	AttributeList = 
+	{
+		"$LOCAL$/CParticleAttributeDeclaration_70E40A2D",
+		"$LOCAL$/CParticleAttributeDeclaration_95C22DF4",
+		"$LOCAL$/CParticleAttributeDeclaration_96C9169E",
+		"$LOCAL$/CParticleAttributeDeclaration_02AFD60A",
+	};
+	SamplerList = 
+	{
+		"$LOCAL$/CParticleSamplerProceduralTurbulence_EB192F60",
+	};
+}
+CParticleState	$LOCAL$/CParticleState_B3CB37AE
+{
+	EditorInfosPosition = int2(-508, 65);
+	StateName = "State_0";
+	Evolvers = 
+	{
+		"$LOCAL$/LocalSpace_2",
+	};
+}
+CParticleAttributeDeclaration	$LOCAL$/CParticleAttributeDeclaration_95C22DF4
+{
+	AttributeName = "Target";
+	AttributeType = float3;
+	DefaultValueF4 = float4(-2.0000000e+000, 0.0000000e+000, 0.0000000e+000, 0.0000000e+000);
+	MinValueF4 = float4(-1.0000000e+001, -1.0000000e+001, -1.0000000e+001, 0.0000000e+000);
+	MaxValueF4 = float4(1.0000000e+001, 1.0000000e+001, 1.0000000e+001, 1.0000000e+000);
+	MaxValueI4 = int4(10, 10, 10, 10);
+}
+CParticleEvolver_Localspace	$LOCAL$/LocalSpace_1
+{
+	CustomName = "Localspace";
+	ChildList = 
+	{
+		"$LOCAL$/Script_1",
+	};
+}
+CParticleEvolver_Localspace	$LOCAL$/LocalSpace_2
+{
+	CustomName = "Localspace";
+	ChildList = 
+	{
+		"$LOCAL$/CParticleEvolver_Script_95A75800",
+	};
+}
+CParticleEvolver_Script	$LOCAL$/Script_1
+{
+	CustomName = "Script";
+	Expression = "$LOCAL$/CCompilerSyntaxNodeExpression_70AF6F2C";
+}
+CCompilerSyntaxNodeExpression	$LOCAL$/CCompilerSyntaxNodeExpression_70AF6F2C
+{
+	Expression = "function void	Eval()
+{
+	Pos = lerp(0,Target,LifeRatio); 							// Movement between 2 position with lerp function
+	float3	Turb = Turb_0.sample(Pos); 								// Sampling of the turbulence
+	Position = Pos + Turb * pow(sin(LifeRatio*3),2);	// Using sin to lerp with turbulence position in the middle life of the particles
+	
+	// same using of sin to blend opacity between the start and end and use a lerp function to blend 2 color during the life particles
+	Color=pow(sin(LifeRatio*3),1.25)*lerp(RGBstart.xyz1,RGBend.xyz1,LifeRatio);
+}
+";
+}
+CParticleFieldDeclaration	$LOCAL$/CParticleFieldDeclaration_58015AE9
+{
+	FieldName = "Color";
+	FieldType = float4;
+}
+CParticleSamplerProceduralTurbulence	$LOCAL$/CParticleSamplerProceduralTurbulence_EB192F60
+{
+	SamplerName = "Turb_0";
+	GlobalScale = 1.0000000e-001;
+	Wavelength = 1.0000000e+000;
+	Strength = 2.9999999e-002;
+	Lacunarity = 3.1724140e-001;
+	Gain = 8.7241381e-001;
+	TimeScale = 8.0000000e+000;
+}
+CParticleFieldDeclaration	$LOCAL$/CParticleFieldDeclaration_B775D1A3
+{
+	FieldName = "Pos";
+	FieldType = float3;
+	TransformFilter = full;
+}
+CParticleDescriptor	$LOCAL$/CParticleDescriptor_FD4E0A1D
+{
+	EditorInfosPosition = int2(-392, -44);
+	Renderer = "$LOCAL$/CParticleRenderer_Ribbon_84A334A4";
+	CustomFields = 
+	{
+		"$LOCAL$/CParticleFieldDeclaration_6F8DDE37",
+		"$LOCAL$/CParticleFieldDeclaration_86892DC6",
+	};
+	SpawnEvaluator = "$LOCAL$/CCompilerSyntaxNodeExpression_0A02E67F";
+	States = 
+	{
+		"$LOCAL$/CParticleState_B3CB37AE",
+	};
+}
+CParticleRenderer_Ribbon	$LOCAL$/CParticleRenderer_Ribbon_84A334A4
+{
+	CustomName = "Ribbon";
+	BillboardingMaterial = Additive_Soft;
+	Diffuse = "Textures/FX/SymmetricGradient.dds";
+}
+CParticleFieldDeclaration	$LOCAL$/CParticleFieldDeclaration_6F8DDE37
+{
+	FieldName = "Color";
+	FieldType = float4;
+}
+CParticleFieldDeclaration	$LOCAL$/CParticleFieldDeclaration_86892DC6
+{
+	FieldName = "Pos";
+	FieldType = float3;
+	TransformFilter = full;
+}
+CCompilerSyntaxNodeExpression	$LOCAL$/CCompilerSyntaxNodeExpression_60B4D6C3
+{
+	Expression = "function void	Eval()
+{
+	Pos = lerp(0,Target,LifeRatio);
+	float3	Turb = Turb_0.sample(Pos * 0.1);
+	Position = Pos + Turb * pow(sin(LifeRatio*3),2);
+	Color = pow(sin(LifeRatio*3),1.25)*lerp(RGBstart.xyz1,RGBend.xyz1,LifeRatio);
+}
+";
+}
+CActionFactoryParticleSpawnerBase	$LOCAL$/SubLink
+{
+	EditorInfosPosition = int2(-288, -61);
+	Descriptor = "$LOCAL$/CParticleDescriptor_FD4E0A1D";
+	Infinite = true;
+	DurationInSeconds = 2.0000000e+000;
+	SpawnCount = 2.0000000e+002;
+}
+CParticleEvolver_Script	$LOCAL$/CParticleEvolver_Script_95A75800
+{
+	CustomName = "Script";
+	Expression = "$LOCAL$/CCompilerSyntaxNodeExpression_60B4D6C3";
+}
+CParticleAttributeDeclaration	$LOCAL$/CParticleAttributeDeclaration_70E40A2D
+{
+	AttributeName = "RGBstart";
+	AttributeType = float3;
+	DefaultValueF4 = float4(0.0000000e+000, 1.0000000e+000, 1.0000000e+000, 0.0000000e+000);
+	HasMin = true;
+	HasMax = true;
+	MaxValueF4 = float4(1.0000000e+000, 1.0000000e+000, 1.0000000e+000, 1.0000000e+000);
+	MaxValueI4 = int4(10, 10, 10, 10);
+}
+CCompilerSyntaxNodeExpression	$LOCAL$/CCompilerSyntaxNodeExpression_0A02E67F
+{
+	EditorInfosPosition = int2(-508, 22);
+	Expression = "function void	Eval()
+{
+	Life = 0.2;
+	Size = Thickness;
+
+}
+";
+}
+CParticleAttributeDeclaration	$LOCAL$/CParticleAttributeDeclaration_96C9169E
+{
+	AttributeName = "RGBend";
+	AttributeType = float3;
+	DefaultValueF4 = float4(1.0000000e+000, 0.0000000e+000, 0.0000000e+000, 0.0000000e+000);
+	HasMin = true;
+	HasMax = true;
+	MaxValueF4 = float4(1.0000000e+000, 1.0000000e+000, 1.0000000e+000, 1.0000000e+000);
+	MaxValueI4 = int4(10, 10, 10, 10);
+}
+CActionFactoryWithChilds	$LOCAL$/Others
+{
+	ChildList = 
+	{
+		"$LOCAL$/SubLink",
+	};
+}
+CParticleAttributeDeclaration	$LOCAL$/CParticleAttributeDeclaration_02AFD60A
+{
+	AttributeName = "Thickness";
+	DefaultValueF4 = float4(4.0000002e-003, 0.0000000e+000, 0.0000000e+000, 0.0000000e+000);
+	HasMin = true;
+	HasMax = true;
+	MaxValueF4 = float4(1.0000000e+000, 1.0000000e+000, 1.0000000e+000, 1.0000000e+000);
+	MaxValueI4 = int4(10, 10, 10, 10);
+}

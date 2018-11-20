@@ -1,0 +1,16 @@
+using System;
+
+[Flags]
+public enum CloudRegionFlag
+{
+	eu = 0x1,
+	us = 0x2,
+	asia = 0x4,
+	jp = 0x8,
+	au = 0x10,
+	usw = 0x20,
+	sa = 0x40,
+	cae = 0x80,
+	kr = 0x100,
+	@in = 0x200
+}

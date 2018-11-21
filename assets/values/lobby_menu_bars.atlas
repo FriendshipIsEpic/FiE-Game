@@ -1,0 +1,13 @@
+
+lobby_menu_bars.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lobby/menu_background
+  rotate: false
+  xy: 2, 2
+  size: 559, 99
+  orig: 559, 99
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+life_gauge.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/enemy_gauge_highlight
+  rotate: false
+  xy: 260, 302
+  size: 237, 14
+  orig: 237, 14
+  offset: 0, 0
+  index: -1
+textures/gauge_bg
+  rotate: false
+  xy: 2, 34
+  size: 248, 24
+  orig: 248, 24
+  offset: 0, 0
+  index: -1
+textures/gauge_earth
+  rotate: false
+  xy: 2, 18
+  size: 237, 14
+  orig: 237, 14
+  offset: 0, 0
+  index: -1
+textures/gauge_health
+  rotate: false
+  xy: 260, 286
+  size: 237, 14
+  orig: 237, 14
+  offset: 0, 0
+  index: -1
+textures/gauge_magic
+  rotate: false
+  xy: 2, 2
+  size: 237, 14
+  orig: 237, 14
+  offset: 0, 0
+  index: -1
+textures/gauge_wing
+  rotate: false
+  xy: 260, 270
+  size: 237, 14
+  orig: 237, 14
+  offset: 0, 0
+  index: -1
+textures/light
+  rotate: false
+  xy: 2, 60
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

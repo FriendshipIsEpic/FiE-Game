@@ -1,0 +1,48 @@
+
+LoadingIcon.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LoadingIcon/Blue
+  rotate: false
+  xy: 192, 268
+  size: 188, 112
+  orig: 188, 112
+  offset: 0, 0
+  index: -1
+LoadingIcon/Orange
+  rotate: false
+  xy: 2, 267
+  size: 188, 113
+  orig: 188, 113
+  offset: 0, 0
+  index: -1
+LoadingIcon/Pink
+  rotate: false
+  xy: 2, 152
+  size: 188, 113
+  orig: 188, 113
+  offset: 0, 0
+  index: -1
+LoadingIcon/Purple
+  rotate: false
+  xy: 192, 51
+  size: 82, 215
+  orig: 82, 215
+  offset: 0, 0
+  index: -1
+LoadingIcon/White
+  rotate: false
+  xy: 2, 38
+  size: 188, 112
+  orig: 188, 112
+  offset: 0, 0
+  index: -1
+LoadingIcon/Yellow
+  rotate: false
+  xy: 276, 51
+  size: 79, 215
+  orig: 79, 215
+  offset: 0, 0
+  index: -1

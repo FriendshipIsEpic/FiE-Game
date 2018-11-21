@@ -1,0 +1,27 @@
+
+element_select.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lobby/elemenet_select_cursor_2
+  rotate: false
+  xy: 100, 9
+  size: 79, 89
+  orig: 79, 89
+  offset: 0, 0
+  index: -1
+lobby/element_select_backcground
+  rotate: false
+  xy: 2, 2
+  size: 96, 96
+  orig: 96, 96
+  offset: 0, 0
+  index: -1
+lobby/ok_button
+  rotate: false
+  xy: 181, 66
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

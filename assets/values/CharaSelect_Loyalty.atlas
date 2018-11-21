@@ -1,0 +1,13 @@
+
+CharaSelect_Loyalty.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Images/Loyalty
+  rotate: false
+  xy: 2, 2
+  size: 1032, 1191
+  orig: 1032, 1191
+  offset: 0, 0
+  index: -1

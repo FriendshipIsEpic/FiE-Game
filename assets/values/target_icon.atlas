@@ -1,0 +1,83 @@
+
+target_icon.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/cooldown_ring_freelock
+  rotate: false
+  xy: 2, 122
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+textures/lockon_maker
+  rotate: false
+  xy: 2, 56
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+textures/lockon_maker_glow
+  rotate: false
+  xy: 262, 186
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_blue
+  rotate: false
+  xy: 2, 2
+  size: 44, 52
+  orig: 44, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_full
+  rotate: false
+  xy: 68, 68
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_full_blue
+  rotate: false
+  xy: 328, 198
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_full_green
+  rotate: false
+  xy: 136, 68
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_glow
+  rotate: false
+  xy: 396, 198
+  size: 66, 52
+  orig: 66, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_green
+  rotate: false
+  xy: 262, 132
+  size: 44, 52
+  orig: 44, 52
+  offset: 0, 0
+  index: -1
+textures/renewed_cooldown_red
+  rotate: false
+  xy: 204, 68
+  size: 44, 52
+  orig: 44, 52
+  offset: 0, 0
+  index: -1
+textures/targeticon_glow
+  rotate: false
+  xy: 132, 122
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

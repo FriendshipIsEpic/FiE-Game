@@ -2,10 +2,11 @@ using ParticlePlayground;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Fie.Footstep
-{
-	public class FieFootstepPlayer : MonoBehaviour
-	{
+namespace Fie.Footstep {
+	/// <summary>
+	/// An audio player for playing audio clips under a player.
+	/// </summary>
+	public class FieFootstepPlayer : MonoBehaviour {
 		[SerializeField]
 		private AudioSource _audioSource;
 
@@ -21,35 +22,31 @@ namespace Fie.Footstep
 
 		public float pitchOffset => _pitchOffset;
 
-		public void EmitFootstepParticle(float duration)
-		{
+		public void EmitFootstepParticle(float duration) {
 			_particleDuration = duration;
 		}
 
-		public void SetMaterial(Material material)
-		{
+		public void SetMaterial(Material material) {
 			_particle.particleSystemRenderer.material = material;
 		}
 
-		private void Update()
-		{
-			bool flag = _particleDuration > 0f;
+		private void Update() {
+			bool flag = _particleDuration > 0;
 			_particle.emit = flag;
-			if (flag)
-			{
+			if (flag) {
 				_particleDuration -= Time.deltaTime;
 			}
 		}
 
-		private void Awake()
-		{
+		private void Awake() {
 			SceneManager.sceneLoaded += SceneManager_sceneLoaded;
 		}
 
-		private void SceneManager_sceneLoaded(UnityEngine.SceneManagement.Scene arg0, LoadSceneMode arg1)
-		{
-			if ((bool)_particle)
-			{
+		/// <summary>
+		/// Called when the scene is loaded.
+		/// </summary>
+		private void SceneManager_sceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode) {
+			if ((bool)_particle) {
 				_particle.Start();
 			}
 		}

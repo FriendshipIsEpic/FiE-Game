@@ -20,24 +20,24 @@ internal class NetworkingPeer : LoadBalancingPeer, IPhotonPeerListener
 	public const string NameServerHttp = "http://ns.exitgamescloud.com:80/photon/n";
 
 	private static readonly Dictionary<ConnectionProtocol, int> ProtocolToNameServerPort = new Dictionary<ConnectionProtocol, int>
-	{
-		{
-			ConnectionProtocol.Udp,
-			5058
-		},
-		{
-			ConnectionProtocol.Tcp,
-			4533
-		},
-		{
-			ConnectionProtocol.WebSocket,
-			9093
-		},
-		{
-			ConnectionProtocol.WebSocketSecure,
-			19093
-		}
-	};
+    {
+        {
+            ConnectionProtocol.Udp,
+            5058
+        },
+        {
+            ConnectionProtocol.Tcp,
+            4533
+        },
+        {
+            ConnectionProtocol.WebSocket,
+            9093
+        },
+        {
+            ConnectionProtocol.WebSocketSecure,
+            19093
+        }
+    };
 
 	public bool IsInitialConnect;
 

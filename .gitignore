@@ -211,4 +211,10 @@ GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
 
+# Unity
+Temp
+Library
+ProjectSettings
+*.meta
+
 /toolkit

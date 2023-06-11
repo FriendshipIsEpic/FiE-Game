@@ -4797,10 +4797,10 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Unity3D.SDK.2017.4.37.1\lib\UnityEditor.dll</HintPath>
+      <HintPath>packages\Unity3D.SDK.2018.4.11.1\lib\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Unity3D.SDK.2017.4.37.1\lib\UnityEngine.dll</HintPath>
+      <HintPath>packages\Unity3D.UnityEngine.2018.3.5.1\lib\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

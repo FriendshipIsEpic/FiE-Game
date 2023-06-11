@@ -1,27 +1,21 @@
 using UnityEngine;
 
-namespace Fie.Manager
-{
-	public class FieManagerBehaviour<T> : FieManagerBase where T : FieManagerBase
-	{
+namespace Fie.Manager {
+	public class FieManagerBehaviour<T> : FieManagerBase where T : FieManagerBase {
 		[SerializeField]
 		private bool _isAutoStartUp;
 
 		private static T instance;
 
-		public static T I
-		{
-			get
-			{
-				if ((UnityEngine.Object)instance != (UnityEngine.Object)null && instance.isDestroyed)
-				{
-					instance = (T)null;
+		public static T I {
+			get {
+				if (instance != null && instance.isDestroyed) {
+					instance = null;
 				}
-				if ((UnityEngine.Object)instance == (UnityEngine.Object)null)
+				if (instance == null)
 				{
 					instance = UnityEngine.Object.FindObjectOfType<T>();
-					if ((UnityEngine.Object)instance == (UnityEngine.Object)null || instance.isDestroyed)
-					{
+					if (instance == null || instance.isDestroyed) {
 						GameObject gameObject = new GameObject();
 						UnityEngine.Object.DontDestroyOnLoad(gameObject);
 						instance = gameObject.AddComponent<T>();
@@ -31,18 +25,14 @@ namespace Fie.Manager
 				}
 				return instance;
 			}
-			set
-			{
+			set {
 				instance = value;
 			}
 		}
 
-		private void Start()
-		{
-			if (_isAutoStartUp)
-			{
-				T i = I;
-				i.StartUp();
+		private void Start() {
+			if (_isAutoStartUp) {
+				I.StartUp();
 			}
 		}
 	}

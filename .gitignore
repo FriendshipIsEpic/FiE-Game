@@ -218,3 +218,6 @@ ProjectSettings
 *.meta
 
 /toolkit
+
+# Files too large to keep on git
+/assets

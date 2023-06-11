@@ -1,1 +1,0 @@
-{"skeleton":{"hash":"W+u5pn6qMeJLYxntzAhDBMnrzws","spine":"2.1.18","width":15,"height":106},"bones":[{"name":"root"}],"slots":[{"name":"textures/split","bone":"root","attachment":"textures/split"}],"skins":{"default":{"textures/split":{"textures/split":{"y":-53,"width":15,"height":106}}}},"animations":{"animation":{}}}

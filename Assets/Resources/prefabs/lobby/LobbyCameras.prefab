@@ -1,0 +1,1337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1332928742822242}
+  m_IsPrefabParent: 1
+--- !u!1 &1332928742822242
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4418761855788546}
+  m_Layer: 0
+  m_Name: LobbyCameras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4418761855788546
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1332928742822242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4668026989526258}
+  - {fileID: 4108206483804318}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!1 &1417168534209713
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4668026989526258}
+  - component: {fileID: 20771408092626087}
+  - component: {fileID: 114727450727347631}
+  - component: {fileID: 114534645801864220}
+  - component: {fileID: 114019946732829193}
+  - component: {fileID: 114884812188707979}
+  - component: {fileID: 114728582678472701}
+  - component: {fileID: 114854043162461706}
+  - component: {fileID: 114136902095211329}
+  - component: {fileID: 114124273528640660}
+  - component: {fileID: 114346694179086661}
+  - component: {fileID: 114065148701703083}
+  - component: {fileID: 114769774791484898}
+  m_Layer: 0
+  m_Name: LobbyCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4668026989526258
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24, y: 3.58, z: 4.12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4067802373177833}
+  m_Father: {fileID: 4418761855788546}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!20 &20771408092626087
+Camera:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215685, g: 0.30196083, b: 0.4745098, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 40
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967263
+  m_RenderingPath: 3
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!114 &114727450727347631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe38f3013d9f1cc83fb31588c7b65e7f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  PostProcessingProfileForLev2: {fileID: 11400000, guid: 3afcec1d31c4a30458b81fe5e5a2f741, type: 2}
+  PostProcessingProfileForLev3: {fileID: 11400000, guid: c631290488341674b92282cbc7c56c37, type: 2}
+  PostProcessingProfileForLev4: {fileID: 11400000, guid: bcc48c0a734e13e4e9a4d2fbde9769bd, type: 2}
+  PostProcessingProfileForLev5: {fileID: 11400000, guid: df27671bd164466498d70caf3a35ad71, type: 2}
+  nowCameraTargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  lastCameraTargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  beforeTaskChangedTargetRotation: {x: 0, y: 0, z: 0, w: 1}
+  nowCameraTargetPos: {x: 0, y: 0, z: 0}
+  lastCameraTargetPos: {x: 0, y: 0, z: 0}
+  beforeTaskChangedTargetPos: {x: 0, y: 0, z: 0}
+  tagetMakerScreenPos: {x: 0, y: 0, z: 0}
+  _colorCorrectionEffect: {fileID: 0}
+  _vignetteEffect: {fileID: 0}
+  _reverbFilter: {fileID: 164757011241920217}
+  _isEnableDOF: 0
+  _mainCameraCutScene: {fileID: 0}
+--- !u!114 &114534645801864220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24715a7f3a623cc33cecb1f2be664889, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  voxelResolution: 256
+  visualizeSunDepthTexture: 0
+  visualizeGI: 0
+  sun: {fileID: 0}
+  giCullingMask:
+    serializedVersion: 2
+    m_Bits: 2147483645
+  shadowSpaceSize: 50
+  temporalBlendWeight: 0.1
+  visualizeVoxels: 0
+  updateGI: 1
+  skyColor: {r: 0, g: 0, b: 0, a: 0}
+  voxelSpaceSize: 50
+  useBilateralFiltering: 0
+  innerOcclusionLayers: 1
+  halfResolution: 1
+  stochasticSampling: 1
+  infiniteBounces: 0
+  followTransform: {fileID: 0}
+  cones: 6
+  coneTraceSteps: 14
+  coneLength: 1
+  coneWidth: 5.5
+  occlusionStrength: 1
+  nearOcclusionStrength: 0.5
+  occlusionPower: 1.5
+  coneTraceBias: 1
+  nearLightGain: 1
+  giGain: 1
+  secondaryBounceGain: 1
+  softSunlight: 0
+  skyIntensity: 1
+  doReflections: 1
+  reflectionSteps: 64
+  reflectionOcclusionPower: 1
+  skyReflectionIntensity: 1
+  farOcclusionStrength: 1
+  farthestOcclusionStrength: 1
+  secondaryCones: 6
+  secondaryOcclusionStrength: 1
+  sphericalSkylight: 0
+  gaussianMipFilter: 0
+  voxelAA: 0
+--- !u!114 &114019946732829193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77b8e1d98972ecb4c39e56952d2d38a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Shader: {fileID: 0}
+  Brightness: 0
+  Contrast: 0
+  ContrastCoeff: {x: 0.5, y: 0.5, z: 0.5}
+  Gamma: 1
+--- !u!114 &114884812188707979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2763bd06ce74a9547c9d7a1320472ab, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_HasPostFx: 0
+  m_TimeMultiplier: 1
+  m_TextureLODBias: -0.5
+  m_DepthRT: {fileID: 0}
+  m_EnableSoftParticles: 1
+  m_EnableDistortion: 1
+  m_UseDepthGrabToZTest: 0
+  m_DepthGrabFormat: 16
+  m_EnableBlur: 0
+  m_BlurFactor: 0.2
+--- !u!114 &114728582678472701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822a5279e858d9b8733ea55607d74e8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  profile: {fileID: 11400000, guid: df27671bd164466498d70caf3a35ad71, type: 2}
+  isEnableRefleshMatrix: 1
+--- !u!114 &114854043162461706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e789a978e481aa0699596f7dc680d907, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_maskTexture: {fileID: 0}
+  m_targetTexture: {fileID: 0}
+  m_showDebugMessages: 1
+  m_softMaxdownscales: 6
+  m_debugToScreen: 0
+  m_highPrecision: 0
+  m_bloomRange: {x: 500, y: 0.002, z: 0, w: 0}
+  m_overallThreshold: 0.4
+  m_bloomParams: {x: 1, y: 0.4, z: 1.621, w: 1}
+  m_temporalFilteringActive: 0
+  m_temporalFilteringValue: 0.05
+  m_bloomDownsampleCount: 5
+  m_temporalFilteringCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.999
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_separateFeaturesThreshold: 0
+  m_featuresThreshold: 0.05
+  m_lensFlare:
+    m_overallIntensity: 1
+    m_normalizedGhostIntensity: 0.4
+    m_normalizedHaloIntensity: 0.1
+    m_applyLensFlare: 0
+    m_lensFlareGhostAmount: 3
+    m_lensFlareGhostsParams: {x: 0.4, y: 0.228, z: 0.856, w: 4}
+    m_lensFlareGhostChrDistortion: 2
+    m_lensGradient:
+      key0:
+        serializedVersion: 2
+        rgba: 4294967295
+      key1:
+        serializedVersion: 2
+        rgba: 4294901760
+      key2:
+        serializedVersion: 2
+        rgba: 4278255360
+      key3:
+        serializedVersion: 2
+        rgba: 4278512639
+      key4:
+        serializedVersion: 2
+        rgba: 4278190335
+      key5:
+        serializedVersion: 2
+        rgba: 0
+      key6:
+        serializedVersion: 2
+        rgba: 0
+      key7:
+        serializedVersion: 2
+        rgba: 0
+      ctime0: 0
+      ctime1: 16384
+      ctime2: 32768
+      ctime3: 49151
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 16384
+      atime2: 32768
+      atime3: 49151
+      atime4: 65535
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 5
+    m_lensFlareGradTexture: {fileID: 0}
+    m_lensFlareHaloParams: {x: 0.1, y: 0.301, z: 1, w: 96}
+    m_lensFlareHaloChrDistortion: 1.51
+    m_lensFlareGaussianBlurAmount: 1
+  m_applyLensDirt: 1
+  m_lensDirtStrength: 5
+  m_lensDirtTexture: {fileID: 2800000, guid: b0e04d98512703b40aaa38aad4f8978b, type: 3}
+  m_applyLensStardurst: 1
+  m_lensStardurstTex: {fileID: 2800000, guid: 09b7d0b1f870ef34cbfb475d44c8b378, type: 3}
+  m_lensStarburstStrength: 2
+  m_anamorphicGlare:
+    m_customGlareDef:
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    - FoldoutValue: 1
+      m_starType: 0
+      m_starInclination: 0
+      m_chromaticAberration: 0
+      m_customStarData:
+        m_starType: 0
+        m_starName:
+        m_starlinesCount: 2
+        m_passCount: 4
+        m_sampleLength: 1
+        m_attenuation: 0.85
+        m_inclination: 0
+        m_rotation: 0
+        m_starLinesArr:
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 0
+        - PassCount: 4
+          SampleLength: 1
+          Attenuation: 0.85
+          Inclination: 1.5707964
+        m_customIncrement: 90
+        m_longAttenuation: 0
+    m_customGlareDefIdx: 0
+    m_customGlareDefAmount: 27
+    m_applyGlare: 1
+    _overallTint: {r: 1, g: 1, b: 1, a: 1}
+    m_cromaticAberrationGrad:
+      key0:
+        serializedVersion: 2
+        rgba: 4294967295
+      key1:
+        serializedVersion: 2
+        rgba: 4294901760
+      key2:
+        serializedVersion: 2
+        rgba: 4278255360
+      key3:
+        serializedVersion: 2
+        rgba: 4278512639
+      key4:
+        serializedVersion: 2
+        rgba: 4278190335
+      key5:
+        serializedVersion: 2
+        rgba: 0
+      key6:
+        serializedVersion: 2
+        rgba: 0
+      key7:
+        serializedVersion: 2
+        rgba: 0
+      ctime0: 0
+      ctime1: 16384
+      ctime2: 32768
+      ctime3: 49151
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 16384
+      atime2: 32768
+      atime3: 49151
+      atime4: 65535
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 5
+    m_glareMaxPassCount: 3
+    m_currentWidth: 497
+    m_currentHeight: 280
+    m_currentGlareType: 8
+    m_currentGlareIdx: 8
+    m_perPassDisplacement: 5
+    m_intensity: 0.12
+    m_overallStreakScale: 0.75
+  m_bokehFilter:
+    m_isActive: 0
+    m_applyOnBloomSource: 0
+    m_bokehSampleRadius: 0.5
+    m_bokehCameraProperties: {x: 0.05, y: 0.018, z: 1.34, w: 0.18}
+    m_offsetRotation: 0
+    m_apertureShape: 1
+  m_upscaleWeights:
+  - 0.0842
+  - 0.1282
+  - 0.1648
+  - 0.2197
+  - 0.2197
+  - 0.1831
+  m_gaussianRadius:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  m_gaussianSteps: 010000000100000001000000010000000100000001000000
+  m_lensDirtWeights:
+  - 0.067
+  - 0.102
+  - 0.1311
+  - 0.1749
+  - 0.2332
+  - 0.2915
+  m_lensStarburstWeights:
+  - 0.067
+  - 0.102
+  - 0.1311
+  - 0.1749
+  - 0.2332
+  - 0.2915
+  m_downscaleSettingsFoldout: 010000000000
+  m_featuresSourceId: 0
+  m_upscaleQuality: 0
+  m_mainThresholdSize: 0
+--- !u!114 &114136902095211329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96df8c44aebd5f7e890df041e81c7141, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  blurShader: {fileID: 4800000, guid: 5a3faa8912930d04ebaecfd8ccf671d7, type: 3}
+  ssrShader: {fileID: 4800000, guid: b7610e7d23496964f88975a227b04e29, type: 3}
+  ssrDeferredShader: {fileID: 4800000, guid: bdb7665d7fdf10f4283e2932da115a13, type: 3}
+--- !u!114 &114124273528640660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938e838be1ae1bfbc1f2ea87d0dee488, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_BlurScale: 0.5
+  m_BlurShader: {fileID: 4800000, guid: 332a6916b298dec489870e122cf6f647, type: 3}
+--- !u!114 &114346694179086661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044b5128fac1a8b5ce4fd687e43237c6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  TranslucencyColor1: {r: 1, g: 1, b: 1, a: 1}
+  Strength1: 500
+  PointLightsDirectionality1: 0.675
+  Constant1: 0.5
+  Scattering1: 0.015
+  SpotExponent1: 39.5
+  SuppressShadows1: 20
+  NdotLReduction1: 1
+  TranslucencyColor2: {r: 1, g: 1, b: 1, a: 1}
+  Strength2: 4
+  PointLightsDirectionality2: 0.7
+  Constant2: 0.1
+  Scattering2: 0.05
+  SpotExponent2: 30
+  SuppressShadows2: 0.5
+  NdotLReduction2: 0
+  TranslucencyColor3: {r: 1, g: 1, b: 1, a: 1}
+  Strength3: 4
+  PointLightsDirectionality3: 0.7
+  Constant3: 0.1
+  Scattering3: 0.05
+  SpotExponent3: 30
+  SuppressShadows3: 0.5
+  NdotLReduction3: 0
+  TranslucencyColor4: {r: 1, g: 1, b: 1, a: 1}
+  Strength4: 4
+  PointLightsDirectionality4: 0.7
+  Constant4: 0.1
+  Scattering4: 0.05
+  SpotExponent4: 30
+  SuppressShadows4: 0.5
+  NdotLReduction4: 0
+  TranslucencyPropsTex: {fileID: 0}
+--- !u!114 &114065148701703083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3495951eb5f1a776dea6bb8093cb3548, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  WaterLevel: 0.78126454
+  WetnessAmount: 0.955591
+  flowTimeScale: 1
+  FlowBumpStrength: 1
+  RainIntensity: 1
+  SnowLevel: 0
+  Frost: 0
+  SnowDissolve: 0.35
+  SnowBumpMicro: 0.02
+  SnowSpecGloss: {r: 0.15, g: 0.15, b: 0.15, a: 0.6}
+  SnowGlitterColor: {r: 0.1, g: 0.1, b: 0.1, a: 0.03}
+  SnowDissolveCover: 2
+  SnowBumpMicroCover: 0.08
+  SnowSpecGlossCover: {r: 0.1, g: 0.1, b: 0.1, a: 0.15}
+  SnowGlitterColorCover: {r: 0.8, g: 0.8, b: 0.8, a: 0.2}
+  SnowDissolveMelt: 0.35
+  SnowBumpMicroMelt: 0.02
+  SnowSpecGlossMelt: {r: 0.15, g: 0.15, b: 0.15, a: 0.6}
+  SnowGlitterColorMelt: {r: 0.1, g: 0.1, b: 0.1, a: 0.03}
+  Simulate: 1
+  fallIntensity: 1
+  temperature: 20
+  wind: 0.3
+  weatherTimeScale: 0.3
+  FreezeWetWhenSnowPresent: 1
+  AddWetWhenSnowPresent: 1
+  UseParticleSystem: 0
+  rainGameObject: {fileID: 0}
+  snowGameObject: {fileID: 0}
+--- !u!114 &114769774791484898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417168534209713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad0deabb042b730dd41540f95bab4e58, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_DebugShader: {fileID: 4800000, guid: 4e362abab875ceb4489099a8df09a5bf, type: 3}
+  m_ShadowmapShader: {fileID: 4800000, guid: 20c982237b22daf48820424492c6e01d, type: 3}
+  m_InjectLightingAndDensity: {fileID: 7200000, guid: 759b9465ad60b7848977474003233210, type: 2}
+  m_Scatter: {fileID: 7200000, guid: 65bf3d6898557424384321d2b6a2bdf0, type: 2}
+  m_ApplyToOpaqueShader: {fileID: 4800000, guid: 241d0374ab9267246ba55175833d8e3d, type: 3}
+  m_BlurShadowmapShader: {fileID: 4800000, guid: 7c6c2308955e27d49b69edae8a2a6d8a, type: 3}
+  m_Noise: {fileID: 2800000, guid: 24eb4b541251403459d5509aa0374fe8, type: 3}
+  m_Debug: 0
+  m_Z: 1
+  m_NearClip: 0.1
+  m_FarClipMax: 100
+  m_GlobalDensityMult: 27.63
+  m_ConstantFog: 2
+  m_HeightFogAmount: 3.05
+  m_HeightFogExponent: 1
+  m_HeightFogOffset: 1
+  m_NoiseFogAmount: 0.6
+  m_NoiseFogScale: 1
+  m_Wind: {fileID: 0}
+  m_Anisotropy: 0.661
+  m_GlobalIntensityMult: 1
+  m_AmbientLightIntensity: 1
+  m_AmbientLightColor: {r: 0.2758975, g: 0.3310166, b: 0.5955882, a: 1}
+  m_BlurShadowmap: 0
+  m_ShadowmapDownsample: 1
+  m_BlurSize: 3
+  m_BlurIterations: 2
+--- !u!1 &1746744043770111
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4067802373177833}
+  - component: {fileID: 81766067908889168}
+  - component: {fileID: 164757011241920217}
+  m_Layer: 0
+  m_Name: Listner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4067802373177833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746744043770111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4668026989526258}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!81 &81766067908889168
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746744043770111}
+  m_Enabled: 1
+--- !u!164 &164757011241920217
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746744043770111}
+  m_Enabled: 1
+  m_DryLevel: 0
+  m_Room: 0
+  m_RoomHF: 0
+  m_RoomRolloff: 0
+  m_DecayTime: 0.1
+  m_DecayHFRatio: 0.1
+  m_ReflectionsLevel: -10000
+  m_ReverbLevel: 0
+  m_ReverbDelay: 0.04
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 27
+--- !u!1 &1650361554038751
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4108206483804318}
+  m_Layer: 0
+  m_Name: SelectiveMenuCameraTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108206483804318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1650361554038751}
+  m_LocalRotation: {x: -0.122787654, y: -0.29325515, z: -0.038009137, w: 0.94735414}
+  m_LocalPosition: {x: 58.2, y: 3.3, z: -27.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4418761855788546}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -14.770002, y: 34.400005, z: 1.5086323E-07}

@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SelectableUIAtlas_7
+  m_Rect:
+    serializedVersion: 2
+    x: 930
+    y: 1198
+    width: 93
+    height: 118
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 100
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: 7139afa750954584eadfe24bbf4c662b, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 0.085, y: 0.06, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.065, y: 0.08, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.025, y: 0.13, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.465, y: 0.59, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.155, y: 0.02, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.465, y: -0.59, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.165, y: -0.22, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.105, y: -0.18, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.185, y: -0.22, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.195, y: -0.27, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.185, y: -0.26, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.465, y: 0.59, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.145, y: -0.02, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.045, y: -0.09, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.085, y: -0.18, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.115, y: -0.21, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.185, y: -0.27, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.465, y: -0.59, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.125, y: -0.02, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.135, y: 0.02, z: 0}
+    indices:
+    - 16
+    - 9
+    - 10
+    - 7
+    - 2
+    - 18
+    - 0
+    - 18
+    - 2
+    - 19
+    - 18
+    - 0
+    - 11
+    - 9
+    - 17
+    - 5
+    - 17
+    - 9
+    - 16
+    - 5
+    - 9
+    - 10
+    - 5
+    - 16
+    - 15
+    - 5
+    - 10
+    - 14
+    - 5
+    - 15
+    - 13
+    - 5
+    - 14
+    - 12
+    - 5
+    - 13
+    - 4
+    - 5
+    - 12
+    - 3
+    - 2
+    - 11
+    - 8
+    - 11
+    - 2
+    - 9
+    - 11
+    - 8
+    - 10
+    - 9
+    - 8
+    - 6
+    - 8
+    - 2
+    - 7
+    - 6
+    - 2
+    - 1
+    - 2
+    - 3
+    - 0
+    - 1
+    - 3
+    - 4
+    - 0
+    - 3
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+    - 0
+    textureRect:
+      serializedVersion: 2
+      x: 930
+      y: 1198
+      width: 93
+      height: 118
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 100, y: 976.5, z: 100, w: 1257}

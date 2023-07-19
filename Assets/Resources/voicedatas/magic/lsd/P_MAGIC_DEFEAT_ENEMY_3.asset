@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_DEFEAT_ENEMY_3
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 50e21104e5fe79a48b644ed2e1a58860, type: 3}
+  phonemeData:
+  - phoneme: 5
+    time: 0.3807977
+  - phoneme: 1
+    time: 0.43973067
+  - phoneme: 0
+    time: 0.499117
+  - phoneme: 5
+    time: 0.59839636
+  - phoneme: 4
+    time: 0.6360228
+  - phoneme: 1
+    time: 0.69903576
+  - phoneme: 4
+    time: 0.7625021
+  - phoneme: 4
+    time: 0.8001285
+  - phoneme: 4
+    time: 0.83820826
+  - phoneme: 0
+    time: 0.8758347
+  - phoneme: 7
+    time: 0.9139145
+  - phoneme: 4
+    time: 0.10125
+  - phoneme: 3
+    time: 0.11875
+  - phoneme: 2
+    time: 0.15499999
+  - phoneme: 4
+    time: 0.21375002
+  - phoneme: 1
+    time: 0.23375
+  - phoneme: 5
+    time: 0.27125
+  - phoneme: 4
+    time: 0.32250002
+  emotionData: []

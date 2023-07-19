@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1119253124144726}
+  m_IsPrefabParent: 1
+--- !u!1 &1119253124144726
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4708779810954048}
+  - component: {fileID: 114603501226384464}
+  - component: {fileID: 135636700931439142}
+  - component: {fileID: 114192741861688280}
+  m_Layer: 0
+  m_Name: ApplejackYeehawReflect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4708779810954048
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119253124144726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114603501226384464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119253124144726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38cdbc9a151756ae5e7fcdb8e92d037, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _emitObjectType: 3
+  _defaultAllyTag: 0
+  _defaultHostileTag: 1
+  _hittingType: 2
+  _hitInterval: 1
+  _friendshipGainedType: 1
+  _gainedFriendshipPoint: 1
+  damageAttribute: 0
+  defaultDamage: 150
+  defaultStagger: 15
+  defaultHate: 4
+  defaultGainedFriendshipPoint: 0
+  baseDamage: 0
+  baseStagger: 0
+  baseHate: 0
+  baseGainedFriendshipPoint: 0
+  damageFluctuatingRate: 0.05
+  ability: 104
+  yeehawEnableDuration: 0.3
+  yeehawPysicalForce: 2.5
+--- !u!135 &135636700931439142
+SphereCollider:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119253124144726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.25
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114192741861688280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1119253124144726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc58e476165cb375567fd234b1067fdb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  _isActive: 1
+  _isOnlyStatusEffect: 0
+  _duration: 0
+  _riftForceRate: 1
+  _resetMoveForce: 0

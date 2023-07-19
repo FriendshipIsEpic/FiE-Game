@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: defaultMat
+  m_Shader: {fileID: 4800000, guid: 9d9f7c4c34a404445b0e9828e55866cb, type: 3}
+  m_ShaderKeywords: USE_NORMAL_FROM_MASK
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: BaseNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: e5160bd89c965734f810e7515475f190, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Mask
+      second:
+        m_Texture: {fileID: 2800000, guid: 929ead764d8e55745940a7e566e431ed, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material1_Color
+      second:
+        m_Texture: {fileID: 18600000, guid: 2f1d1a5c26d32b44f92475dfc9b28261, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material1_Normal
+      second:
+        m_Texture: {fileID: 18600000, guid: b5d6a2ea3a2af2e4db7140424f647197, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material1_RM
+      second:
+        m_Texture: {fileID: 18600000, guid: 7ce230ae1238660429ef1715da55930e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material2_Color
+      second:
+        m_Texture: {fileID: 18600000, guid: 7962f18db6adc1e47839bcb576cd3d6f, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material2_Normal
+      second:
+        m_Texture: {fileID: 18600000, guid: 2fc5b21f533563f4e91c3dfa6ef12c06, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material2_RM
+      second:
+        m_Texture: {fileID: 18600000, guid: 614a381630b7a2847b919240a33baefb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material3_Color
+      second:
+        m_Texture: {fileID: 18600000, guid: 4a178acd87f7d8f4286ed902d47d19c8, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material3_Normal
+      second:
+        m_Texture: {fileID: 18600000, guid: 2ad3ed60a592b0f419c1adbaf18445bc, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material3_RM
+      second:
+        m_Texture: {fileID: 18600000, guid: 0c1d945ca95a25a4e9b9d9e13286bfee, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material4_Color
+      second:
+        m_Texture: {fileID: 18600000, guid: 7546196e9914bf54c9cb9d405a3c338b, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material4_Normal
+      second:
+        m_Texture: {fileID: 18600000, guid: 1a082e6665dc7e345bfb553076fae807, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Material4_RM
+      second:
+        m_Texture: {fileID: 18600000, guid: 7546196e9914bf54c9cb9d405a3c338b, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: BaseNormalIntensity
+      second: 1
+    - first:
+        name: Material1_NormalIntensity
+      second: 5
+    - first:
+        name: Material1_Scale
+      second: 16
+    - first:
+        name: Material2_NormalFromMaskIntensity
+      second: -1.55
+    - first:
+        name: Material2_NormalFromMaskOffset
+      second: 0.1
+    - first:
+        name: Material2_NormalIntensity
+      second: 2
+    - first:
+        name: Material2_Scale
+      second: 96
+    - first:
+        name: Material3_NormalFromMaskIntensity
+      second: 3.38
+    - first:
+        name: Material3_NormalFromMaskOffset
+      second: 0.1
+    - first:
+        name: Material3_NormalIntensity
+      second: 6.51
+    - first:
+        name: Material3_Scale
+      second: 128
+    - first:
+        name: Material4_NormalFromMaskIntensity
+      second: 1
+    - first:
+        name: Material4_NormalFromMaskOffset
+      second: 0.1
+    - first:
+        name: Material4_NormalIntensity
+      second: 1.5
+    - first:
+        name: Material4_Scale
+      second: 92
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}

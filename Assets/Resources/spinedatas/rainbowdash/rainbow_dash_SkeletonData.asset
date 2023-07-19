@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b322f0685be38ac169b3ea23e9eda25f, type: 3}
+  m_Name: rainbow_dash_SkeletonData
+  m_EditorClassIdentifier:
+  atlasAssets:
+  - {fileID: 11400000, guid: d9c90fa17f7250a4fba99b1d235cac3d, type: 2}
+  scale: 0.001
+  skeletonJSON: {fileID: 4900000, guid: 904ea11ad148dd448a994a8230770cef, type: 3}
+  fromAnimation:
+  - idle
+  - idle
+  - idle
+  - walk
+  - gallop
+  - walk
+  - walk
+  - idle
+  - gallop
+  - landing
+  - landing
+  - landing
+  - evasion_down
+  - jump_idle
+  - jump
+  - evasion_front
+  - stagger
+  - stagger
+  - stagger
+  - stagger
+  - stagger_fall
+  - stagger_fall
+  - stagger_fall
+  - stagger_fall
+  - jump_idle
+  - evasion_back
+  - evasion_down
+  - evasion_front
+  - evasion_up
+  - idle
+  - counter_strike_end
+  - walk
+  - gallop
+  - omnismash_finishing_waiting
+  - omnismash_finishing_start
+  - omnismash_finishing_end
+  - base_attack_1
+  - base_attack_2
+  toAnimation:
+  - idle_relax
+  - walk
+  - gallop
+  - gallop
+  - walk
+  - idle
+  - jump
+  - jump
+  - jump
+  - idle
+  - walk
+  - gallop
+  - landing
+  - landing
+  - landing
+  - landing
+  - evasion_back
+  - evasion_down
+  - evasion_front
+  - evasion_up
+  - evasion_back
+  - evasion_down
+  - evasion_front
+  - evasion_up
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_start
+  - omnismash_finishing_start
+  - omnismash_finishing_end
+  - omnismash_finishing_to_idle
+  - base_attack_2
+  - base_attack_3
+  duration:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0
+  - 0
+  - 0
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0.05
+  - 0
+  - 0
+  - 0
+  - 0.05
+  - 0
+  defaultMix: 0.1
+  controller: {fileID: 0}

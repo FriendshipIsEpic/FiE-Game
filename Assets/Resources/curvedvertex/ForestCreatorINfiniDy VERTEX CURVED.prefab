@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1339210764489188}
+  m_IsPrefabParent: 1
+--- !u!1 &1339210764489188
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4474242963223978}
+  - component: {fileID: 114270077418458704}
+  m_Layer: 0
+  m_Name: ForestCreatorINfiniDy VERTEX CURVED
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4474242963223978
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339210764489188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.2430172, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4689513410129222}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114270077418458704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339210764489188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a6cded3170a931ebbd03e30b6f4a9f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  AddChopHandler: 0
+  customRot: 0
+  lerpRot: 0
+  lerpRotAmount: 0.5
+  HorizontAligned: 0
+  RandomRotRight: 0
+  RandomRotRightMin: -30
+  RandomRotRightMax: 30
+  Disable_after_growth: 0
+  WhenCombinerFull: 1
+  Eliminate_original_mesh: 0
+  ScaleMin_grabbed: 1
+  Restart: 0
+  RotTowards: 0
+  RotVector: {x: 0, y: -1, z: 0}
+  RandomRot: 0
+  RandRotMin: -360
+  RandRotMax: 360
+  GroupByObject: 0
+  ParentToObject: 0
+  ParentWhileGrowing: 0
+  MoveWithObject: 0
+  RaycastLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  AvoidOwnColl: 0
+  Tag_based: 0
+  GrassManager: {fileID: 0}
+  Type: 0
+  Tag_based_player: 0
+  Player_tag: Player
+  LOD_distance: 200
+  LOD_distance1: 230
+  LOD_distance2: 260
+  Cutoff_distance: 300
+  Init_rot: 0
+  Intial_Up_Vector: {x: 0, y: 1, z: 0}
+  MinAvoidDist: 2
+  MinScaleAvoidDist: 4
+  InteractionSpeed: 1
+  InteractSpeedThres: 0.5
+  enable_colliders_editor: 1
+  enable_colliders_playmode: 1
+  GrassCollider: {fileID: 0}
+  colliderScale: {x: 3, y: 2, z: 3}
+  PosSpread: {x: 8, y: 8}
+  ScaleWhole: 0
+  max_ray_dist: 3
+  PaintedOnOBJ: {fileID: 0}
+  GridOnNormal: 0
+  Max_Health: 100
+  Chop: 0
+  max_fall_ammount: 80
+  EnableAction: 0
+  no_shadows_on_dynamic: 0
+  Rm_shad_above_lvl: 5
+  no_leaf_shadows: 0
+  Rm_receive: 1
+  Rm_cast: 1
+  Range_leaf_scale: 0
+  Leaf_scale_range: {x: 0.5, y: 0.8}
+  fall_max_time: 4
+  fall_speed: 1
+  Rot_toward_normal: 1
+  Rot_speed: 5
+  direction_normal: {x: 0, y: 1, z: 0}
+  max_rot_time: 0.5
+  player: {fileID: 0}
+  Interaction_thres: 15
+  Interaction_offset: 5
+  Enable_LOD: 1
+  Grow_in_Editor: 0
+  InstaGrowLeaves: 1
+  Leaves_local_space: 0
+  is_grass: 1
+  StartRadi: 2
+  StartLength: 1
+  Length_scale: 1
+  Extend_scale: 0.5
+  Min_max_spread: {x: 0, y: 0}
+  Spread_Z_separate: 1
+  Min_max_spread_Z: {x: 0, y: 0}
+  Spread_Y_separate: 0
+  Min_max_spread_Y: {x: 45, y: 45}
+  Min_Max_Branching: {x: 1, y: 5}
+  Max_branches_per_level:
+  Min_Max_Radi: {x: 0.4, y: 0.8}
+  lower_length_by: 0.85
+  lower_radi_by: 0.7
+  Grow_tree: 0
+  Start_tree_scale: 0.5
+  End_scale: 2
+  Grow_tree_speed: 3.5
+  Update_every: 0.02
+  BarkPrefab:
+  BarkPrefabOBJ: {fileID: 1753477785802893, guid: 8b2a81e3222eac54f9b3a59e4e075e5f, type: 2}
+  LeafPrefabs: []
+  BranchPrefabs: []
+  LeafPrefabsOBJ:
+  - {fileID: 1075606243854395, guid: fd57f04e45c2e2a4c9656b510af166a2, type: 2}
+  - {fileID: 1075606243854395, guid: fd57f04e45c2e2a4c9656b510af166a2, type: 2}
+  BranchPrefabsOBJ:
+  - {fileID: 1608787042474786, guid: 39fb3c72387fe1849b9fde1a2bfa4e78, type: 2}
+  - {fileID: 1608787042474786, guid: 39fb3c72387fe1849b9fde1a2bfa4e78, type: 2}
+  BranchID_per_level: 01000000010000000000000000000000
+  Grow_leaves_slow_factor: 3
+  Grow_speed: 1.25
+  Growth_start_div: 2
+  Growth_angle_div: 2
+  Leaf_start_div: 2
+  Smooth_leaf_growth: 0
+  Leaf_level_min_max: {x: 1, y: 8}
+  Leaves_per_branch: 3
+  Use_height: 0
+  Leaf_height_min_max: {x: 0, y: 18}
+  Leaf_dist_factor: 0.29
+  CreateForest: 1
+  Interactive_tree: 0
+  Max_interact_holder_items: 12
+  Max_trees_per_group: 12
+  Max_tree_dist: 15
+  rotation_over: 0
+  Grow_angles: 0
+  Branch_levels:
+  scaleVectors: []
+  Registered_Brances: []
+  Start_Scales: []
+  Registered_Leaves: []
+  Registered_Leaves_Rot: []
+  Leaf_belongs_to_branch:
+  Leaf_pool: {fileID: 1944618745531244}
+  Leaves: []
+  Leaves_scales: []
+  Height_levels: 1
+  Height_separation: 0.5
+  Height_reduce: 0.07
+  Level1Decline: 0
+  Reduce_angle_with_height: 1
+  Multithreaded: 1
+  Height_offset: {x: -0.09, y: 0, z: -0.1}
+  Decouple_from_bark: 0
+  Tree_Holder_Index: 0
+  Grass_Holder_Index: 0
+  Forest_holder: {fileID: 0}
+  Leaf_mat: {fileID: 0}
+  Enable_wind: 1
+  Wind_freq: 0.4
+  Wind_strength: 0.002
+  batching_ended: 0
+  is_moving: 0
+  Health: 100
+  start_falling: 0
+  fall_ammount: 0
+  fall_ended: 0
+  passed_chop: 0
+  root_tree: {fileID: 0}
+  Grow_tree_ended: 0
+  Branch_grew:
+  Grow_level: 0
+  growth_over: 0
+  Combiner: {fileID: 0}
+  shadows_removed: 0
+--- !u!1 &1944618745531244
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4689513410129222}
+  m_Layer: 0
+  m_Name: LEAF_POOL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4689513410129222
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944618745531244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4474242963223978}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}

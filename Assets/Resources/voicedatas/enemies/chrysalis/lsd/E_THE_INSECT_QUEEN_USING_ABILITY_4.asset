@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: E_THE_INSECT_QUEEN_USING_ABILITY_4
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 93cac6df5e5a45648817380da9fea041, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.01904145
+  - phoneme: 0
+    time: 0.04688957
+  - phoneme: 4
+    time: 0.10282383
+  - phoneme: 4
+    time: 0.13090996
+  - phoneme: 2
+    time: 0.15352169
+  - phoneme: 4
+    time: 0.19160458
+  - phoneme: 2
+    time: 0.2142163
+  - phoneme: 4
+    time: 0.28086138
+  - phoneme: 3
+    time: 0.29966483
+  - phoneme: 6
+    time: 0.3372717
+  - phoneme: 2
+    time: 0.36869007
+  - phoneme: 4
+    time: 0.39987046
+  - phoneme: 4
+    time: 0.4189119
+  - phoneme: 2
+    time: 0.4346211
+  - phoneme: 7
+    time: 0.46127912
+  - phoneme: 5
+    time: 0.48793715
+  - phoneme: 4
+    time: 0.5079307
+  - phoneme: 1
+    time: 0.5414912
+  - phoneme: 4
+    time: 0.5750518
+  - phoneme: 4
+    time: 0.5950453
+  - phoneme: 4
+    time: 0.6152769
+  - phoneme: 4
+    time: 0.6355084
+  - phoneme: 0
+    time: 0.6552639
+  - phoneme: 4
+    time: 0.735476
+  - phoneme: 3
+    time: 0.74666286
+  - phoneme: 6
+    time: 0.7695126
+  - phoneme: 2
+    time: 0.788316
+  - phoneme: 4
+    time: 0.8073575
+  - phoneme: 4
+    time: 0.8235427
+  - phoneme: 3
+    time: 0.84068
+  - phoneme: 6
+    time: 0.87543064
+  emotionData: []

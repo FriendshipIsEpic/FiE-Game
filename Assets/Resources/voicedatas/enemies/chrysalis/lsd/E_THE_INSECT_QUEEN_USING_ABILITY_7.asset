@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: E_THE_INSECT_QUEEN_USING_ABILITY_7
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: cf82c74609ed32d4ab1a4dcff469ae72, type: 3}
+  phonemeData:
+  - phoneme: 7
+    time: 0.031153498
+  - phoneme: 2
+    time: 0.092570394
+  - phoneme: 4
+    time: 0.15443234
+  - phoneme: 0
+    time: 0.21629429
+  - phoneme: 4
+    time: 0.29061761
+  - phoneme: 1
+    time: 0.3275568
+  - phoneme: 2
+    time: 0.36494097
+  - phoneme: 4
+    time: 0.42279747
+  - phoneme: 2
+    time: 0.45039058
+  - phoneme: 7
+    time: 0.49712083
+  - phoneme: 4
+    time: 0.52515894
+  - phoneme: 0
+    time: 0.5754496
+  - phoneme: 4
+    time: 0.6595641
+  - phoneme: 4
+    time: 0.71029973
+  emotionData: []

@@ -1,0 +1,27 @@
+
+header.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/ability_controls
+  rotate: false
+  xy: 2, 7
+  size: 442, 107
+  orig: 442, 107
+  offset: 0, 0
+  index: -1
+textures/footer
+  rotate: false
+  xy: 446, 2
+  size: 413, 112
+  orig: 413, 112
+  offset: 0, 0
+  index: -1
+textures/header
+  rotate: false
+  xy: 861, 8
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1

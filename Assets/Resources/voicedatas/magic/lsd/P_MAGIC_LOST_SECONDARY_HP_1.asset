@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_LOST_SECONDARY_HP_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: bd00349fd19ee9541be2f2d24bf180bf, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0
+  - phoneme: 0
+    time: 0.046546523
+  - phoneme: 4
+    time: 0.14050959
+  - phoneme: 4
+    time: 0.18749113
+  - phoneme: 4
+    time: 0.5046165
+  - phoneme: 3
+    time: 0.5294123
+  - phoneme: 6
+    time: 0.57900393
+  - phoneme: 2
+    time: 0.62076527
+  - phoneme: 4
+    time: 0.6620916
+  - phoneme: 0
+    time: 0.68732244
+  - phoneme: 5
+    time: 0.72647375
+  emotionData: []

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_APPEAR_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 8f5e19dfa9371d2408549c82c72b2c29, type: 3}
+  phonemeData:
+  - phoneme: 6
+    time: 0.044333063
+  - phoneme: 1
+    time: 0.13679917
+  - phoneme: 4
+    time: 0.2298986
+  - phoneme: 4
+    time: 0.2856316
+  - phoneme: 4
+    time: 0.34199792
+  - phoneme: 1
+    time: 0.38506433
+  - phoneme: 4
+    time: 0.45663056
+  - phoneme: 4
+    time: 0.50033027
+  - phoneme: 3
+    time: 0.55732995
+  - phoneme: 0
+    time: 0.67132926
+  - phoneme: 4
+    time: 0.7511288
+  - phoneme: 4
+    time: 0.8315616
+  emotionData: []

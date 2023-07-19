@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SelectableUIAtlas_5
+  m_Rect:
+    serializedVersion: 2
+    x: 1816
+    y: 1523
+    width: 153
+    height: 140.92387
+  m_Offset: {x: 0, y: 0.03805912}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 100
+  m_Pivot: {x: 0.5, y: 0.50027007}
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: 7139afa750954584eadfe24bbf4c662b, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 0.575, y: 0.695, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.765, y: -0.275, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.765, y: 0.155, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.505, y: -0.615, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.405, y: -0.705, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.395, y: 0.705, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.445, y: -0.705, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.535, y: 0.705, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.765, y: 0.155, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.765, y: -0.285, z: 0}
+    indices:
+    - 9
+    - 8
+    - 6
+    - 7
+    - 6
+    - 8
+    - 5
+    - 6
+    - 7
+    - 4
+    - 6
+    - 5
+    - 0
+    - 4
+    - 5
+    - 3
+    - 4
+    - 0
+    - 1
+    - 3
+    - 0
+    - 2
+    - 1
+    - 0
+    textureRect:
+      serializedVersion: 2
+      x: 1816
+      y: 1523
+      width: 153
+      height: 140.92387
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 100, y: 1892.5, z: 100, w: 1593.5}

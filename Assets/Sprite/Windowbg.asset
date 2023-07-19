@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Windowbg
+  m_Rect:
+    serializedVersion: 2
+    x: 0.07612038
+    y: 262.0761
+    width: 52.847755
+    height: 52.847755
+  m_Offset: {x: -0.9999979, y: 1.0000026}
+  m_Border: {x: 11.92388, y: 14.92388, z: 13.923876, w: 12.923876}
+  m_PixelsToUnits: 100
+  m_Pivot: {x: 0.48107776, y: 0.5189223}
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: f833f553a7c9f624991770edc9acf6d6, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 0.275, y: 0.215, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.235, y: -0.275, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.275, y: -0.215, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.215, y: 0.255, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.195, y: -0.275, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.215, y: 0.255, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.255, y: 0.195, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.255, y: -0.235, z: 0}
+    indices:
+    - 7
+    - 6
+    - 4
+    - 5
+    - 4
+    - 6
+    - 3
+    - 4
+    - 5
+    - 1
+    - 4
+    - 3
+    - 0
+    - 1
+    - 3
+    - 2
+    - 1
+    - 0
+    textureRect:
+      serializedVersion: 2
+      x: 0.07612038
+      y: 262.0761
+      width: 52.847755
+      height: 52.847755
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 67
+    uvTransform: {x: 100, y: 25.5, z: 100, w: 289.5}

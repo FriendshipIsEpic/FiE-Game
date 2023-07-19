@@ -46,7 +46,6 @@ artifacts/
 *_p.c
 *_i.h
 *.ilk
-*.meta
 *.obj
 *.pch
 *.pdb
@@ -215,9 +214,3 @@ ModelManifest.xml
 Temp
 Library
 ProjectSettings
-*.meta
-
-/toolkit
-
-# Files too large to keep on git
-/assets

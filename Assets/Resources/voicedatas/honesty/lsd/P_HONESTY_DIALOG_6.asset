@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_DIALOG_6
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: ae30a1ebc9afb274b8452e7b521fa67f, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0
+  - phoneme: 2
+    time: 0.036822353
+  - phoneme: 4
+    time: 0.098451346
+  - phoneme: 4
+    time: 0.1356613
+  - phoneme: 1
+    time: 0.16473158
+  - phoneme: 4
+    time: 0.19380186
+  - phoneme: 2
+    time: 0.23333743
+  - phoneme: 4
+    time: 0.29923007
+  - phoneme: 4
+    time: 0.3655103
+  - phoneme: 0
+    time: 0.4050459
+  - phoneme: 4
+    time: 0.44458145
+  - phoneme: 4
+    time: 0.63567007
+  - phoneme: 2
+    time: 0.65427506
+  - phoneme: 7
+    time: 0.6860586
+  - phoneme: 2
+    time: 0.7046636
+  - phoneme: 4
+    time: 0.73644704
+  - phoneme: 4
+    time: 0.76474214
+  - phoneme: 3
+    time: 0.7934248
+  - phoneme: 6
+    time: 0.85040253
+  - phoneme: 4
+    time: 0.8976902
+  emotionData: []

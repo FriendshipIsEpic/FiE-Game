@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GRASS_A SHADER 21 ANIME 2 LONG
+  m_Shader: {fileID: 4800000, guid: abf14101740e33345b9d26fde07930af, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2450
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Diffuse
+      second:
+        m_Texture: {fileID: 2800000, guid: bac13b446a8a76d4fa0abc2765ec0346, type: 3}
+        m_Scale: {x: 1, y: 0.981}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SnowTexture
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AO
+      second: 2.4
+    - first:
+        name: _BaseColorYShift
+      second: 1
+    - first:
+        name: _BaseLight
+      second: 0.35
+    - first:
+        name: _BulgeScale
+      second: 0.0050000004
+    - first:
+        name: _BulgeScale_copy
+      second: 1
+    - first:
+        name: _BulgeShape
+      second: 8.61
+    - first:
+        name: _Cutoff
+      second: 0.502
+    - first:
+        name: _FadeThreshold
+      second: 500
+    - first:
+        name: _GlowIntensity
+      second: 0.76
+    - first:
+        name: _Occlusion
+      second: 7.5
+    - first:
+        name: _RandYScale
+      second: 1
+    - first:
+        name: _RippleScale
+      second: 0
+    - first:
+        name: _ShadowStrength
+      second: 1
+    - first:
+        name: _Shininess
+      second: 0.7
+    - first:
+        name: _SmoothMotionFactor
+      second: 255
+    - first:
+        name: _SpecularPower
+      second: 1
+    - first:
+        name: _SquashAmount
+      second: 1
+    - first:
+        name: _StopMotionThreshold
+      second: 15
+    - first:
+        name: _Strength
+      second: 0.16
+    - first:
+        name: _TintFrequency
+      second: 0.1
+    - first:
+        name: _TintPower
+      second: 0
+    - first:
+        name: _TranslucencyViewDependency
+      second: 0.7
+    - first:
+        name: _WaveXFactor
+      second: 0.4
+    - first:
+        name: _WaveYFactor
+      second: 0.4
+    m_Colors:
+    - first:
+        name: _CameraPos
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Color
+      second: {r: 1, g: 0.8367347, b: 0.1734694, a: 1}
+    - first:
+        name: _ColorGlobal
+      second: {r: 0.66176474, g: 0.66176474, b: 0.66176474, a: 0}
+    - first:
+        name: _ColorGlobal1
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _ColorTrans
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - first:
+        name: _EmisColor
+      second: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+    - first:
+        name: _Emission
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _GlowColor
+      second: {r: 0.75735295, g: 0.41001523, b: 0.41001523, a: 0.9764706}
+    - first:
+        name: _InteractPos
+      second: {r: -20.549, g: 1.4093554, b: -5.5, a: 0}
+    - first:
+        name: _InteractSpeed
+      second: {r: 0.036939997, g: -0.0024856094, b: 0.00985957, a: 0}
+    - first:
+        name: _OceanCenter
+      second: {r: 0, g: 0, b: 0.010000001, a: 0.010000001}
+    - first:
+        name: _Params1
+      second: {r: 11.86, g: 24.5, b: 19.6, a: 0}
+    - first:
+        name: _Params2
+      second: {r: 9.72, g: 18.71, b: 9.89, a: 0}
+    - first:
+        name: _Scale
+      second: {r: 1, g: 2.45, b: 0.5, a: 0}
+    - first:
+        name: _SpecColor
+      second: {r: 0.07352942, g: 0, b: 0.019463655, a: 0}
+    - first:
+        name: _TimeControl1
+      second: {r: 2, g: 1, b: 1, a: 0}
+    - first:
+        name: _TranslucencyColor
+      second: {r: 0.73, g: 0.85, b: 0.41, a: 1}
+    - first:
+        name: _WaveAndDistance
+      second: {r: 12, g: 3.6, b: 1, a: 1}
+    - first:
+        name: _WaveControl1
+      second: {r: 1.01, g: 0, b: 0, a: 0.3}
+    - first:
+        name: _WavingTint
+      second: {r: 0.7, g: 0.6, b: 0.5, a: 0}

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20b2ff862084fa5dae619c96b29b0bf2, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier:
+  AppID: ea060d62-a233-4822-b6a0-307a7b1fc4c8
+  VoiceAppID:
+  ChatAppID:
+  HostType: 1
+  PreferredRegion: 0
+  EnabledRegions: -1
+  Protocol: 0
+  ServerAddress:
+  ServerPort: 5055
+  VoiceServerPort: 5055
+  JoinLobby: 0
+  EnableLobbyStatistics: 0
+  PunLogging: 0
+  NetworkLogging: 1
+  RunInBackground: 1
+  RpcList:
+  - AddDamageRPC
+  - AddFriendshipRPC
+  - ChangeExternalInputValuesRPC
+  - changeStateRPC
+  - ChangeTargetRPC
+  - ChangeViewIDRPC
+  - Chat
+  - CreateEnemyRPC
+  - DeployBuildDataRPC
+  - DestroyRpc
+  - ForwardEvent
+  - InstantiateRpc
+  - OnAwakeRPC
+  - PickupItemInit
+  - PunPickup
+  - PunPickupSimple
+  - PunRespawn
+  - RebuildPlayerInformationRPC
+  - RequestForPickupItems
+  - RequestForPickupTimes
+  - ReviveRPC
+  - SendGameCharacterBuildDataRPC
+  - SetAwesomeEffectRPC
+  - ShowActivityRPC
+  - ShowResultRPC
+  - StartCinemacitRPC
+  - TriggerRPC
+  - SetScoreRPC
+  - SendGameOverEventRpc
+  - SendGameQuitEventRpc
+  - SendRetryEventRpc
+  - SetActivePortalRPC
+  - SkipCinemacitRPC
+  DisableAutoOpenWizard: 1

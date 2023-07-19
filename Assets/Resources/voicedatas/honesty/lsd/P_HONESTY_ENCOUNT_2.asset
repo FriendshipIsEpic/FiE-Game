@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_ENCOUNT_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 876008c9db1f3644780a3aa201ee2bf3, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.1464293
+  - phoneme: 2
+    time: 0.21513844
+  - phoneme: 4
+    time: 0.32946593
+  - phoneme: 1
+    time: 0.39817506
+  - phoneme: 4
+    time: 0.46744737
+  - phoneme: 2
+    time: 0.5299614
+  - phoneme: 4
+    time: 0.65498954
+  - phoneme: 1
+    time: 0.71750355
+  - phoneme: 3
+    time: 0.7805808
+  - phoneme: 4
+    time: 0.9056089
+  emotionData: []

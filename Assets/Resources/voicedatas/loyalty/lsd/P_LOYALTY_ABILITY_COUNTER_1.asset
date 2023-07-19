@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_LOYALTY_ABILITY_COUNTER_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: d0f8c9a25b3196f4aab716a23695d62e, type: 3}
+  phonemeData:
+  - phoneme: 0
+    time: 0.5446302
+  - phoneme: 4
+    time: 0.038495973
+  - phoneme: 0
+    time: 0.08415399
+  - phoneme: 7
+    time: 0.16651745
+  - phoneme: 3
+    time: 0.23276633
+  - phoneme: 7
+    time: 0.30796775
+  - phoneme: 1
+    time: 0.3769024
+  - phoneme: 7
+    time: 0.46463743
+  - phoneme: 4
+    time: 0.6633841
+  emotionData:
+  - emotion: Nihil
+    startTime: 0.00089525647
+    endTime: 1
+    blendInTime: 0.04
+    blendOutTime: 0.04
+    blendToMarker: 0
+    blendFromMarker: 0

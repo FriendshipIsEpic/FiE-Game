@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_DEFEATED_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 4ca7da0eca8c0624aa13398bc2325086, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.017089844
+  - phoneme: 4
+    time: 0.041015625
+  - phoneme: 1
+    time: 0.081005864
+  - phoneme: 0
+    time: 0.10527344
+  - phoneme: 4
+    time: 0.1534668
+  - phoneme: 2
+    time: 0.24609375
+  - phoneme: 4
+    time: 0.28266603
+  - phoneme: 6
+    time: 0.30454102
+  - phoneme: 1
+    time: 0.3411133
+  - phoneme: 4
+    time: 0.37768555
+  - phoneme: 0
+    time: 0.39990234
+  - phoneme: 4
+    time: 0.42211914
+  - phoneme: 7
+    time: 0.44433594
+  - phoneme: 4
+    time: 0.45903322
+  - phoneme: 2
+    time: 0.48364258
+  - phoneme: 7
+    time: 0.50859374
+  - phoneme: 1
+    time: 0.523291
+  - phoneme: 4
+    time: 0.5482422
+  - phoneme: 4
+    time: 0.5728516
+  - phoneme: 5
+    time: 0.5878906
+  - phoneme: 2
+    time: 0.6094238
+  - phoneme: 4
+    time: 0.6459961
+  - phoneme: 0
+    time: 0.7037598
+  - phoneme: 4
+    time: 0.76186526
+  emotionData: []

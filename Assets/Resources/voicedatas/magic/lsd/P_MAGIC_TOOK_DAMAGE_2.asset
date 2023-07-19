@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_TOOK_DAMAGE_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: dc2a527a2fbe5ca4a8167dc1821bd318, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.22649954
+  - phoneme: 0
+    time: 0.37600717
+  - phoneme: 4
+    time: 0.7645479
+  emotionData:
+  - emotion: Silly
+    startTime: 0
+    endTime: 0.1
+    blendInTime: 0.04
+    blendOutTime: 0.04
+    blendToMarker: 0
+    blendFromMarker: 0

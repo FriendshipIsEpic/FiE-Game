@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_FRIENDSHIP_ABILITY_4
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 5e7e8076a5273374fb7ff906523a4410, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.10504132
+  - phoneme: 0
+    time: 0.12376608
+  - phoneme: 1
+    time: 0.15527847
+  - phoneme: 4
+    time: 0.21099605
+  - phoneme: 4
+    time: 0.24479194
+  - phoneme: 2
+    time: 0.27858785
+  - phoneme: 5
+    time: 0.43523642
+  - phoneme: 4
+    time: 0.7352892
+  - phoneme: 2
+    time: 0.7558408
+  - phoneme: 6
+    time: 0.7900934
+  - phoneme: 0
+    time: 0.854945
+  - phoneme: 4
+    time: 0.93349767
+  emotionData: []

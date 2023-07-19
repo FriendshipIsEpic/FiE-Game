@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_BORING_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 865fa5b3dfe4db4449b573f821ea33ec, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0
+  - phoneme: 8
+    time: 0.028301602
+  - phoneme: 0
+    time: 0.07602587
+  - phoneme: 6
+    time: 0.12375014
+  - phoneme: 0
+    time: 0.17202935
+  - phoneme: 4
+    time: 0.21697894
+  - phoneme: 4
+    time: 0.24417068
+  - phoneme: 2
+    time: 0.28579068
+  - phoneme: 7
+    time: 0.35515735
+  - phoneme: 3
+    time: 0.39178294
+  - phoneme: 7
+    time: 0.46558908
+  - phoneme: 2
+    time: 0.50276965
+  - phoneme: 4
+    time: 0.5638123
+  - phoneme: 4
+    time: 0.60099286
+  - phoneme: 2
+    time: 0.63817334
+  - phoneme: 4
+    time: 0.740836
+  - phoneme: 4
+    time: 0.8434987
+  - phoneme: 2
+    time: 0.8779046
+  - phoneme: 4
+    time: 0.9361726
+  emotionData: []

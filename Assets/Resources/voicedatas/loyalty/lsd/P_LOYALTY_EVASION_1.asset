@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_LOYALTY_EVASION_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 6446e687eb24fed4587291fac68e6d9a, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.10026857
+  - phoneme: 3
+    time: 0.19695613
+  - phoneme: 4
+    time: 0.29006267
+  - phoneme: 1
+    time: 0.35183525
+  - phoneme: 4
+    time: 0.3974933
+  - phoneme: 0
+    time: 0.4404655
+  - phoneme: 7
+    time: 0.5711728
+  - phoneme: 0
+    time: 0.6445837
+  - phoneme: 4
+    time: 0.72336614
+  emotionData: []

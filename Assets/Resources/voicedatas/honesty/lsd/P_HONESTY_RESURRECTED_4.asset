@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_RESURRECTED_4
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 2b1e9e8145f5f9f45952b4b1aa5cde88, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.014632204
+  - phoneme: 3
+    time: 0.1287634
+  - phoneme: 6
+    time: 0.35848898
+  - phoneme: 2
+    time: 0.54943925
+  - phoneme: 4
+    time: 0.7411211
+  emotionData: []

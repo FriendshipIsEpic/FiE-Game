@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_DIALOG_6
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: cb9e05b3d5da249409581d005bec5a31, type: 3}
+  phonemeData:
+  - phoneme: 1
+    time: 0.082217686
+  - phoneme: 4
+    time: 0.12254351
+  - phoneme: 0
+    time: 0.16326083
+  - phoneme: 4
+    time: 0.18753463
+  - phoneme: 4
+    time: 0.21180843
+  - phoneme: 2
+    time: 0.23647372
+  - phoneme: 4
+    time: 0.27679956
+  - phoneme: 4
+    time: 0.30146486
+  - phoneme: 1
+    time: 0.38368255
+  - phoneme: 4
+    time: 0.46590024
+  - phoneme: 6
+    time: 0.4980043
+  - phoneme: 1
+    time: 0.55203307
+  - phoneme: 4
+    time: 0.5841371
+  - phoneme: 6
+    time: 0.63816583
+  - phoneme: 1
+    time: 0.6918031
+  - phoneme: 4
+    time: 0.72429866
+  - phoneme: 0
+    time: 0.749747
+  - phoneme: 4
+    time: 0.7924219
+  emotionData: []

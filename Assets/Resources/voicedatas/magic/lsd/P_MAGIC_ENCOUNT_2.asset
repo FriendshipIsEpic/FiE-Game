@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_ENCOUNT_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: b8528307e01d46c4fb7da76ada699cbc, type: 3}
+  phonemeData:
+  - phoneme: 0
+    time: 0
+  - phoneme: 4
+    time: 0.0978782
+  - phoneme: 0
+    time: 0.15660512
+  - phoneme: 4
+    time: 0.21533203
+  - phoneme: 0
+    time: 0.26557618
+  - phoneme: 4
+    time: 0.34909892
+  - phoneme: 1
+    time: 0.39934304
+  - phoneme: 7
+    time: 0.45023972
+  - phoneme: 1
+    time: 0.50570405
+  - phoneme: 4
+    time: 0.5990146
+  - phoneme: 1
+    time: 0.6551314
+  - phoneme: 2
+    time: 0.7112482
+  - phoneme: 5
+    time: 0.7719327
+  emotionData:
+  - emotion: Serious
+    startTime: 0
+    endTime: 0.1
+    blendInTime: 0.04
+    blendOutTime: 0.04
+    blendToMarker: 0
+    blendFromMarker: 0

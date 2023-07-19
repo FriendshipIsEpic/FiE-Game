@@ -1,0 +1,62 @@
+
+split_line.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/friendship_gauge/1
+  rotate: false
+  xy: 190, 99
+  size: 34, 11
+  orig: 34, 11
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/2
+  rotate: false
+  xy: 124, 38
+  size: 36, 10
+  orig: 36, 10
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/3
+  rotate: false
+  xy: 190, 112
+  size: 36, 10
+  orig: 36, 10
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/4
+  rotate: false
+  xy: 124, 14
+  size: 35, 10
+  orig: 35, 10
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/5
+  rotate: false
+  xy: 124, 26
+  size: 36, 10
+  orig: 36, 10
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/6
+  rotate: false
+  xy: 190, 86
+  size: 33, 11
+  orig: 33, 11
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/background
+  rotate: false
+  xy: 124, 50
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+textures/friendship_gauge/widefrare
+  rotate: false
+  xy: 2, 2
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_BORING_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 599dee353e4cdd24da3ccb896e6599ff, type: 3}
+  phonemeData:
+  - phoneme: 2
+    time: 0.08613281
+  - phoneme: 4
+    time: 0.18001758
+  - phoneme: 0
+    time: 0.23686524
+  - phoneme: 7
+    time: 0.29371288
+  - phoneme: 7
+    time: 0.35056055
+  - phoneme: 6
+    time: 0.40654686
+  - phoneme: 3
+    time: 0.50129294
+  - phoneme: 4
+    time: 0.61498827
+  emotionData: []

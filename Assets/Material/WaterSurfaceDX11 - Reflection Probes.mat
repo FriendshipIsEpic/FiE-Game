@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: WaterSurfaceDX11 - Reflection Probes
+  m_Shader: {fileID: 4800000, guid: 942eb6cfedc7e9b44b2230d78b45c0e5, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2450
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _DetailWavesNormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 51d501c3beeb529448c52362ed04d9b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FoamMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 65889ee4aaf906e42ab72e074b56f515, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _WavesNormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 51d501c3beeb529448c52362ed04d9b4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _Density
+      second: 0.1
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DetailWavesNormalIntensity
+      second: 0.161
+    - first:
+        name: _DetailWavesScale
+      second: 1
+    - first:
+        name: _DetailWavesSpeed
+      second: 6
+    - first:
+        name: _DetailWavesTileScale
+      second: 0.5
+    - first:
+        name: _DisplacementIntensity
+      second: 0.1
+    - first:
+        name: _DisplacementSpeed
+      second: 1
+    - first:
+        name: _DstBlend
+      second: 0
+    - first:
+        name: _FadeLevel
+      second: 6
+    - first:
+        name: _FoamDistance
+      second: 1
+    - first:
+        name: _FoamIntensity
+      second: 2
+    - first:
+        name: _FoamScale
+      second: 0.6
+    - first:
+        name: _FoamSpeed
+      second: 1
+    - first:
+        name: _FoamWavesIntensity
+      second: 1
+    - first:
+        name: _Fresnel
+      second: 3
+    - first:
+        name: _Gloss
+      second: 1
+    - first:
+        name: _GlossBleedIntensity
+      second: 1
+    - first:
+        name: _GlossBleedSharpness
+      second: 1
+    - first:
+        name: _GlossBleedingIntensity
+      second: -0.18
+    - first:
+        name: _GlossDiffuse
+      second: 0.567
+    - first:
+        name: _Glossiness
+      second: 0.5
+    - first:
+        name: _InverseWavesDirection
+      second: 0
+    - first:
+        name: _MaskIntensity
+      second: 1
+    - first:
+        name: _MaxTessellation
+      second: 16
+    - first:
+        name: _Metallic
+      second: 0
+    - first:
+        name: _Mode
+      second: 0
+    - first:
+        name: _NormalIntensity
+      second: 0.662
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _ReflectionFresnel
+      second: 2
+    - first:
+        name: _ReflectionIntensity
+      second: 1
+    - first:
+        name: _ReflectionPower
+      second: 1
+    - first:
+        name: _ReflectionRoughness
+      second: 0.732
+    - first:
+        name: _RefractionIntensity
+      second: 0
+    - first:
+        name: _RefractionLevel
+      second: 0.074
+    - first:
+        name: _Scale
+      second: 1
+    - first:
+        name: _ShoreOpacity
+      second: 0.3
+    - first:
+        name: _ShoreTransparency
+      second: 6
+    - first:
+        name: _SpecularIntensity
+      second: 1
+    - first:
+        name: _Specularity
+      second: 0
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _WaterDensity
+      second: 0.15
+    - first:
+        name: _WaterFadeLevel
+      second: 3
+    - first:
+        name: _WaterOpacity
+      second: 1
+    - first:
+        name: _WaterSpeed
+      second: 1
+    - first:
+        name: _WaveHeightSineIntensity
+      second: 0.2
+    - first:
+        name: _WaveHeightSineSpeed
+      second: 2
+    - first:
+        name: _WavesAmplitude
+      second: 1
+    - first:
+        name: _WavesFoamIntensity
+      second: 0.3
+    - first:
+        name: _WavesNormalIntensity
+      second: 0.5
+    - first:
+        name: _WavesSpeed
+      second: 1
+    - first:
+        name: _WavesTileScale
+      second: 0.25
+    - first:
+        name: _ZWrite
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0, g: 0, b: 0, a: 1}
+    - first:
+        name: _WaterColor
+      second: {r: 0.6397059, g: 0.91054773, b: 1, a: 1}

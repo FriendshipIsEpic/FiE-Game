@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!186 &18600000
+ProceduralTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: forest_ground_001_height
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_SubstanceMaterial: {fileID: 18500000, guid: b89b7e51a15ac814ca5953dca3b8339c, type: 2}
+  m_SubstanceTextureUID: 12297878302150547274
+  Type: 3
+  AlphaSource: 0
+  m_AlphaSourceUID: 0
+  AlphaSourceIsGrayscale: 1
+  m_AlphaSourceIsInverted: 0
+  m_Mipmaps: 0
+  Format: 0
+  m_TextureSettings:
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapMode: 0
+  m_BakedData:
+  m_BakedDataForPlainNormalMaps:
+  m_BakedParameters:
+    width: 0
+    height: 0
+    mipLevels: 0
+    textureFormat: 62
+  m_TextureParameters:
+    width: 512
+    height: 512
+    mipLevels: 10
+    textureFormat: 12
+  m_LightmapFormat: 0
+  m_ColorSpace: 0

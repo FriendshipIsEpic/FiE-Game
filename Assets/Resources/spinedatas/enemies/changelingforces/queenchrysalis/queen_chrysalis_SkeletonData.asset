@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b322f0685be38ac169b3ea23e9eda25f, type: 3}
+  m_Name: queen_chrysalis_SkeletonData
+  m_EditorClassIdentifier:
+  atlasAssets:
+  - {fileID: 11400000, guid: b5c62377ddae4d04d8b62a8d222134a5, type: 2}
+  scale: 0.0015
+  skeletonJSON: {fileID: 4900000, guid: 3d51fd9fc016302478682ec46b78d46e, type: 3}
+  fromAnimation:
+  - jump_idle
+  - airraid_prepare
+  - airraid_attacking
+  - grab_preburn
+  - airraid_attacking
+  toAnimation:
+  - airraid_prepare
+  - airraid_attacking
+  - airraid_finishmove
+  - grab_burn
+  - grab_burn
+  duration:
+  - 0.1
+  - 0.05
+  - 0
+  - 0
+  - 0
+  defaultMix: 0.2
+  controller: {fileID: 0}

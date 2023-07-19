@@ -1,0 +1,188 @@
+
+changeling_alpha.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+textures/body
+  rotate: true
+  xy: 1578, 1570
+  size: 476, 417
+  orig: 476, 417
+  offset: 0, 0
+  index: -1
+textures/chest
+  rotate: false
+  xy: 577, 2
+  size: 241, 213
+  orig: 241, 213
+  offset: 0, 0
+  index: -1
+textures/eye_0
+  rotate: true
+  xy: 1007, 26
+  size: 189, 164
+  orig: 189, 164
+  offset: 0, 0
+  index: -1
+textures/eye_1
+  rotate: false
+  xy: 1044, 836
+  size: 164, 124
+  orig: 164, 124
+  offset: 0, 0
+  index: -1
+textures/eye_2
+  rotate: false
+  xy: 820, 46
+  size: 185, 169
+  orig: 185, 169
+  offset: 0, 0
+  index: -1
+textures/fin
+  rotate: true
+  xy: 686, 363
+  size: 221, 438
+  orig: 221, 438
+  offset: 0, 0
+  index: -1
+textures/head_top
+  rotate: false
+  xy: 1090, 1509
+  size: 486, 537
+  orig: 486, 537
+  offset: 0, 0
+  index: -1
+textures/head_top_attack
+  rotate: false
+  xy: 549, 1484
+  size: 539, 562
+  orig: 539, 562
+  offset: 0, 0
+  index: -1
+textures/head_top_damage
+  rotate: false
+  xy: 2, 345
+  size: 504, 535
+  orig: 504, 535
+  offset: 0, 0
+  index: -1
+textures/left_back_leg
+  rotate: false
+  xy: 1044, 962
+  size: 174, 520
+  orig: 174, 520
+  offset: 0, 0
+  index: -1
+textures/left_back_leg_boots
+  rotate: true
+  xy: 1041, 659
+  size: 175, 136
+  orig: 175, 136
+  offset: 0, 0
+  index: -1
+textures/left_front_leg
+  rotate: true
+  xy: 1220, 949
+  size: 149, 428
+  orig: 149, 428
+  offset: 0, 0
+  index: -1
+textures/left_front_leg_boots
+  rotate: false
+  xy: 1387, 808
+  size: 162, 139
+  orig: 162, 139
+  offset: 0, 0
+  index: -1
+textures/left_wing
+  rotate: false
+  xy: 1611, 1189
+  size: 374, 379
+  orig: 374, 379
+  offset: 0, 0
+  index: -1
+textures/left_wing_fly1
+  rotate: false
+  xy: 2, 1465
+  size: 545, 581
+  orig: 545, 581
+  offset: 0, 0
+  index: -1
+textures/left_wing_fly2
+  rotate: true
+  xy: 549, 942
+  size: 540, 493
+  orig: 540, 493
+  offset: 0, 0
+  index: -1
+textures/left_wing_fly3
+  rotate: false
+  xy: 2, 882
+  size: 545, 581
+  orig: 545, 581
+  offset: 0, 0
+  index: -1
+textures/right_back_leg
+  rotate: false
+  xy: 508, 360
+  size: 176, 520
+  orig: 176, 520
+  offset: 0, 0
+  index: -1
+textures/right_back_leg_boots
+  rotate: false
+  xy: 1210, 811
+  size: 175, 136
+  orig: 175, 136
+  offset: 0, 0
+  index: -1
+textures/right_front_leg
+  rotate: true
+  xy: 686, 217
+  size: 144, 420
+  orig: 144, 420
+  offset: 0, 0
+  index: -1
+textures/right_front_leg_boots
+  rotate: false
+  xy: 1179, 670
+  size: 161, 139
+  orig: 161, 139
+  offset: 0, 0
+  index: -1
+textures/right_wing
+  rotate: false
+  xy: 385, 8
+  size: 190, 335
+  orig: 190, 335
+  offset: 0, 0
+  index: -1
+textures/right_wing_fly1
+  rotate: true
+  xy: 2, 33
+  size: 310, 381
+  orig: 310, 381
+  offset: 0, 0
+  index: -1
+textures/right_wing_fly2
+  rotate: false
+  xy: 1220, 1100
+  size: 389, 407
+  orig: 389, 407
+  offset: 0, 0
+  index: -1
+textures/right_wing_fly3
+  rotate: false
+  xy: 686, 586
+  size: 353, 354
+  orig: 353, 354
+  offset: 0, 0
+  index: -1
+textures/tail
+  rotate: false
+  xy: 1650, 917
+  size: 338, 270
+  orig: 338, 270
+  offset: 0, 0
+  index: -1

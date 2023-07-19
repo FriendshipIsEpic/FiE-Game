@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: b5a2b2372f3fd7742ae231d0c43bfcf1
+timeCreated: 1689780113
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  name:
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Orbitron
+  fontNames:
+  - Orbitron
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 759624624133e514da1a649ce58453ab, type: 3}
+  - {fileID: 12800000, guid: 34e57bc796f70b54091fa6e7711fdb32, type: 3}
+  - {fileID: 0}
+  - {fileID: 12800000, guid: 9b951570d692c9a49ba46bebd64892f4, type: 3}
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

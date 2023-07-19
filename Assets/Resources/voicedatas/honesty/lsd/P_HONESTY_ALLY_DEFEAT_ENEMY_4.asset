@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_ALLY_DEFEAT_ENEMY_4
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 68e7df3383fceb343a308f84b4b3d64e, type: 3}
+  phonemeData:
+  - phoneme: 2
+    time: 0.0475
+  - phoneme: 3
+    time: 0.15249999
+  - phoneme: 2
+    time: 0.23875001
+  - phoneme: 8
+    time: 0.30625
+  - phoneme: 4
+    time: 0.5075
+  - phoneme: 4
+    time: 0.58625
+  - phoneme: 4
+    time: 0.64
+  - phoneme: 4
+    time: 0.6925
+  - phoneme: 0
+    time: 0.75
+  emotionData: []

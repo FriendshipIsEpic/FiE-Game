@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4300000
+Mesh:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Church_StainedGlassC1_Church_StainedGlassCShape1
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    firstVertex: 0
+    vertexCount: 10
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 9E-08, y: 0.9537031, z: 4.2544837}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: []
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200000003000100040003000000040005000300060005000400060007000500080007000600080009000700
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 139
+    m_VertexCount: 10
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 4
+    m_DataSize: 480
+    _typelessdata: 0646c1b3d9b52bbfd00b7c40fefe7f3f7e7f803b7e7f80bb0020cc3e0004763f3d7f803b7fff7fbf6e0081b7000080bf0646c133cdd93c3ebb248840fefe7f3f7e7f803b7e7f80bb00e0413e807d7f3f3d7f803b7fff7fbf720081b7000080bf77cc2b3385d93cbebb248840fefe7f3f7e7f803b7e7f80bb00208f3e807d7f3f3d7f803b7fff7fbfe00081b7000080bf77ccab32c2b52b3fd00b7c40fefe7f3f7e7f803b7e7f80bb00c08f3d0004763f3d7f803b7fff7fbff1ff80b7000080bf77cc2b32e32574bfaa314840fefe7f3f7e7f803b7e7f80bb00a0ef3e00c05d3f3d7f803b7fff7fbfeeff80b7000080bf77ccab32e325743faa314840fefe7f3f7e7f803b7e7f80bb00c0743a00c05d3f3d7f803b7fff7fbfc3ff80b7000080bf77ccab32b0e773bf32581c40fefe7f3f7e7f803b7e7f80bb0080ef3e0038493f3d7f803b7fff7fbfbdff80b7000080bf77ccab32a9e7733f32581c40fefe7f3f7e7f803b7e7f80bb00e0983a0038493f3d7f803b7fff7fbfbcff80b7000080bf77ccab32b0e773bfbb2488c0fefe7f3f7e7f803b7e7f80bb0080ef3e0000203b3d7f803b7fff7fbfbcff80b7000080bf77ccab32a9e7733fbb2488c0fefe7f3f7e7f803b7e7f80bb00e0983a0000203b3d7f803b7fff7fbfbcff80b7000080bf
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data:
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data:
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 9E-08, y: 0.9537031, z: 4.2544837}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh:
+  m_BakedTriangleCollisionMesh:
+  m_MeshOptimized: 1

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_DIALOG_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 39a79ae67305e9349bf10022e5a67904, type: 3}
+  phonemeData:
+  - phoneme: 0
+    time: 0.057421874
+  - phoneme: 4
+    time: 0.1026416
+  - phoneme: 4
+    time: 0.14822021
+  - phoneme: 4
+    time: 0.19379883
+  - phoneme: 2
+    time: 0.20994873
+  - phoneme: 4
+    time: 0.24224854
+  - phoneme: 4
+    time: 0.25839844
+  - phoneme: 2
+    time: 0.2731128
+  - phoneme: 7
+    time: 0.29787597
+  - phoneme: 1
+    time: 0.31940916
+  - phoneme: 4
+    time: 0.34094238
+  - phoneme: 0
+    time: 0.36606446
+  - phoneme: 4
+    time: 0.40877196
+  - phoneme: 4
+    time: 0.43425292
+  - phoneme: 1
+    time: 0.48270264
+  - phoneme: 4
+    time: 0.5311523
+  - phoneme: 1
+    time: 0.57960206
+  - phoneme: 4
+    time: 0.62805176
+  - phoneme: 1
+    time: 0.67650145
+  - phoneme: 4
+    time: 0.72495115
+  - phoneme: 2
+    time: 0.769812
+  - phoneme: 4
+    time: 0.8146728
+  - phoneme: 4
+    time: 0.84158933
+  emotionData: []

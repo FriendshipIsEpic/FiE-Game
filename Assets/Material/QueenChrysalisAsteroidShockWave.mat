@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: QueenChrysalisAsteroidShockWave
+  m_Shader: {fileID: 4800000, guid: 31608f9499902884e9ba70ec40d844a3, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: d539642f5f33c3d48a8f83f9aadcae15, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MaskTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 9d1a62fbaeb536b42970ca3d71a59eeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TiltTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 5e322ec4009cc7940b8a21ddf9ce34ea, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AlphaInfluence
+      second: 0.931
+    - first:
+        name: _AlphaMax
+      second: 0.618
+    - first:
+        name: _BlurThickness
+      second: 0.2
+    - first:
+        name: _BurstAlpha
+      second: 0
+    - first:
+        name: _Contrast
+      second: 0.54821426
+    - first:
+        name: _EmissionGain
+      second: 3
+    - first:
+        name: _InnerRadius
+      second: 0
+    - first:
+        name: _InvFade
+      second: 3
+    - first:
+        name: _Main_Pan_SpeedX
+      second: 0.1
+    - first:
+        name: _Main_Pan_SpeedY
+      second: 0.1
+    - first:
+        name: _MaskDir
+      second: 0
+    - first:
+        name: _OuterRadius
+      second: 0.2
+    - first:
+        name: _Pan_SpeedX
+      second: 0.2
+    - first:
+        name: _Pan_SpeedY
+      second: 0.2
+    - first:
+        name: _StartDistance
+      second: 0.47
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.62058824, g: 1, b: 0.3602941, a: 1}
+    - first:
+        name: _TintColor
+      second: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 0.5019608}
+    - first:
+        name: _echoUV
+      second: {r: 0, g: 0, b: 0, a: 0}

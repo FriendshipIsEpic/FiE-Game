@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_LOYALTY_ALLY_DEFEATED_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: d1dbe7774cc32c149b57309a505f41fa, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0
+  - phoneme: 2
+    time: 0.021052128
+  - phoneme: 4
+    time: 0.05613901
+  - phoneme: 2
+    time: 0.33893928
+  - phoneme: 4
+    time: 0.6224413
+  emotionData: []

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: lobby_menu_bars_Material
+  m_Shader: {fileID: 4800000, guid: ce780b4826d2ae843b35acd7262f6db6, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2b41d6c0c18f8714a983ba2285dee24f, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: bfe0c13d0163c3342ba4d33c35d2b86e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BaseEmissive
+      second: 0.2
+    - first:
+        name: _BumpAmt
+      second: 32
+    - first:
+        name: _Cutoff
+      second: 0.1
+    - first:
+        name: _Cutout
+      second: 0
+    - first:
+        name: _Emissive
+      second: 1.33
+    - first:
+        name: _InvFade
+      second: 1
+    - first:
+        name: _TintAmt
+      second: 0.218
+    m_Colors:
+    - first:
+        name: _SubColor
+      second: {r: 0.41176465, g: 0.72972965, b: 1, a: 0.516}
+    - first:
+        name: _TintColor
+      second: {r: 0.13408306, g: 0.1427634, b: 0.14705884, a: 1}

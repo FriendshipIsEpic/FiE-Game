@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_LOYALTY_APPEAR_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: a4613946197de2a4ba2d2dfd4243f6b2, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.0431694
+  - phoneme: 1
+    time: 0.12896176
+  - phoneme: 4
+    time: 0.21530055
+  - phoneme: 8
+    time: 0.2830601
+  - phoneme: 4
+    time: 0.41803277
+  - phoneme: 0
+    time: 0.5038251
+  - phoneme: 4
+    time: 0.5595628
+  - phoneme: 7
+    time: 0.62622947
+  - phoneme: 1
+    time: 0.75300545
+  emotionData: []

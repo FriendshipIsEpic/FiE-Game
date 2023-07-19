@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: HitEffect2
+  m_Shader: {fileID: 4800000, guid: 31608f9499902884e9ba70ec40d844a3, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 5f91138f05f937549b116e2b02dd9c8b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MaskTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 9d1a62fbaeb536b42970ca3d71a59eeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TiltTex
+      second:
+        m_Texture: {fileID: 2800000, guid: d3c12567f4d2d7145a27dfbb882a624b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AlphaInfluence
+      second: 1
+    - first:
+        name: _AlphaMax
+      second: 0.463
+    - first:
+        name: _BurstAlpha
+      second: 0
+    - first:
+        name: _ClipRange
+      second: 0.8
+    - first:
+        name: _Contrast
+      second: 0.628
+    - first:
+        name: _Displacement
+      second: 0.1
+    - first:
+        name: _EmissionGain
+      second: 2.36
+    - first:
+        name: _InnerRadius
+      second: 0.023
+    - first:
+        name: _InvFade
+      second: 1
+    - first:
+        name: _Pan_SpeedX
+      second: 0.4
+    - first:
+        name: _Pan_SpeedY
+      second: 0.4
+    - first:
+        name: _RimPower
+      second: 3
+    - first:
+        name: _Shininess
+      second: 0.7
+    - first:
+        name: _StartDistance
+      second: 0.578
+    m_Colors:
+    - first:
+        name: _ChannelFactor
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
+        name: _Color
+      second: {r: 0.7924948, g: 0.5147059, b: 1, a: 1}
+    - first:
+        name: _Emission
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Range
+      second: {r: 0, g: 0.5, b: 0, a: 1}
+    - first:
+        name: _RimColor
+      second: {r: 0.26, g: 0.19, b: 0.16, a: 0}
+    - first:
+        name: _SpecColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TintColor
+      second: {r: 0.5147059, g: 0.5147059, b: 0.5147059, a: 0.5019608}

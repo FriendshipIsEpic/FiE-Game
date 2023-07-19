@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Stereo3D
+  m_Shader: {fileID: 4800000, guid: c49b5e1fce011674aae35efaeee58cb8, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _LeftTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RightTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Shininess
+      second: 0.078125
+    - first:
+        name: _Weave_X
+      second: 1
+    - first:
+        name: _Weave_Y
+      second: 1080
+    m_Colors:
+    - first:
+        name: _Balance_Left_B
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Balance_Left_G
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Balance_Left_R
+      second: {r: 1, g: 0, b: 0, a: 0}
+    - first:
+        name: _Balance_Right_B
+      second: {r: 0, g: 0, b: 1, a: 0}
+    - first:
+        name: _Balance_Right_G
+      second: {r: 0, g: 1, b: 0, a: 0}
+    - first:
+        name: _Balance_Right_R
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _SpecColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}

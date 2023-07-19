@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: name_entry_window_Material
+  m_Shader: {fileID: 4800000, guid: ce780b4826d2ae843b35acd7262f6db6, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 2b41d6c0c18f8714a983ba2285dee24f, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 4fbca58372541b94289b31596b37a46b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpAmt
+      second: 24
+    - first:
+        name: _ClipRange
+      second: 0.8
+    - first:
+        name: _Cutoff
+      second: 0.1
+    - first:
+        name: _Cutout
+      second: 0
+    - first:
+        name: _Displacement
+      second: 0.1
+    - first:
+        name: _Emissive
+      second: 1.5
+    - first:
+        name: _InvFade
+      second: 1
+    - first:
+        name: _TintAmt
+      second: 0.714
+    m_Colors:
+    - first:
+        name: _ChannelFactor
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
+        name: _Color
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - first:
+        name: _Range
+      second: {r: 0, g: 0.5, b: 0, a: 1}
+    - first:
+        name: _SubColor
+      second: {r: 0.21323529, g: 0.63851345, b: 1, a: 0.866}
+    - first:
+        name: _TintColor
+      second: {r: 0.012975769, g: 0.19674082, b: 0.35294116, a: 0.866}

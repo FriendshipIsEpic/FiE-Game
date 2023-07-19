@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: E_THE_INSECT_QUEEN_RANDOM_9
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: a7f9c4b5d4eedd94ab8893a0232c5c3f, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.013874157
+  - phoneme: 3
+    time: 0.03270337
+  - phoneme: 4
+    time: 0.07056
+  - phoneme: 2
+    time: 0.08938921
+  - phoneme: 6
+    time: 0.12090337
+  - phoneme: 7
+    time: 0.15261573
+  - phoneme: 0
+    time: 0.17223775
+  - phoneme: 4
+    time: 0.2118782
+  - phoneme: 4
+    time: 0.23169842
+  - phoneme: 0
+    time: 0.25171685
+  - phoneme: 4
+    time: 0.26261798
+  - phoneme: 1
+    time: 0.2735191
+  - phoneme: 4
+    time: 0.28818607
+  - phoneme: 1
+    time: 0.30285302
+  - phoneme: 2
+    time: 0.31752
+  - phoneme: 4
+    time: 0.34209707
+  - phoneme: 2
+    time: 0.36667415
+  - phoneme: 4
+    time: 0.38272855
+  - phoneme: 4
+    time: 0.39244044
+  - phoneme: 0
+    time: 0.41226068
+  - phoneme: 4
+    time: 0.441991
+  - phoneme: 2
+    time: 0.4598292
+  - phoneme: 4
+    time: 0.48955956
+  - phoneme: 1
+    time: 0.5073978
+  - phoneme: 0
+    time: 0.52523595
+  - phoneme: 4
+    time: 0.54684
+  - phoneme: 4
+    time: 0.55972314
+  - phoneme: 4
+    time: 0.5728045
+  - phoneme: 4
+    time: 0.5914355
+  - phoneme: 0
+    time: 0.6227515
+  - phoneme: 2
+    time: 0.6778517
+  - phoneme: 4
+    time: 0.6945007
+  - phoneme: 1
+    time: 0.704609
+  - phoneme: 4
+    time: 0.721258
+  - phoneme: 4
+    time: 0.73929435
+  - phoneme: 2
+    time: 0.74662787
+  - phoneme: 0
+    time: 0.7591146
+  - phoneme: 4
+    time: 0.794791
+  - phoneme: 1
+    time: 0.8126292
+  - phoneme: 0
+    time: 0.8304674
+  - phoneme: 4
+    time: 0.8542517
+  emotionData: []

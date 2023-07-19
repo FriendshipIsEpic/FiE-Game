@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayerWindow_BlackMask
+  m_Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1313
+    height: 532
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 0, y: 0, z: 0, w: 0}
+  m_PixelsToUnits: 100
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: 8a2aa6172f014ac449c3a9bf77c25f10, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 6.565, y: 2.66, z: 0}
+    - serializedVersion: 2
+      pos: {x: 4.495, y: 2.37, z: 0}
+    - serializedVersion: 2
+      pos: {x: 6.565, y: -2.66, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.515, y: 2.37, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.515, y: 0.26, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.515, y: 0.74, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.515, y: -2.37, z: 0}
+    - serializedVersion: 2
+      pos: {x: -6.565, y: 2.66, z: 0}
+    - serializedVersion: 2
+      pos: {x: 4.495, y: -2.37, z: 0}
+    - serializedVersion: 2
+      pos: {x: -6.565, y: -2.66, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.505, y: 0.27, z: 0}
+    - serializedVersion: 2
+      pos: {x: -4.505, y: 0.73, z: 0}
+    indices:
+    - 4
+    - 5
+    - 10
+    - 11
+    - 10
+    - 5
+    - 7
+    - 6
+    - 9
+    - 2
+    - 9
+    - 6
+    - 8
+    - 2
+    - 6
+    - 1
+    - 2
+    - 8
+    - 0
+    - 3
+    - 7
+    - 6
+    - 7
+    - 3
+    - 4
+    - 6
+    - 3
+    - 5
+    - 4
+    - 3
+    - 1
+    - 3
+    - 0
+    - 2
+    - 1
+    - 0
+    textureRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1313
+      height: 532
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 100, y: 656.5, z: 100, w: 266}

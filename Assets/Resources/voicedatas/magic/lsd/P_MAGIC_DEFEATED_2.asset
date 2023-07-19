@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_DEFEATED_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: d7abd956d07ff934dbff04d7964cc45f, type: 3}
+  phonemeData:
+  - phoneme: 0
+    time: 0.0459375
+  - phoneme: 5
+    time: 0.06459961
+  - phoneme: 1
+    time: 0.08326172
+  - phoneme: 4
+    time: 0.11455664
+  - phoneme: 4
+    time: 0.13321875
+  - phoneme: 0
+    time: 0.15188086
+  - phoneme: 5
+    time: 0.17054297
+  - phoneme: 2
+    time: 0.5139258
+  - phoneme: 4
+    time: 0.55957615
+  - phoneme: 4
+    time: 0.5868516
+  - phoneme: 5
+    time: 0.6144141
+  - phoneme: 2
+    time: 0.63795704
+  - phoneme: 4
+    time: 0.67757815
+  - phoneme: 0
+    time: 0.7011211
+  - phoneme: 6
+    time: 0.7249512
+  - phoneme: 0
+    time: 0.76428515
+  - phoneme: 4
+    time: 0.78811526
+  - phoneme: 1
+    time: 0.8116582
+  - phoneme: 2
+    time: 0.8354883
+  - phoneme: 5
+    time: 0.8857324
+  emotionData: []

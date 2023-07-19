@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_MAGIC_PRIMARY_HP_LESS_THAN_HALF_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 8a6bc30d0217c3044941fcbb5ebdff8e, type: 3}
+  phonemeData:
+  - phoneme: 4
+    time: 0.019226074
+  - phoneme: 0
+    time: 0.06383057
+  - phoneme: 4
+    time: 0.10881958
+  - phoneme: 0
+    time: 0.1538086
+  - phoneme: 4
+    time: 0.17687988
+  - phoneme: 2
+    time: 0.19995119
+  - phoneme: 7
+    time: 0.22686769
+  - phoneme: 0
+    time: 0.2607056
+  - phoneme: 4
+    time: 0.29454347
+  - phoneme: 4
+    time: 0.31530762
+  - phoneme: 0
+    time: 0.3376099
+  - phoneme: 4
+    time: 0.35991213
+  - phoneme: 3
+    time: 0.38221437
+  - phoneme: 0
+    time: 0.42681888
+  - phoneme: 4
+    time: 0.47142336
+  - phoneme: 2
+    time: 0.49411014
+  - phoneme: 4
+    time: 0.5310242
+  - phoneme: 0
+    time: 0.55371094
+  - phoneme: 1
+    time: 0.58639526
+  - phoneme: 4
+    time: 0.61408085
+  - phoneme: 0
+    time: 0.63061523
+  - phoneme: 4
+    time: 0.6494568
+  - phoneme: 4
+    time: 0.6690674
+  - phoneme: 0
+    time: 0.71828616
+  - phoneme: 4
+    time: 0.80018926
+  emotionData: []

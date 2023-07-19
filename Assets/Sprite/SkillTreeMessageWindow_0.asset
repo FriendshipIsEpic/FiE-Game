@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!213 &21300000
+Sprite:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SkillTreeMessageWindow_0
+  m_Rect:
+    serializedVersion: 2
+    x: 16
+    y: 16
+    width: 96
+    height: 96
+  m_Offset: {x: 0, y: 0}
+  m_Border: {x: 32, y: 32, z: 32, w: 32}
+  m_PixelsToUnits: 100
+  m_Pivot: {x: 0.5, y: 0.5}
+  m_Extrude: 1
+  m_IsPolygon: 0
+  m_AtlasName:
+  m_PackingTag:
+  m_RD:
+    texture: {fileID: 2800000, guid: d55ea3af78dacb34884b1f26cfae511e, type: 3}
+    alphaTexture: {fileID: 0}
+    vertices:
+    - serializedVersion: 2
+      pos: {x: 0.45, y: 0.48, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.48, y: -0.48, z: 0}
+    - serializedVersion: 2
+      pos: {x: 0.48, y: 0.45, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.48, y: 0.48, z: 0}
+    - serializedVersion: 2
+      pos: {x: -0.48, y: -0.48, z: 0}
+    indices:
+    - 4
+    - 3
+    - 1
+    - 0
+    - 1
+    - 3
+    - 2
+    - 1
+    - 0
+    textureRect:
+      serializedVersion: 2
+      x: 16
+      y: 16
+      width: 96
+      height: 96
+    textureRectOffset: {x: 0, y: 0}
+    settingsRaw: 64
+    uvTransform: {x: 100, y: 64, z: 100, w: 64}

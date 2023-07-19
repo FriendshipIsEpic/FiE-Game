@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TwilightForceFieldShockwave
+  m_Shader: {fileID: 4800000, guid: 31608f9499902884e9ba70ec40d844a3, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: d539642f5f33c3d48a8f83f9aadcae15, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MaskTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 9d1a62fbaeb536b42970ca3d71a59eeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TiltTex
+      second:
+        m_Texture: {fileID: 2800000, guid: faa8add9704b429459f1b285714369e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AlphaInfluence
+      second: 0.5
+    - first:
+        name: _AlphaMax
+      second: 1
+    - first:
+        name: _BurstAlpha
+      second: 0
+    - first:
+        name: _Contrast
+      second: 0.356
+    - first:
+        name: _EmissionGain
+      second: 3.4
+    - first:
+        name: _InnerRadius
+      second: 0
+    - first:
+        name: _InvFade
+      second: 3
+    - first:
+        name: _Pan_SpeedX
+      second: 2
+    - first:
+        name: _Pan_SpeedY
+      second: 2
+    - first:
+        name: _StartDistance
+      second: 0.8
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 0.50735295, g: 0.50735295, b: 0.50735295, a: 1}
+    - first:
+        name: _TintColor
+      second: {r: 0.8013509, g: 0.34101123, b: 0.87500566, a: 1}

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_HONESTY_ABILITY_ROPE_2
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: bcbdec09c160a9c44b3b163c6d749f93, type: 3}
+  phonemeData:
+  - phoneme: 1
+    time: 0.12568305
+  - phoneme: 0
+    time: 0.040983606
+  - phoneme: 7
+    time: 0.19562842
+  - phoneme: 4
+    time: 0.32240438
+  - phoneme: 2
+    time: 0.39945355
+  - phoneme: 8
+    time: 0.4819672
+  - phoneme: 0
+    time: 0.5677596
+  - phoneme: 4
+    time: 0.66939896
+  - phoneme: 2
+    time: 0.72404367
+  - phoneme: 4
+    time: 0.7699453
+  - phoneme: 0
+    time: 0.81584704
+  - phoneme: 4
+    time: 0.86502737
+  emotionData: []

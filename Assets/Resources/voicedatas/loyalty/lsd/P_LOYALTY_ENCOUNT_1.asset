@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff17a6fc27ea849c4b7a6fada674bd48, type: 3}
+  m_Name: P_LOYALTY_ENCOUNT_1
+  m_EditorClassIdentifier:
+  clip: {fileID: 8300000, guid: 67f6d6fac9272574fb4cb2a4076a5eca, type: 3}
+  phonemeData:
+  - phoneme: 0
+    time: 0.29733425
+  - phoneme: 4
+    time: 0.3419344
+  - phoneme: 1
+    time: 0.36858228
+  - phoneme: 0
+    time: 0.39551067
+  - phoneme: 2
+    time: 0.43450072
+  - phoneme: 4
+    time: 0.4737713
+  - phoneme: 4
+    time: 0.49705312
+  - phoneme: 0
+    time: 0.52061546
+  - phoneme: 4
+    time: 0.55988604
+  - phoneme: 4
+    time: 0.59747356
+  - phoneme: 1
+    time: 0.6179504
+  - phoneme: 4
+    time: 0.65245235
+  - phoneme: 0
+    time: 0.67292917
+  - phoneme: 4
+    time: 0.6936864
+  - phoneme: 4
+    time: 0.71416324
+  - phoneme: 4
+    time: 0.73492056
+  - phoneme: 0
+    time: 0.7806427
+  - phoneme: 4
+    time: 0.8572203
+  emotionData:
+  - emotion: Serious
+    startTime: 0
+    endTime: 0.1
+    blendInTime: 0.04
+    blendOutTime: 0.04
+    blendToMarker: 0
+    blendFromMarker: 0

@@ -32,13 +32,29 @@
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
-    <None Include="Assets\**" />
+    <None Include="Assets\AnimationClip\**" />
+    <None Include="Assets\AnimatorController\**" />
+		<None Include="Assets\AudioClip\**" />
+		<None Include="Assets\Avatar\**" />
+		<None Include="Assets\ComputeShader\**" />
+		<None Include="Assets\Cubemap\**" />
+		<None Include="Assets\Font\**" />
+		<None Include="Assets\Material\**" />
+		<None Include="Assets\Mesh\**" />
+		<None Include="Assets\PhysicMaterial\**" />
+		<None Include="Assets\Prefab\**" />
+		<None Include="Assets\ProceduralMaterial\**" />
+		<None Include="Assets\ProceduralTexture\**" />
+		<None Include="Assets\Resources\**" />
+		<None Include="Assets\Scenes\**" />
+		<None Include="Assets\Shader\**" />
+		<None Include="Assets\Sprite\**" />
+		<None Include="Assets\SubstanceArchive\**" />
+		<None Include="Assets\Texture2D\**" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AmplifyBloom.dll" />
-    <Content Include="assets\**" />
     <Content Include="BGM &amp; Gameplay video.txt" />
     <Content Include="test user credentials %28not available%29.txt" />
   </ItemGroup>

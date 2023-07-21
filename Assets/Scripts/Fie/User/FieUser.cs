@@ -1,12 +1,15 @@
-public class FieUser
+namespace Fie.User
 {
-	public string userHash;
+	public class FieUser
+    {
+    	public string userHash;
 
-	public string userName;
+    	public string userName;
 
-	public PhotonPlayer playerInfo;
+    	public PhotonPlayer playerInfo;
 
-	public FieGameCharacter usersCharacter;
+    	public FieGameCharacter usersCharacter;
 
-	public FieGameCharacter usersCharacterPrefab;
+    	public FieGameCharacter usersCharacterPrefab;
+    }
 }

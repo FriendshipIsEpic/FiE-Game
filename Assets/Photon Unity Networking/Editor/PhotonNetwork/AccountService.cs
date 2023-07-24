@@ -9,7 +9,6 @@
 // <author>developer@exitgames.com</author>
 // ----------------------------------------------------------------------------
 
-#if UNITY_EDITOR
 //#define PHOTON_VOICE
 
 using System.Net.Security;
@@ -231,4 +230,3 @@ public class AccountService
         }
     }
 }
-#endif

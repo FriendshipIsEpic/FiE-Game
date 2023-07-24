@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -81,9 +82,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 					if (trackEntry != null)
 					{
 						_hornEffect = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisHornEffect>(chrysalis.hornTransform, Vector3.zero, null);
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
 								Vector3 a = chrysalis.flipDirectionVector;
 								Transform lockonEnemyTransform = chrysalis.detector.getLockonEnemyTransform();
@@ -96,12 +97,12 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 									a = vector;
 									vector.y = 0f;
 								}
-								Vector3 vector2 = a * (e.Float * num);
+								Vector3 vector2 = a * (trackIndex.Float * num);
 								chrysalis.resetMoveForce();
 								chrysalis.setMoveForce(vector2, 0f, useRound: false);
 								chrysalis.setFlipByVector(vector2);
 							}
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								if (_attackCount == 0)
 								{
@@ -113,7 +114,7 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 								}
 								_attackCount++;
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								if ((bool)_hornEffect)
 								{

@@ -218,8 +218,8 @@ namespace Fie.UI
 				{
 					num = _animationShield / _maxShield;
 				}
-				float num2 = entry.endTime - 0.0333f;
-				entry.Time = Mathf.Max(Mathf.Min(num2 - num * num2, num2), 0f);
+				float num2 = entry.animationEnd - 0.0333f;
+				entry.trackTime = Mathf.Max(Mathf.Min(num2 - num * num2, num2), 0f);
 				entry.TimeScale = 0f;
 			}
 		}

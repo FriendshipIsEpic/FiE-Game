@@ -3,6 +3,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Twilight
 {
@@ -48,9 +49,9 @@ namespace Fie.Ponies.Twilight
 					_jumpState = JumpState.JUMP_TAKEOFF_STANDBY;
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.name == "takeOff")
+							if (trackIndex.Data.name == "takeOff")
 							{
 								Vector3 vector = twilight.externalInputVector;
 								vector += Vector3.up;
@@ -60,7 +61,7 @@ namespace Fie.Ponies.Twilight
 								twilight.setMoveForce(vector, 0.5f);
 								_jumpState = JumpState.JUMP_TAKEOFF;
 							}
-							else if (e.Data.name == "finished")
+							else if (trackIndex.Data.name == "finished")
 							{
 								_nextState = typeof(FieStateMachineTwilightFlying);
 								_isEnd = true;

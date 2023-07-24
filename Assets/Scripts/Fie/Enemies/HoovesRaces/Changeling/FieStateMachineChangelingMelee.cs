@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.Changeling
 {
@@ -53,9 +54,9 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 						TrackEntry trackEntry = changeling.animationManager.SetAnimation(11, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
 									Vector3 a = changeling.flipDirectionVector;
 									Transform lockonEnemyTransform = changeling.detector.getLockonEnemyTransform();
@@ -68,16 +69,16 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 										a = vector;
 										vector.y = 0f;
 									}
-									Vector3 vector2 = a * (e.Float * num);
+									Vector3 vector2 = a * (trackIndex.Float * num);
 									changeling.resetMoveForce();
 									changeling.setMoveForce(vector2, 0f, useRound: false);
 									changeling.setFlipByVector(vector2);
 								}
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingBite>(changeling.mouthTransform, changeling.flipDirectionVector, null, changeling);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isEnd = true;
 								}

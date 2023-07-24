@@ -5,7 +5,6 @@ using UnityEngine;
 public class FieSortingOrder : MonoBehaviour
 {
 	[SerializeField]
-	[SortingLayer]
 	private string layerName = "Default";
 
 	[SerializeField]

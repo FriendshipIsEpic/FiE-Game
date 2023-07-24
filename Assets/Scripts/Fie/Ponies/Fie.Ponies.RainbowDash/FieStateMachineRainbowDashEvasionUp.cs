@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -45,19 +46,19 @@ namespace Fie.Ponies.RainbowDash
 					TrackEntry trackEntry = rainbowDash.animationManager.SetAnimation(24, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
-								setEvasion(rainbowDash, e);
+								setEvasion(rainbowDash, trackIndex);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isFinished = true;
 							}
-							if (e.Data.Name == "immunity")
+							if (trackIndex.Data.Name == "immunity")
 							{
-								rainbowDash.isEnableCollider = (e.Int < 1);
+								rainbowDash.isEnableCollider = (trackIndex.Int < 1);
 							}
 						};
 						trackEntry.Complete += delegate

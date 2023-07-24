@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies
 {
@@ -45,9 +46,9 @@ namespace Fie.Ponies
 						_nextState = typeof(FieStateMachineCommonIdle);
 						_isEnd = true;
 					}
-					trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+					trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 					{
-						if (e.Data.Name == "finished")
+						if (trackIndex.Data.Name == "finished")
 						{
 							ponies.SetDialog(FieMasterData<GDEWordScriptTriggerTypeData>.I.GetMasterData(GDEItemKeys.WordScriptTriggerType_WS_TRIGGER_TYPE_ARRIVAL));
 							ponies.submeshObject.enabled = true;

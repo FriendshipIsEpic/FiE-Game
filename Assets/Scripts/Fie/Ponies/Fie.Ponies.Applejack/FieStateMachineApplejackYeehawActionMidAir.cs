@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -46,9 +47,9 @@ namespace Fie.Ponies.Applejack
 					applejack.emotionController.SetEmoteAnimation(43, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "takeOff")
+							if (trackIndex.Data.Name == "takeOff")
 							{
 								Vector3 externalInputVector = applejack.externalInputVector;
 								externalInputVector += Vector3.up + applejack.flipDirectionVector * 0.05f;
@@ -57,7 +58,7 @@ namespace Fie.Ponies.Applejack
 								applejack.resetMoveForce();
 								applejack.setMoveForce(externalInputVector, 0.3f);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								applejack.isEnableGravity = true;
 								_isFinished = true;

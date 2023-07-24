@@ -98,7 +98,7 @@ namespace Fie.Ponies.RainbowDash
 						collider.isEnable = false;
 					}
 				}
-				_customSpineMaterialComponent.SetCustomMaterialOverrides(forceEnable: true);
+				// _customSpineMaterialComponent.SetCustomMaterialOverrides(forceEnable: true);
 				isEnableCollider = false;
 				_isCloackMode = true;
 				UnbindFromDetecter();
@@ -117,7 +117,7 @@ namespace Fie.Ponies.RainbowDash
 					}
 				}
 				FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectRainbowDashDoublePaybackActivationEffect>(base.centerTransform, Vector3.up);
-				_customSpineMaterialComponent.RemoveCustomMaterialOverrides();
+				//_customSpineMaterialComponent.RemoveCustomMaterialOverrides();
 				_isCloackMode = false;
 				_cloackObject = null;
 			}

@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 {
@@ -39,20 +40,20 @@ namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 					if (trackEntry != null)
 					{
 						autoFlipToEnemy(changelingAlpha);
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingAlphaShot>(changelingAlpha.hornTransform, changelingAlpha.flipDirectionVector, changelingAlpha.detector.getLockonEnemyTransform(isCenter: true), changelingAlpha);
 							}
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
 								Vector3 flipDirectionVector = changelingAlpha.flipDirectionVector;
-								Vector3 moveForce = flipDirectionVector * e.Float;
+								Vector3 moveForce = flipDirectionVector * trackIndex.Float;
 								changelingAlpha.resetMoveForce();
 								changelingAlpha.setMoveForce(moveForce, 0f, useRound: false);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isEnd = true;
 							}

@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 {
@@ -31,9 +32,9 @@ namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 				TrackEntry trackEntry = changelingAlpha.animationManager.SetAnimation(13, isLoop: true);
 				if (trackEntry != null)
 				{
-					trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+					trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 					{
-						if (e.Data.Name == "fire")
+						if (trackIndex.Data.Name == "fire")
 						{
 							FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingAlphaChargeEffect>(changelingAlpha.centerTransform, changelingAlpha.flipDirectionVector);
 							FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingAlphaCharge>(changelingAlpha.centerTransform, changelingAlpha.flipDirectionVector, null, changelingAlpha);

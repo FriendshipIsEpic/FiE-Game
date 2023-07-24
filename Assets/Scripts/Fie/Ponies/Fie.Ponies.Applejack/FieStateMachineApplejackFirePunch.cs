@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -64,9 +65,9 @@ namespace Fie.Ponies.Applejack
 						TrackEntry trackEntry = applejack.animationManager.SetAnimation(22, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									switch (_punchCount)
 									{
@@ -79,7 +80,7 @@ namespace Fie.Ponies.Applejack
 									}
 									_punchCount++;
 								}
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
 									Vector3 a = applejack.flipDirectionVector;
 									Transform lockonEnemyTransform = applejack.detector.getLockonEnemyTransform();
@@ -92,21 +93,21 @@ namespace Fie.Ponies.Applejack
 										a = vector;
 										a.y = 0f;
 									}
-									Vector3 vector2 = a * (e.Float * num);
+									Vector3 vector2 = a * (trackIndex.Float * num);
 									applejack.resetMoveForce();
 									applejack.setMoveForce(vector2, 0f);
 									applejack.setFlipByVector(vector2);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isFinished = true;
 								}
-								if (e.Data.name == "cancellable")
+								if (trackIndex.Data.name == "cancellable")
 								{
 									_isCancellable = true;
 								}
 							};
-							_endTime = trackEntry.endTime;
+							_endTime = trackEntry.animationEnd;
 						}
 						else
 						{

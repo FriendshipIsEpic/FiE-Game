@@ -37,7 +37,7 @@ namespace Fie.Ponies.RisingSun
 						TrackEntry trackEntry = fieRisingSun.animationManager.SetAnimation(animationId, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							_endTime = trackEntry.endTime;
+							_endTime = trackEntry.AnimationTime;
 						}
 					}
 					_fireState = FireState.FIRING;

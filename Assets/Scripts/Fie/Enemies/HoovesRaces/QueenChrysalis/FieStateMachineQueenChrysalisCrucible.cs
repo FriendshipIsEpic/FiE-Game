@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -73,9 +74,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 						_hornEffect = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisHornEffect>(chrysalis.hornTransform, Vector3.zero, null);
 						if (trackEntry2 != null)
 						{
-							trackEntry2.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry2.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieEmitObjectQueenChrysalisCrucibleCircle fieEmitObjectQueenChrysalisCrucibleCircle = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCrucibleCircle>(chrysalis.leftFrontHoofTransform, Vector3.forward, null, chrysalis);
 									if (fieEmitObjectQueenChrysalisCrucibleCircle != null)
@@ -88,7 +89,7 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 										_hornEffect.Kill();
 									}
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_attackingState = AttackState.FLYBY;
 								}
@@ -114,9 +115,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 					TrackEntry trackEntry = chrysalis.animationManager.SetAnimation(15, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								foreach (Vector3 item in _hittedPosition)
 								{
@@ -124,14 +125,14 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 									fieEmitObjectQueenChrysalisCrucibleBurst.transform.position = item;
 								}
 							}
-							if (e.Data.Name == "activate")
+							if (trackIndex.Data.Name == "activate")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCommonActivationEffect>(chrysalis.leftFrontHoofTransform, Vector3.zero, null, chrysalis);
 							}
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
 								chrysalis.isEnableGravity = false;
-								Vector3 moveForce = Vector3.up * e.Float;
+								Vector3 moveForce = Vector3.up * trackIndex.Float;
 								chrysalis.setMoveForce(moveForce, 0.5f);
 							}
 						};

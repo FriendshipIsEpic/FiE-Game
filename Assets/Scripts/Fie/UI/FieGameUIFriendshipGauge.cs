@@ -125,8 +125,8 @@ namespace Fie.UI
 			if (entry != null)
 			{
 				float num = _animationFriendship / _maxFriendship;
-				float num2 = entry.endTime - 0.024f;
-				entry.Time = Mathf.Max(Mathf.Min(num * num2, num2), 0f);
+				float num2 = entry.animationEnd - 0.024f;
+				entry.TrackTime = Mathf.Max(Mathf.Min(num * num2, num2), 0f);
 				entry.TimeScale = 0f;
 			}
 		}

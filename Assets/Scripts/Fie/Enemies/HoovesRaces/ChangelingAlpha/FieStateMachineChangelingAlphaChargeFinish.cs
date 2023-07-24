@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 {
@@ -72,13 +73,13 @@ namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 						TrackEntry trackEntry = changelingAlpha.animationManager.SetAnimation(14, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingAlphaChargeFinish>(changelingAlpha.centerTransform, changelingAlpha.flipDirectionVector, null, changelingAlpha);
 								}
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
 									Vector3 a = changelingAlpha.flipDirectionVector;
 									Transform lockonEnemyTransform = changelingAlpha.detector.getLockonEnemyTransform();
@@ -90,20 +91,20 @@ namespace Fie.Enemies.HoovesRaces.ChangelingAlpha
 										a = vector;
 										a.y = 0f;
 									}
-									Vector3 vector2 = a * (e.Float * num);
+									Vector3 vector2 = a * (trackIndex.Float * num);
 									changelingAlpha.resetMoveForce();
 									changelingAlpha.setMoveForce(vector2, 0f, useRound: false);
-									if (e.Float > 0f)
+									if (trackIndex.Float > 0f)
 									{
 										changelingAlpha.setFlipByVector(vector2);
 									}
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isEnd = true;
 								}
 							};
-							_endTime = trackEntry.endTime;
+							_endTime = trackEntry.animationEnd;
 						}
 						else
 						{

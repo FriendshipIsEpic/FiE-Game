@@ -119,7 +119,7 @@ namespace Fie.Ponies.Twilight
 						TrackEntry trackEntry = fieTwilight.animationManager.SetAnimation(29, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							_endTime += trackEntry.endTime;
+							_endTime += trackEntry.AnimationTime;
 						}
 						_isSetEndAnim = true;
 					}

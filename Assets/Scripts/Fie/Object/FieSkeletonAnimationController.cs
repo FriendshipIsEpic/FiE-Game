@@ -28,7 +28,7 @@ namespace Fie.Object
 		{
 			if (_skeletonUtility != null)
 			{
-				_skeletonUtility.skeletonAnimation.timeScale = timeScale;
+				((SkeletonAnimation)_skeletonUtility.skeletonAnimation).timeScale = timeScale;
 			}
 		}
 
@@ -82,11 +82,11 @@ namespace Fie.Object
 			{
 				return null;
 			}
-			if (_skeletonUtility.skeletonAnimation.state == null)
+			if (((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state == null)
 			{
 				return null;
 			}
-			TrackEntry trackEntry = _skeletonUtility.skeletonAnimation.state.SetAnimation(animation.trackID, animation.animationName, isLoop);
+			TrackEntry trackEntry = ((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state.SetAnimation(animation.trackID, animation.animationName, isLoop);
 			if (trackEntry == null)
 			{
 				return null;
@@ -105,7 +105,7 @@ namespace Fie.Object
 		{
 			if (_currentAnimationEntries.ContainsKey(trackID) && _currentAnimationEntries[trackID] != null)
 			{
-				return _currentAnimationEntries[trackID].EndTime <= _currentAnimationEntries[trackID].Time;
+				return _currentAnimationEntries[trackID].animationEnd <= _currentAnimationEntries[trackID].AnimationTime;
 			}
 			return true;
 		}
@@ -143,15 +143,15 @@ namespace Fie.Object
 		{
 			if (animationTrack >= 0)
 			{
-				TrackEntry current = _skeletonUtility.skeletonAnimation.state.GetCurrent(animationTrack);
+				TrackEntry current = ((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state.GetCurrent(animationTrack);
 				if (current != null)
 				{
-					_skeletonUtility.skeletonAnimation.state.ClearTrack(animationTrack);
+					((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state.ClearTrack(animationTrack);
 				}
 			}
 			else
 			{
-				_skeletonUtility.skeletonAnimation.state.ClearTracks();
+				((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state.ClearTracks();
 			}
 			if (_currentAnimationEntries.ContainsKey(animationTrack))
 			{
@@ -161,11 +161,11 @@ namespace Fie.Object
 
 		public string GetCurrentAnimationName(int animationTrack)
 		{
-			if (_skeletonUtility.skeletonAnimation.state == null)
+			if (((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state == null)
 			{
 				return string.Empty;
 			}
-			TrackEntry current = _skeletonUtility.skeletonAnimation.state.GetCurrent(animationTrack);
+			TrackEntry current = ((SkeletonAnimation)_skeletonUtility.skeletonAnimation).state.GetCurrent(animationTrack);
 			if (current == null)
 			{
 				return string.Empty;

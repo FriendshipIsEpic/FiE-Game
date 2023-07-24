@@ -6,6 +6,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -136,9 +137,9 @@ namespace Fie.Ponies.RainbowDash
 						fieRainbowDash.rootBone.transform.localRotation = Quaternion.identity;
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isFinished = true;
 								}

@@ -2,6 +2,7 @@ using Fie.Object;
 using Spine;
 using System;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -46,18 +47,18 @@ namespace Fie.Ponies.Applejack
 						trackEntry = applejack.animationManager.SetAnimation(36, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
-									Vector3 vector = applejack.flipDirectionVector * e.Float;
+									Vector3 vector = applejack.flipDirectionVector * trackIndex.Float;
 									if (applejack.externalInputVector != Vector3.zero)
 									{
 										vector = applejack.externalInputVector;
 										vector.z = vector.y;
 										vector.y = 0f;
 										vector.Normalize();
-										vector *= 0f - e.Float;
+										vector *= 0f - trackIndex.Float;
 										vector.z *= 0.7f;
 									}
 									applejack.setFlipByVector(-vector);
@@ -65,13 +66,13 @@ namespace Fie.Ponies.Applejack
 									applejack.setMoveForce(vector, 0f, useRound: false);
 									applejack.applySideEffectOfStep();
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isEnd = true;
 								}
-								if (e.Data.Name == "immunity")
+								if (trackIndex.Data.Name == "immunity")
 								{
-									applejack.isEnableCollider = (e.Int < 1);
+									applejack.isEnableCollider = (trackIndex.Int < 1);
 								}
 							};
 							trackEntry.Complete += delegate

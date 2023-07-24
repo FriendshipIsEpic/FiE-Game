@@ -39,9 +39,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 							_nextState = typeof(FieStateMachineCommonIdle);
 							_isEnd = true;
 						};
-						trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_nextState = typeof(FieStateMachineCommonIdle);
 								_isEnd = true;

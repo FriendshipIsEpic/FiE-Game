@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -105,9 +106,9 @@ namespace Fie.Ponies.RainbowDash
 					TrackEntry trackEntry = rainbowDash.animationManager.SetAnimation(27, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								switch (_punchCount)
 								{
@@ -120,7 +121,7 @@ namespace Fie.Ponies.RainbowDash
 								}
 								_punchCount++;
 							}
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
 								Vector3 a = rainbowDash.flipDirectionVector;
 								Transform lockonEnemyTransform = rainbowDash.detector.getLockonEnemyTransform(isCenter: true);
@@ -132,21 +133,21 @@ namespace Fie.Ponies.RainbowDash
 									vector.Normalize();
 									a = vector;
 								}
-								Vector3 vector2 = a * (e.Float * num);
+								Vector3 vector2 = a * (trackIndex.Float * num);
 								rainbowDash.resetMoveForce();
 								rainbowDash.setMoveForce(vector2, 0f, useRound: false);
 								rainbowDash.setFlipByVector(vector2);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isFinished = true;
 							}
-							if (e.Data.name == "cancellable")
+							if (trackIndex.Data.name == "cancellable")
 							{
 								_isCancellable = true;
 							}
 						};
-						_endTime = trackEntry.endTime;
+						_endTime = trackEntry.animationEnd;
 					}
 					else
 					{

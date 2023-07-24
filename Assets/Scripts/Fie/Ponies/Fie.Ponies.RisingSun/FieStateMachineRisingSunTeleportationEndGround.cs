@@ -3,6 +3,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RisingSun
 {
@@ -34,9 +35,9 @@ namespace Fie.Ponies.RisingSun
 					TrackEntry trackEntry = fieRisingSun.animationManager.SetAnimation(27, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isFinished = true;
 							}

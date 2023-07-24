@@ -7,6 +7,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -68,9 +69,9 @@ namespace Fie.Ponies.RainbowDash
 					}
 					else
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								SetAttackState(rainbowDash);
 								_attackState = AttackState.ATTACKING;
@@ -122,13 +123,13 @@ namespace Fie.Ponies.RainbowDash
 				}
 				else
 				{
-					trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+					trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 					{
-						if (e.Data.Name == "fire")
+						if (trackIndex.Data.Name == "fire")
 						{
 							FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectRainbowDashOmniSmashImpactEffect>(rainbowDash.transform, Vector3.forward);
 						}
-						if (e.Data.Name == "finished")
+						if (trackIndex.Data.Name == "finished")
 						{
 							if (rainbowDash.omniSmashAttackingCount > 2)
 							{

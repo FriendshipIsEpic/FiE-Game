@@ -6,6 +6,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -62,9 +63,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 					}
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "activate")
+							if (trackIndex.Data.Name == "activate")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCommonActivationEffect>(chrysalis.hornTransform, chrysalis.flipDirectionVector);
 								if (_concentrationEffect != null)

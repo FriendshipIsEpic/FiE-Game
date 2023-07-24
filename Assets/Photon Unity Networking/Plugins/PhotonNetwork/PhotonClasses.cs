@@ -1276,23 +1276,6 @@ namespace UnityEditor.SceneManagement
 }
 #endif
 
-namespace UnityEngine.SceneManagement
-{
-    /// <summary>Minimal implementation of the SceneManager for older Unity, up to v5.2.</summary>
-    public class SceneManager
-    {
-        public static void LoadScene(string name)
-        {
-            Application.LoadLevel(name);
-        }
-
-        public static void LoadScene(int buildIndex)
-        {
-            Application.LoadLevel(buildIndex);
-        }
-    }
-}
-
 #endif
 
 

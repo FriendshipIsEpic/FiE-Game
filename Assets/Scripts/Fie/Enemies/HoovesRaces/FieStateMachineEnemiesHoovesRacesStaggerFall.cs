@@ -41,9 +41,9 @@ namespace Fie.Enemies.HoovesRaces
 					if (fieEnemiesHoovesRaces.groundState == FieObjectGroundState.Grounding)
 					{
 						TrackEntry trackEntry = fieEnemiesHoovesRaces.animationManager.SetAnimation(6, isLoop: false, isForceSet: true);
-						trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isEnd = true;
 							}

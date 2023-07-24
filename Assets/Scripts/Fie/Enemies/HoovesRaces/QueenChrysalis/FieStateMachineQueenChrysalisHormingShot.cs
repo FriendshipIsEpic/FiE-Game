@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -60,22 +61,22 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 						if (trackEntry != null)
 						{
 							autoFlipToEnemy(chrysalis);
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisHormingShot>(chrysalis.hornTransform, chrysalis.flipDirectionVector, chrysalis.detector.getLockonEnemyTransform(isCenter: true), chrysalis);
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisHormingShotActivateEffect>(chrysalis.hornTransform, Vector3.zero, null);
 									chrysalis._isEffectivePull = false;
 								}
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
 									Vector3 flipDirectionVector = chrysalis.flipDirectionVector;
-									Vector3 moveForce = flipDirectionVector * e.Float;
+									Vector3 moveForce = flipDirectionVector * trackIndex.Float;
 									chrysalis.resetMoveForce();
 									chrysalis.setMoveForce(moveForce, 0f, useRound: false);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									if ((bool)_hornEffect)
 									{

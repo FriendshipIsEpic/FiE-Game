@@ -3,6 +3,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -64,9 +65,9 @@ namespace Fie.Ponies.RainbowDash
 						_jumpState = JumpState.JUMP_TAKEOFF_STANDBY;
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.name == "takeOff")
+								if (trackIndex.Data.name == "takeOff")
 								{
 									Vector3 vector = rainbowDash.externalInputVector;
 									vector += Vector3.up;
@@ -76,7 +77,7 @@ namespace Fie.Ponies.RainbowDash
 									rainbowDash.setMoveForce(vector, 0.1f);
 									_jumpState = JumpState.JUMP_TAKEOFF;
 								}
-								else if (e.Data.name == "finished")
+								else if (trackIndex.Data.name == "finished")
 								{
 									_nextState = typeof(FieStateMachineRainbowDashFlying);
 									_isEnd = true;

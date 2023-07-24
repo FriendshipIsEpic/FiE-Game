@@ -9,7 +9,9 @@ using System.Diagnostics;
 using UnityEngine;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using ExitGames.Client.Photon;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
@@ -3149,7 +3151,6 @@ public static class PhotonNetwork
     }
 
 
-#if UNITY_EDITOR
     [Conditional("UNITY_EDITOR")]
     public static void CreateSettings()
     {
@@ -3215,6 +3216,5 @@ public static class PhotonNetwork
             }
         }
     }
-#endif
 
 }

@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -42,14 +43,14 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 							_nextState = typeof(FieStateMachineCommonIdle);
 							_isEnd = true;
 						};
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
-								Vector3 moveForce = chrysalis.flipDirectionVector * e.Float;
+								Vector3 moveForce = chrysalis.flipDirectionVector * trackIndex.Float;
 								chrysalis.setMoveForce(moveForce, 0f, useRound: false);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_nextState = typeof(FieStateMachineCommonIdle);
 								_isEnd = true;

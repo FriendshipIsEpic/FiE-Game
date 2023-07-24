@@ -3,6 +3,7 @@ using Fie.Object;
 using Spine;
 using System;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -62,9 +63,9 @@ namespace Fie.Ponies.Applejack
 						TrackEntry trackEntry = applejack.animationManager.SetAnimation(animationId, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									applejack.isEnableGravity = true;
 									Vector3 a = applejack.externalInputVector * 0.5f;
@@ -77,14 +78,14 @@ namespace Fie.Ponies.Applejack
 									applejack.CalcBatteCicleSkill();
 									applejack.isEnableCollider = false;
 								}
-								else if (e.Data.Name == "finished")
+								else if (trackIndex.Data.Name == "finished")
 								{
 									applejack.isEnableGravity = true;
 									applejack.isEnableCollider = true;
 									_isEnd = true;
 								}
 							};
-							_endTime = trackEntry.endTime;
+							_endTime = trackEntry.animationEnd;
 						}
 						else
 						{

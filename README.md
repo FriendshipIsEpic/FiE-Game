@@ -14,16 +14,21 @@ Old Build: https://mega.nz/file/9XI1TKSJ#ZlEbr8mZePdn0wjxS7TFhny0u3FvgeDI_E-0bO1
 
 ## Dependencies
 
-This project requires the following modules:
+This project is built using Unity 5.5 as well as several unity store assets and libraries:
 
- - RogoDigital.Libsync
- - Spine
- - AmplifyBloom
+ - RogoDigital.Libsync (lipsyncing)
+ - Spine (rigging)
+ - AmplifyBloom (rendering)
+ - PigeonToolkit/TrailEffect (particles)
+ - QuickRopes Rope Physics (rope physics)
  - GameDataEditor
  - Photon Unity Networking
+ + others
 
 ## Building
 
-This project uses the 2018 version of Unity
+It's recommended to have a working version of Unity 5 installed and working before you attempt to build this project.
 
-TODO
+1. Clone the repository:
+
+> git clone https://github.com/FriendshipIsEpic/FiE-Game.git

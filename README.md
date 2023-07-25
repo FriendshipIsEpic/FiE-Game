@@ -2,10 +2,15 @@
 
 Free and Open-Source, just to show that once it's on the internet you can never get rid of it.
 
-This is continuation of the unity game "Friendship is Epic".
+This is continuation of the unity game "Friendship is Epic" that was famously lost when the original developer
+when missing in action (and took the only copy of the project, the code, and assets with him).
+
+This project is a reconstruction of that original game's source code and assets, using the released 
+developer build as a starting point to resume work on a game that deserved to be finished.
+
+## Credits
 
 Credits for the original project and ideas goes to the late helements and the Japanese FiE team
-
 Sound effects and music credit to Jyc Row.
 https://www.youtube.com/watch?v=58x-X-44gcM&list=PLl7dXRHbZCdiW4GFNq8n8KLEDvMpXInTZ
 

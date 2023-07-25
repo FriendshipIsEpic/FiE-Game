@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -103,29 +104,29 @@ namespace Fie.Ponies.RainbowDash
 					TrackEntry trackEntry = rainbowDash.animationManager.SetAnimation(28, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectRainbowDashBaseAttack3>(rainbowDash.leftBackHoofTransform, Vector3.zero, null, rainbowDash);
 							}
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
-								Vector3 vector = rainbowDash.flipDirectionVector * -1f * e.Float;
+								Vector3 vector = rainbowDash.flipDirectionVector * -1f * trackIndex.Float;
 								rainbowDash.resetMoveForce();
 								rainbowDash.setMoveForce(vector, 0f, useRound: false);
 								rainbowDash.setFlipByVector(vector * -1f);
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isFinished = true;
 							}
-							if (e.Data.name == "cancellable")
+							if (trackIndex.Data.name == "cancellable")
 							{
 								_isCancellable = true;
 							}
 						};
-						_endTime = trackEntry.endTime;
+						_endTime = trackEntry.animationEnd;
 					}
 					else
 					{

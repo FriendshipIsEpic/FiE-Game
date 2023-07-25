@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -104,9 +105,9 @@ namespace Fie.Ponies.RainbowDash
 					TrackEntry trackEntry = rainbowDash.animationManager.SetAnimation(28, isLoop: false, isForceSet: true);
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
 								Vector3 vector = rainbowDash.flipDirectionVector;
 								if (rainbowDash.detector.lockonTargetObject != null)
@@ -114,7 +115,7 @@ namespace Fie.Ponies.RainbowDash
 									vector = (rainbowDash.detector.lockonTargetObject.centerTransform.position - rainbowDash.centerTransform.position).normalized;
 								}
 								rainbowDash.resetMoveForce();
-								rainbowDash.setMoveForce(vector * e.Float * 3f, 0f, useRound: false);
+								rainbowDash.setMoveForce(vector * trackIndex.Float * 3f, 0f, useRound: false);
 								rainbowDash.setFlipByVector(vector);
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectRainbowDashStabAttack>(rainbowDash.centerTransform, vector, null, rainbowDash);
 								_attackingEffect = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectRainbowDashDoublePaybackAttackingEffect>(rainbowDash.centerTransform, Vector3.up);
@@ -123,7 +124,7 @@ namespace Fie.Ponies.RainbowDash
 									FieManagerBehaviour<FieGameCameraManager>.I.gameCamera.setOffsetTransition(rainbowDash, new FieCameraOffset(new FieCameraOffset.FieCameraOffsetParam(new Vector3(0f, 0f, 1.5f), new Vector3(0f, 0f, 0f), 10f), 0.1f, 0.3f, 1.5f));
 								}
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								if (_attackingEffect != null)
 								{
@@ -131,12 +132,12 @@ namespace Fie.Ponies.RainbowDash
 								}
 								_isFinished = true;
 							}
-							if (e.Data.name == "cancellable")
+							if (trackIndex.Data.name == "cancellable")
 							{
 								_isCancellable = true;
 							}
 						};
-						_endTime = trackEntry.endTime;
+						_endTime = trackEntry.animationEnd;
 					}
 					else
 					{

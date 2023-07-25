@@ -1,4 +1,5 @@
 using System;
+using RogoDigital.Lipsync;
 using UnityEngine;
 
 namespace Fie.Voice

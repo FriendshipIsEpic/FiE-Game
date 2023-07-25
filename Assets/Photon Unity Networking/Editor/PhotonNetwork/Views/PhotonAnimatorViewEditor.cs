@@ -17,6 +17,7 @@
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 
 #if UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2 || UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7
 using UnityEditorInternal;
@@ -31,9 +32,9 @@ public class PhotonAnimatorViewEditor : Editor
     private Animator m_Animator;
     private PhotonAnimatorView m_Target;
 
-#if UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2 || UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7 || UNITY_5 || UNITY_5_0
+//#if UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2 || UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7 || UNITY_5 || UNITY_5_0
     private AnimatorController m_Controller;
-#endif
+//#endif
 
 	private const string TRIGGER_HELP_URL = "https://doc.photonengine.com/en/pun/current/reference/animatorviewtriggerhelp";
 
@@ -50,7 +51,7 @@ public class PhotonAnimatorViewEditor : Editor
         }
 
         DrawWeightInspector();
-       
+
 		if (GetLayerCount() == 0)
         {
             GUILayout.BeginVertical(GUI.skin.box);
@@ -73,14 +74,14 @@ public class PhotonAnimatorViewEditor : Editor
         //GUILayout.Label( "m_SynchronizeParameters " + serializedObject.FindProperty( "m_SynchronizeParameters" ).arraySize );
     }
 
-	 
+
     private int GetLayerCount()
     {
-		#if UNITY_5 || UNITY_5_0
+		//#if UNITY_5 || UNITY_5_0
 		return (this.m_Controller == null) ? 0 : this.m_Controller.layers.Length;
-		#else
-		return (this.m_Controller == null) ? 0 : this.m_Controller.layerCount;
-		#endif
+		//#else
+		//return (this.m_Controller == null) ? 0 : this.m_Controller.layerCount;
+		//#endif
     }
 
 
@@ -228,7 +229,7 @@ public class PhotonAnimatorViewEditor : Editor
             #endif
         }
     }
-	
+
 
     private void DrawParameterInspector()
     {

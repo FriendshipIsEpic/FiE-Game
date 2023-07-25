@@ -48,7 +48,7 @@ namespace Fie.UI
 
 		public IEnumerator ScoreTransition()
 		{
-			_003CScoreTransition_003Ec__Iterator0 _003CScoreTransition_003Ec__Iterator = (_003CScoreTransition_003Ec__Iterator0)/*Error near IL_0032: stateMachine*/;
+			//_003CScoreTransition_003Ec__Iterator0 _003CScoreTransition_003Ec__Iterator = (_003CScoreTransition_003Ec__Iterator0)/*Error near IL_0032: stateMachine*/;
 			FieLevelInfo expInfo = FieManagerBehaviour<FieSaveManager>.I.GetLevelInfoByTotalExp(_resultParam.beforeExp);
 			_levelGauge.Initialize(0f, (float)expInfo.requiredExpToNextLevel, (float)expInfo.currentExpToNextLevel);
 			string levelLabel = FieLocalizeUtility.GetConstantText(GDEItemKeys.ConstantTextList_SKILL_TREE_LEVEL_LABEL);

@@ -386,7 +386,7 @@ public abstract class FieGameCharacter : FieNetworkObjectBase
 
 	public SkeletonUtility skeletonUtility => _skeletonUtility;
 
-	public MeshRenderer submeshObject => _submeshObject.meshRenderer;
+	public MeshRenderer submeshObject => _submeshObject.GetComponent<MeshRenderer>();
 
 	public FieDetector detector => _detector;
 
@@ -937,14 +937,14 @@ public abstract class FieGameCharacter : FieNetworkObjectBase
 		if (base.flipState == FieObjectFlipState.Left)
 		{
 			base.transform.rotation = Quaternion.AngleAxis(0f, Vector3.up);
-			_skeletonUtility.skeletonAnimation.zSpacing = -0.002f;
-			_skeletonUtility.skeletonRenderer.isFlippedNormal = false;
+			_skeletonUtility.skeletonRenderer.zSpacing = -0.002f;
+			// _skeletonUtility.skeletonRenderer.isFlippedNormal = false;
 		}
 		else
 		{
 			base.transform.rotation = Quaternion.AngleAxis(180f, Vector3.up);
-			_skeletonUtility.skeletonAnimation.zSpacing = 0.002f;
-			_skeletonUtility.skeletonRenderer.isFlippedNormal = true;
+			_skeletonUtility.skeletonRenderer.zSpacing = 0.002f;
+			// _skeletonUtility.skeletonRenderer.isFlippedNormal = true;
 		}
 	}
 

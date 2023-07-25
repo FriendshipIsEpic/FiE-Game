@@ -3,6 +3,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.Changeling
 {
@@ -50,21 +51,21 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 						TrackEntry trackEntry = changeling.animationManager.SetAnimation(changeling.getBackStepAnimationID(), isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
-									Vector3 moveForce = changeling.flipDirectionVector * e.Float;
+									Vector3 moveForce = changeling.flipDirectionVector * trackIndex.Float;
 									changeling.setMoveForce(moveForce, 0f, useRound: false);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isEnd = true;
 								}
-								if (e.Data.Name == "immunity")
+								if (trackIndex.Data.Name == "immunity")
 								{
-									changeling.isEnableCollider = (e.Int < 1);
-									changeling.damageSystem.isEnableStaggerImmunity = (e.Int >= 1);
+									changeling.isEnableCollider = (trackIndex.Int < 1);
+									changeling.damageSystem.isEnableStaggerImmunity = (trackIndex.Int >= 1);
 								}
 							};
 							trackEntry.Complete += delegate

@@ -116,7 +116,7 @@ namespace Fie.UI
 				yield return (object)null;
 				/*Error: Unable to find new state assignment for yield return*/;
 			}
-			yield return (object)new WaitForSeconds(entry.endTime);
+			yield return (object)new WaitForSeconds(entry.animationEnd);
 			/*Error: Unable to find new state assignment for yield return*/;
 		}
 
@@ -342,7 +342,7 @@ namespace Fie.UI
 			{
 				num = latestCooldown / maxCooldown;
 			}
-			entry.Time = Mathf.Max(Mathf.Min(entry.endTime - num * entry.endTime, entry.endTime), 0f);
+			entry.trackTime = Mathf.Max(Mathf.Min(entry.animationEnd - num * entry.animationEnd, entry.animationEnd), 0f);
 			entry.TimeScale = 0f;
 		}
 

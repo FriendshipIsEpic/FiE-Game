@@ -31,9 +31,9 @@ namespace Fie.Ponies
 				{
 					fiePonies.emotionController.RestoreEmotionFromDefaultData();
 					TrackEntry trackEntry = fiePonies.animationManager.SetAnimation(9, isLoop: false, isForceSet: true);
-					trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+					trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 					{
-						if (e.Data.Name == "finished")
+						if (trackIndex.Data.Name == "finished")
 						{
 							_isEnd = true;
 						}

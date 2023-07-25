@@ -51,9 +51,9 @@ namespace Fie.Enemies.HoovesRaces.Flightling
 					if (trackEntry != null)
 					{
 						autoFlipToEnemy(flightling);
-						trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectFlightlingShot>(flightling.hornTransform, flightling.flipDirectionVector, flightling.detector.getLockonEnemyTransform(isCenter: true), flightling);
 							}

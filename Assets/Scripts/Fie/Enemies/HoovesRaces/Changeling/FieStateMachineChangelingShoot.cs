@@ -38,9 +38,9 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 					if (trackEntry != null)
 					{
 						autoFlipToEnemy(changeling);
-						trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingShot>(changeling.hornTransform, changeling.flipDirectionVector, changeling.detector.getLockonEnemyTransform(isCenter: true), changeling);
 							}

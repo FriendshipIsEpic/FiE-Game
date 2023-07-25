@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -50,9 +51,9 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 					if (chrysalis.groundState == FieObjectGroundState.Grounding)
 					{
 						TrackEntry trackEntry = chrysalis.animationManager.SetAnimation(6, isLoop: false, isForceSet: true);
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "activate")
+							if (trackIndex.Data.Name == "activate")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCommonActivationEffect>(chrysalis.hornTransform, chrysalis.flipDirectionVector, null, chrysalis);
 								_hornEffect = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisHornEffect>(chrysalis.hornTransform, Vector3.zero, null);
@@ -61,7 +62,7 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 								chrysalis.emotionController.SetEmoteAnimation(30, isForceSet: true);
 								chrysalis.isSpeakable = true;
 							}
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieEmitObjectQueenChrysalisStaggerRecoveringBurst fieEmitObjectQueenChrysalisStaggerRecoveringBurst = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisStaggerRecoveringBurst>(chrysalis.centerTransform, chrysalis.flipDirectionVector, null, chrysalis);
 								FieManagerBehaviour<FieGameCameraManager>.I.gameCamera.setWiggler(0.6f, 15, new Vector3(0.2f, 0.5f));
@@ -71,7 +72,7 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 									_hornEffect.Kill();
 								}
 							}
-							if (e.Data.Name == "finished")
+							if (trackIndex.Data.Name == "finished")
 							{
 								_isEnd = true;
 							}

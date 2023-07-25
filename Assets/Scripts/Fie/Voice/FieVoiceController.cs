@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Spine.Unity;
 using UnityEngine;
 
 namespace Fie.Voice
@@ -78,7 +79,7 @@ namespace Fie.Voice
 
 		private IEnumerator AsyncLoadVoiceDatas(GDEGameCharacterTypeData gameCharacterTypeData)
 		{
-			_003CAsyncLoadVoiceDatas_003Ec__Iterator0 _003CAsyncLoadVoiceDatas_003Ec__Iterator = (_003CAsyncLoadVoiceDatas_003Ec__Iterator0)/*Error near IL_0034: stateMachine*/;
+			//_003CAsyncLoadVoiceDatas_003Ec__Iterator0 _003CAsyncLoadVoiceDatas_003Ec__Iterator = (_003CAsyncLoadVoiceDatas_003Ec__Iterator0)/*Error near IL_0034: stateMachine*/;
 			if (gameCharacterTypeData != null)
 			{
 				List<GDEWordScriptsListData> voiceDataList = FieMasterData<GDEWordScriptsListData>.FindMasterDataList(delegate(GDEWordScriptsListData data)
@@ -238,7 +239,7 @@ namespace Fie.Voice
 			}
 			if (_actorCharacter != null && _actorCharacter.emotionController != null)
 			{
-				_actorCharacter.skeletonUtility.skeletonAnimation.state.ClearTrack(emotionTrackID);
+				((SkeletonAnimation)_actorCharacter.skeletonUtility.skeletonAnimation).state.ClearTrack(emotionTrackID);
 				_actorCharacter.emotionController.RestoreEmotionFromDefaultData();
 				_actorCharacter.emotionController.RestartAutoAnimation();
 			}
@@ -283,19 +284,19 @@ namespace Fie.Voice
 			{
 				_currentPhonemeMarker = index;
 				Phoneme phoneme = _phonemeMarkers[index].phoneme;
-				if (phonemesAnimations.ContainsKey(phoneme))
-				{
-					TrackEntry trackEntry = actorCharacter.skeletonUtility.skeletonAnimation.state.SetAnimation(phonemeTrackID, phonemesAnimations[phoneme], loop: false);
-					if (trackEntry != null)
-					{
-						float mixDuration = 0f;
-						if (_currentPhonemeMarker + 1 < _phonemeMarkers.Count)
-						{
-							mixDuration = _phonemeMarkers[_currentPhonemeMarker + 1].time - _phonemeMarkers[_currentPhonemeMarker].time;
-						}
-						trackEntry.mixDuration = mixDuration;
-					}
-				}
+				// if (phonemesAnimations.ContainsKey(phoneme))
+				// {
+				// 	TrackEntry trackEntry = actorCharacter.skeletonUtility.skeletonAnimation.state.SetAnimation(phonemeTrackID, phonemesAnimations[phoneme], loop: false);
+				// 	if (trackEntry != null)
+				// 	{
+				// 		float mixDuration = 0f;
+				// 		if (_currentPhonemeMarker + 1 < _phonemeMarkers.Count)
+				// 		{
+				// 			mixDuration = _phonemeMarkers[_currentPhonemeMarker + 1].time - _phonemeMarkers[_currentPhonemeMarker].time;
+				// 		}
+				// 		trackEntry.mixDuration = mixDuration;
+				// 	}
+				// }
 			}
 		}
 
@@ -307,7 +308,7 @@ namespace Fie.Voice
 				string emotion = _emotionMarkers[index].emotion;
 				if (emotionsAnimations.ContainsKey(emotion))
 				{
-					TrackEntry trackEntry = actorCharacter.skeletonUtility.skeletonAnimation.state.SetAnimation(emotionTrackID, emotionsAnimations[emotion], loop: false);
+					TrackEntry trackEntry = ((SkeletonAnimation)actorCharacter.skeletonUtility.skeletonAnimation).state.SetAnimation(emotionTrackID, emotionsAnimations[emotion], loop: false);
 					if (trackEntry != null)
 					{
 						trackEntry.mixDuration = 0.2f;

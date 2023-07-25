@@ -48,13 +48,13 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 						TrackEntry trackEntry = changeling.animationManager.SetAnimation(14, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(AnimationState state, int trackIndex, Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectChangelingVortex>(changeling.transform, changeling.flipDirectionVector, null, changeling);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isEnd = true;
 								}

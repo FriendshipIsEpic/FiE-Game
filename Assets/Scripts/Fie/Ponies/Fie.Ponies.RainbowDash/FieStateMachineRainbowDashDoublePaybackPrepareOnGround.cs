@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.RainbowDash
 {
@@ -61,9 +62,9 @@ namespace Fie.Ponies.RainbowDash
 						TrackEntry trackEntry = rainbowDash.animationManager.SetAnimation(animationId, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "immunity")
+								if (trackIndex.Data.Name == "immunity")
 								{
 									setCounterEvent(rainbowDash);
 								}
@@ -72,9 +73,9 @@ namespace Fie.Ponies.RainbowDash
 							{
 								rainbowDash.damageSystem.damageCheckEvent -= HealthSystem_damageCheckEvent;
 								TrackEntry trackEntry2 = rainbowDash.animationManager.SetAnimation(32, isLoop: false, isForceSet: true);
-								trackEntry2.Event += delegate(Spine.AnimationState endAnimationState, int endAnimationTrackIndex, Spine.Event endEvent)
+								trackEntry2.Event += delegate(TrackEntry endAnimationState, Event endAnimationTrackIndex)
 								{
-									if (endEvent.Data.Name == "finished")
+									if (endAnimationTrackIndex.Data.Name == "finished")
 									{
 										_isFinished = true;
 									}

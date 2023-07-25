@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -74,9 +75,9 @@ namespace Fie.Ponies.Applejack
 					applejack.SetDialog(30, FieMasterData<GDEWordScriptsListData>.I.GetMasterData(GDEItemKeys.WordScriptsList_P_HONESTY_ABILITY_ROPE_1), FieMasterData<GDEWordScriptsListData>.I.GetMasterData(GDEItemKeys.WordScriptsList_P_HONESTY_ABILITY_ROPE_2));
 					if (trackEntry != null)
 					{
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								Vector3 directionalVec = (applejack.flipState != 0) ? Vector3.right : Vector3.left;
 								FieEmitObjectApplejackRope fieEmitObjectApplejackRope = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectApplejackRope>(applejack.mouthTransform, directionalVec, applejack.detector.getLockonEnemyTransform(), applejack);
@@ -120,14 +121,14 @@ namespace Fie.Ponies.Applejack
 									};
 								}
 							}
-							else if (e.Data.Name == "takeOff")
+							else if (trackIndex.Data.Name == "takeOff")
 							{
 								Vector3 up = Vector3.up;
 								up.Normalize();
 								up *= 4f;
 								applejack.setMoveForce(up, 0.3f);
 							}
-							else if (e.Data.Name == "finished")
+							else if (trackIndex.Data.Name == "finished")
 							{
 								_nextState = typeof(FieStateMachineApplejackFlying);
 								_isEnd = true;
@@ -137,7 +138,7 @@ namespace Fie.Ponies.Applejack
 						{
 							_isEnd = true;
 						};
-						_endTime = trackEntry.endTime;
+						_endTime = trackEntry.animationEnd;
 					}
 					else
 					{

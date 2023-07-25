@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Ponies.Applejack
 {
@@ -79,9 +80,9 @@ namespace Fie.Ponies.Applejack
 						TrackEntry trackEntry = applejack.animationManager.SetAnimation(animationId, isLoop: false, isForceSet: true);
 						if (trackEntry != null)
 						{
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "fire")
+								if (trackIndex.Data.Name == "fire")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectApplejackKickRift>(applejack.leftBackHoofTransform, applejack.flipDirectionVector * -1f, null, applejack);
 									applejack.CalcBatteCicleSkill();
@@ -90,7 +91,7 @@ namespace Fie.Ponies.Applejack
 										FieManagerBehaviour<FieGameCameraManager>.I.gameCamera.setOffsetTransition(applejack, new FieCameraOffset(new FieCameraOffset.FieCameraOffsetParam(new Vector3(0f, 0f, 1.5f), new Vector3(0f, 0f, 0f), 5f), 0.3f, 0.3f, 1.5f));
 									}
 								}
-								if (e.Data.Name == "move")
+								if (trackIndex.Data.Name == "move")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectApplejackKickEffect>(applejack.centerTransform, applejack.flipDirectionVector * -1f);
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectApplejackKickEffect2>(applejack.leftFrontHoofTransform, applejack.flipDirectionVector);
@@ -106,21 +107,21 @@ namespace Fie.Ponies.Applejack
 										a = vector;
 										a.y = 0f;
 									}
-									Vector3 vector2 = a * (e.Float * num);
+									Vector3 vector2 = a * (trackIndex.Float * num);
 									applejack.resetMoveForce();
 									applejack.setMoveForce(vector2, 0f, useRound: false);
 									applejack.setFlipByVector(vector2 * -1f);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									_isFinished = true;
 								}
-								if (e.Data.name == "cancellable")
+								if (trackIndex.Data.name == "cancellable")
 								{
-									_isCancellable = (e.Int >= 1);
+									_isCancellable = (trackIndex.Int >= 1);
 								}
 							};
-							_endTime = trackEntry.endTime;
+							_endTime = trackEntry.animationEnd;
 						}
 						else
 						{

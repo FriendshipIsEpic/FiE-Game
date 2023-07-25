@@ -33,7 +33,7 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 				gameCharacter.isEnableCollider = false;
 				gameCharacter.isEnableGravity = true;
 				gameCharacter.isEnableAutoFlip = false;
-				gameCharacter.skeletonUtility.skeletonRenderer.meshRenderer.enabled = false;
+				gameCharacter.skeletonUtility.skeletonRenderer.GetComponent<MeshRenderer>().enabled = false;
 			}
 		}
 
@@ -44,7 +44,7 @@ namespace Fie.Enemies.HoovesRaces.Changeling
 				gameCharacter.isEnableCollider = true;
 				gameCharacter.isEnableGravity = true;
 				gameCharacter.isEnableAutoFlip = true;
-				gameCharacter.skeletonUtility.skeletonRenderer.meshRenderer.enabled = true;
+				gameCharacter.skeletonUtility.skeletonRenderer.GetComponent<MeshRenderer>().enabled = true;
 				if (_arriveEffect != null)
 				{
 					_arriveEffect.StopEffect();

@@ -1,5 +1,6 @@
 using Spine;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces
 {
@@ -60,9 +61,9 @@ namespace Fie.Enemies.HoovesRaces
 		{
 			if (entry != null)
 			{
-				entry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+				entry.Event += delegate(TrackEntry state, Event trackIndex)
 				{
-					if (e.Data.Name == "footstep" && base.currentFootstepMaterial != null)
+					if (trackIndex.Data.Name == "footstep" && base.currentFootstepMaterial != null)
 					{
 						base.currentFootstepMaterial.playFootstepAudio(base.footstepPlayer);
 					}

@@ -4,6 +4,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -55,13 +56,13 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 								_nextState = typeof(FieStateMachineQueenChrysalisAirRiadAttacking);
 								_isEnd = true;
 							};
-							trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+							trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 							{
-								if (e.Data.Name == "activate")
+								if (trackIndex.Data.Name == "activate")
 								{
 									_concentrationObject = FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisAirRaidConcentration>(chrysalis.leftFrontHoofTransform, chrysalis.flipDirectionVector);
 								}
-								if (e.Data.Name == "finished")
+								if (trackIndex.Data.Name == "finished")
 								{
 									FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCommonActivationEffect>(chrysalis.leftFrontHoofTransform, chrysalis.flipDirectionVector);
 									if (_concentrationObject != null)

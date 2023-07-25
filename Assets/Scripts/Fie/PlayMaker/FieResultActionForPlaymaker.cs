@@ -8,7 +8,7 @@ namespace Fie.PlayMaker
 	{
 		public override void OnEnter()
 		{
-			SceneManager.LoadScene(0, LoadSceneMode.Single);
+			SceneManager.LoadScene(0);
 			Finish();
 		}
 	}

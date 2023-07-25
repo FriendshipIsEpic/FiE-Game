@@ -5,6 +5,7 @@ using Spine;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Event = Spine.Event;
 
 namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 {
@@ -55,16 +56,16 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 							_nextState = typeof(FieStateMachineQueenChrysalisMeteorShowerAttacking);
 							_isEnd = true;
 						};
-						trackEntry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+						trackEntry.Event += delegate(TrackEntry state, Event trackIndex)
 						{
-							if (e.Data.Name == "move")
+							if (trackIndex.Data.Name == "move")
 							{
-								Vector3 moveForce = Vector3.up * e.Float;
+								Vector3 moveForce = Vector3.up * trackIndex.Float;
 								chrysalis.isEnableGravity = false;
 								chrysalis.resetMoveForce();
 								chrysalis.setMoveForce(moveForce, 0.5f);
 							}
-							if (e.Data.Name == "activate")
+							if (trackIndex.Data.Name == "activate")
 							{
 								if (_concentrationObject != null)
 								{
@@ -74,7 +75,7 @@ namespace Fie.Enemies.HoovesRaces.QueenChrysalis
 								chrysalis.emotionController.SetEmoteAnimation(30, isForceSet: true);
 								chrysalis._isEffectivePull = false;
 							}
-							if (e.Data.Name == "fire")
+							if (trackIndex.Data.Name == "fire")
 							{
 								FieManagerBehaviour<FieEmittableObjectManager>.I.EmitObject<FieEmitObjectQueenChrysalisCommonActivationEffect>(chrysalis.hornTransform, chrysalis.flipDirectionVector);
 								chrysalis.SetDialog(100, FieMasterData<GDEWordScriptsListData>.I.GetMasterData(GDEItemKeys.WordScriptsList_E_THE_INSECT_QUEEN_USING_ABILITY_1), FieMasterData<GDEWordScriptsListData>.I.GetMasterData(GDEItemKeys.WordScriptsList_E_THE_INSECT_QUEEN_USING_ABILITY_2));

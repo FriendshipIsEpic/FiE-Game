@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Event = Spine.Event;
 
 namespace Fie.Ponies
 {
@@ -137,8 +138,7 @@ namespace Fie.Ponies
 					if (value)
 					{
 						_headBone.mode = SkeletonUtilityBone.Mode.Override;
-						_headBone.flip = false;
-						_headBone.flipX = false;
+						_headBone.scale = false;
 						_headBone.overrideAlpha = 0f;
 						if (_headTrackingTweener != null)
 						{
@@ -148,7 +148,7 @@ namespace Fie.Ponies
 					else
 					{
 						_headBone.mode = SkeletonUtilityBone.Mode.Follow;
-						_headBone.flip = true;
+						_headBone.scale = true;
 					}
 				}
 				_isEnableHeadTracking = value;
@@ -343,9 +343,9 @@ namespace Fie.Ponies
 		{
 			if (entry != null)
 			{
-				entry.Event += delegate(Spine.AnimationState state, int trackIndex, Spine.Event e)
+				entry.Event += delegate(TrackEntry state, Event trackIndex)
 				{
-					if (e.Data.Name == "footstep" && base.currentFootstepMaterial != null)
+					if (trackIndex.Data.Name == "footstep" && base.currentFootstepMaterial != null)
 					{
 						base.currentFootstepMaterial.playFootstepAudio(base.footstepPlayer);
 					}

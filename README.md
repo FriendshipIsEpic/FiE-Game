@@ -21,7 +21,7 @@ Old Build: https://mega.nz/file/9XI1TKSJ#ZlEbr8mZePdn0wjxS7TFhny0u3FvgeDI_E-0bO1
 
 This project is built using Unity 5.5 as well as several unity store assets and libraries:
 
- - RogoDigital.Libsync (lipsyncing)
+ - RogoDigital.Lipsync (lip-syncing)
  - Spine (rigging)
  - AmplifyBloom (rendering)
  - PigeonToolkit/TrailEffect (particles)
@@ -32,7 +32,7 @@ This project is built using Unity 5.5 as well as several unity store assets and 
 
 ## Building
 
-It's recommended to have a working version of Unity 5 installed and working before you attempt to build this project.
+It's recommended to have a working version of Unity 5.5 installed and working before you attempt to build this project.
 
 1. Clone the repository:
 

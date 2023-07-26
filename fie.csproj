@@ -1852,6 +1852,27 @@
     <Compile Include="Assets\SEGI\SEGICascaded.cs" />
     <Compile Include="Assets\SEGI\SEGICascadedPreset.cs" />
     <Compile Include="Assets\SEGI\SEGIPreset.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\PCTKEffectsIntroDialogue.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\SmokePlumeEditor.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\SmokeTrailEditor.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\TrailEditor.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\TrailEditor_Base.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Editor\TrailPreviewUtillity.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\PCTrail.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\PCTrailPoint.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\PCTrailRendererData.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\SmokePlume.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\SmokeTrail.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\SmokeTrailPoint.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\SmoothTrail.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\Trail.cs" />
+    <Compile Include="Assets\TrailEffect\Effects\Trails\TrailRenderer_Base.cs" />
+    <Compile Include="Assets\TrailEffect\Generic\Editor\IntroDialogue.cs" />
+    <Compile Include="Assets\TrailEffect\Generic\VersionInformation.cs" />
+    <Compile Include="Assets\TrailEffect\Utillities\CircularBuffer.cs" />
+    <Compile Include="Assets\TrailEffect\Utillities\Editor\RangePropertyDrawer.cs" />
+    <Compile Include="Assets\TrailEffect\Utillities\GizmosExtra.cs" />
+    <Compile Include="Assets\TrailEffect\Utillities\Range.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />

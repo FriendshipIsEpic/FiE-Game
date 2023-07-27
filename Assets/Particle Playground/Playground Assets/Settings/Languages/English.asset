@@ -1,0 +1,710 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0e429d9ea264321b2a0e5758212180, type: 3}
+  m_Name: English
+  m_EditorClassIdentifier: 
+  languageNameSeenByEnglish: American
+  languageName: English
+  playgroundName: Particle Playground
+  newParticlePlaygroundSystem: New Particle Playground System
+  playgroundWizard: Playground Wizard
+  playgroundPresetWizard: Playground Preset Wizard
+  presetWizard: Preset Wizard
+  playgroundCopyWizard: Playground Copy Wizard
+  copyWizard: Copy Wizard
+  languageInstallWizard: Language Install Wizard
+  playgroundBrushWizard: Playground Brush Wizard
+  brushWizard: Brush Wizard
+  preset: Preset
+  presets: Presets
+  publish: Publish
+  all: All
+  user: User
+  example: Example
+  examples: Examples
+  icon: Icon
+  icons: Icons
+  list: List
+  create: Create
+  createPreset: Create Preset
+  convertTo: Convert to
+  edit: Edit
+  export: Export
+  settings: Settings
+  none: None
+  fix: Fix
+  save: Save
+  load: Load
+  rebuild: Rebuild
+  refresh: Refresh
+  xml: Xml
+  asset: Asset
+  browse: Browse
+  paths: Paths
+  playgroundPath: Playground Path
+  languagesPath: Languages Path
+  userPresetPath: User Preset Path
+  examplePresetPath: Example Preset Path
+  presetIconPath: Preset Icon Path
+  brushPath: Brush Path
+  scriptPath: Script Path
+  updateUrl: Update URL
+  officialSite: Official Site
+  assetStore: Asset Store
+  manual: Manual
+  supportForum: Support Forum
+  mailSupport: Mail Support
+  updateAvailable: Update Available
+  updateAvailableText: is available. Please visit the Unity Asset Store to download
+    the new version.
+  unityAssetStore: Unity Asset Store
+  searchNoPresetFound: No preset found containing
+  noPresetsFound: No presets found. Press "Create" to make a new preset.
+  noUserPresetsFound: No user presets found in any "Resources/Presets" folder. Press
+    "Create" to make a new preset.
+  noExamplePresetsFound: No example presets found. Make sure they are stored in
+  noPresetsFoundInProject: No presets found. Make sure that the path to the presets
+    are set to
+  noSettingsFile: No settings file could be found. You must have a settings file at
+  noParticleSystems: No particle systems created.
+  noManipulators: No manipulators created.
+  noProperties: No properties created.
+  noTarget: No target
+  noTargets: No targets created.
+  noEvents: No events created.
+  noMesh: No Mesh
+  noCollisionPlanes: No collision planes created.
+  noSnapshots: No snapshots created.
+  noStates: No states created.
+  allTargets: All targets must be assigned.
+  noPlaygroundManager: The Playground Manager runs all Particle Playground Systems
+    in the scene, you need to create one to get started.
+  missingTransform: Missing Transform!
+  noAlphaColorInPaint: You have no alpha in the color. No particle positions will
+    be painted.
+  noLifetimeColors: No lifetime colors created.
+  someFeaturesInScript: Some features are inactivated as this Particle Playground
+    System is running in script mode.
+  notSnapshot: is not a snapshot.
+  notSnapshotText: You can only add snapshots into this slot. First create a snapshot
+    from the new particle system you wish to assign.
+  projectionOnlyWorldSpace: Projection can only run in world space.
+  particleSystemEventAssignErrorSelf: A particle system cannot send events to itself.
+    Please choose another particle system in your Scene.
+  particleSystemEventAssignErrorSnapshot: A particle system cannot send events to
+    a snapshot. Please choose another particle system in your Scene.
+  enableCollisionToSendEvents: You must enable collision on this particle system to
+    send collision events.
+  couldNotReadTexture: Could not read the Import Settings of the selected texture.
+  couldNotReadMesh: Could not read the Import Settings of the selected mesh.
+  notReadable: is not readable. Please change Read/Write Enabled on its Import Settings.
+  editFromHierarchyOnly: Please edit this from Hierarchy only.
+  localScaleWarning: A local scale of anything else than Vector3 (1,1,1) may result
+    in Shuriken component not rendering.
+  rotationSimulationSpace: Would you like to simulate the particle system in local
+    space? This will let source positions and force settings apply along with the
+    particle system's rotation.
+  setLocalSpaceSimulation: Set Local Space Simulation
+  checkForUpdates: Check For Updates
+  language: Language
+  install: Install
+  installType: Install Type
+  installText: The Playground Language Wizard allows you to add a new language to
+    your Playground Settings. Installing as an Asset you need the language file to
+    already be imported to your project.
+  languageFile: Language File
+  languageLocation: Language Location
+  saveLanguage: Save Language
+  loadLanguage: Load Language
+  noLanguageFound: No language could be found.
+  remove: Remove
+  removeAll: Remove all
+  removeLanguage: Are you sure you want to remove the language
+  removePreset: Permanently delete this preset?
+  removePresetText: will be removed. Are you sure?
+  removeParticlePlaygroundSystem: Are you sure you want to remove this Particle Playground
+    System?
+  removeManipulator: Are you sure you want to remove the Manipulator assigned to
+  removeEvent: Remove the events from
+  removeEventsText1: All events connected to this particle system from
+  removeEventsText2: will be removed. Are you sure you want to remove them?
+  removeEventInEventList: Are you sure you want to remove this event?
+  removeSnapshot: Are you sure you want to remove the snapshot
+  removeAllSnapshots: Remove all snapshots?
+  removeAllSnapshotsText: Are you sure you want to remove all snapshot?
+  removeState: Are you sure you want to remove the state
+  deleteBrush: Permanently delete this brush?
+  deleteBrushText: will be removed from your brushes, are you sure?
+  gameObjectIntact: (GameObject in Scene will remain intact)
+  switchToScriptMode: Switch to Script Mode?
+  switchToScriptModeText1: The event target of
+  switchToScriptModeText2: is running in
+  switchToScriptModeText3: mode. All events must be received by Script Mode.
+  yes: Yes
+  no: No
+  ok: Ok
+  switchText: Switch
+  cancel: Cancel
+  openPlaygroundWizard: Open Playground Wizard
+  playgroundParticles: Playground Particles
+  playgroundManager: Playground Manager
+  eventControlled: Event Controlled
+  controlledByAnotherEvent: This Particle Playground System is controlled by events
+    from another particle system.
+  controlledByScript: This Particle Playground System is controlled by script. You
+    can only emit particles from script in this source mode using PlaygroundParticlesC.Emit(position,
+    velocity, color) or let another particle system control it by events. Please see
+    the manual for more details.
+  emissionIndex: Emission Index
+  emissionRate: Emission Rate
+  emit: Emit
+  emitParticles: Emit Particles
+  snapshot: Snapshot
+  source: Source
+  sourceDescription: 'Source is the target method for the particles in this Particle
+    Playground System.
+
+
+    State: Target position and color in a stored state
+
+
+    Transform: Target transforms live in the scene
+
+
+    WorldObject: Target each vertex in a mesh live in the scene
+
+
+    SkinnedWorldObject: Target each vertex in a skinned mesh live in the scene
+
+
+    Script: Behaviour controlled by custom scripts
+
+
+    Paint: Target painted positions and colors made with a brush
+
+
+    Projection: Target projected positions and colors made with a texture'
+  setParticleCount: Set Particle Count
+  proceduralOptions: Procedural Options
+  meshVerticesUpdate: Mesh Vertices Update
+  meshVerticesUpdateDescription: Enable this if the object's mesh is procedural and
+    changes vertices over time.
+  meshNormalsUpdate: Mesh Normals Update
+  meshNormalsUpdateDescription: Enable this if the object's mesh is procedural and
+    changes normals over time.
+  sourceDownResolution: Source Down Resolution
+  particleSettings: Particle Settings
+  forces: Forces
+  collision: Collision
+  rendering: Rendering
+  sortingLayer: Sorting Layer
+  orderInLayer: Order In Layer
+  manipulator: Manipulator
+  manipulators: Manipulators
+  state: State
+  states: States
+  eventName: Event
+  events: Events
+  eventListener: Event Listener
+  typeOfEvent: The type of event.
+  snapshots: Snapshots
+  advanced: Advanced
+  particleSystem: Particle System
+  particleSystems: Particle Systems
+  globalManipulators: Global Manipulators
+  target: Target
+  targets: Targets
+  transition: Transition
+  size: Size
+  strength: Strength
+  shape: Shape
+  sphere: Sphere
+  box: Box
+  bounds: Bounds
+  nullName: Null
+  affects: Affects
+  type: Type
+  time: Time
+  presetText: Create a Particle Playground Preset by selecting a Particle Playground
+    System and an icon (optional). The icon must be in png-format and preferably 32x32
+    pixels. All connected objects will be childed to the Particle Playground System.
+  publishText: Prepare a preset for packaging by selecting the Particle Playground
+    Preset in the list. The icon must be in png-format and preferably 32x32 pixels.
+    All connected meshes, images and/or cached values will be distributed along with
+    your Particle Playground System. Please check all dependencies before you distribute
+    your asset. You agree that Polyfied cannot be held responsible for the quality
+    of your asset when publishing assets connected to the Particle Playground framework.
+  childConnected: Child Connected Objects
+  presetWithSameNameFound: Preset with same name found!
+  presetWithSameNameFoundText: already exists. Do you want to overwrite it?
+  gameObjectIsNotPlayground: GameObject is not a Particle Playground System.
+  brushWizardText: Create a Particle Playground Brush by selecting a texture and edit
+    its settings. The texture must have Read/Write Enabled and use True Color (non-compressed)
+    in its import settings.
+  brushTexture: Brush Texture
+  brushSameName: Brush with same name found!
+  brushSameNameText: already exists. Do you want to overwrite it?
+  playgroundCopyWizardText: The Playground Copy Wizard allows you to copy a particle
+    system into another Particle Playground system. You may need to tweak your target
+    Particle Playground system after copying a Shuriken component.
+  from: From
+  fromType: From Type
+  to: To
+  copy: Copy
+  copyErrorMessageIsPlayground: You have specified a Shuriken component from a Particle
+    Playground system. This is not allowed as it will result in a corrupt copy.
+  copyErrorMessageSameSystem: You have specified the same particle system to copy
+    from. This is an unnecessary procedure.
+  enabled: Enabled
+  transform: Transform
+  transforms: Transforms
+  vector3: Vector3
+  position: Position
+  localPosition: Local Position
+  rotation: Rotation
+  localRotation: Local Rotation
+  scale: Scale
+  distance: Distance
+  radius: Radius
+  points: Points
+  worldObject: World Object
+  skinnedWorldObject: Skinned World Object
+  material: Material
+  attractor: Attractor
+  gravitational: Gravitational
+  repellent: Repellent
+  property: Property
+  combined: Combined
+  vortex: Vortex
+  turbulence: Turbulence
+  turbulenceType: Turbulence Type
+  calculateParticles: Calculate Particles
+  calculateParticlesDescription: Calculate forces on PlaygroundParticles objects.
+    Disabling this overrides independently set values and halts all PlaygroundParticles
+    objects.
+  groupAutomatically: Group Automatically
+  groupAutomaticallyDescription: Automatically parent a PlaygroundParticles object
+    to Playground Manager if it has no parent.
+  buildZeroAlphaPixels: Build Zero Alpha Pixels
+  buildZeroAlphaPixelsDescription: Turn this on if you want to build particles from
+    0 alpha pixels into states.
+  sceneGizmos: Scene Gizmos
+  sceneGizmosDescription: Show gizmos in Scene View for Playground objects.
+  sourcePositions: Source Positions
+  sourcePositionsDescription: Show gizmos in Scene View for particle source positions.
+  wireframes: Wireframes
+  wireframesDescription: Draw wireframes around particles in Scene View.
+  paintToolbox: Paint Toolbox
+  paintToolboxDescription: Show Paint toolbox in Scene View when Source is set to
+    Paint
+  showShuriken: Show Shuriken
+  showShurikenDescription: Show the Shuriken component in Inspector.
+  advancedSnapshots: Advanced Snapshots
+  advancedSnapshotsDescription: Show the snapshots of a particle system in Hierarchy
+    and expose more advanced controls through settings.
+  pixelFilterMode: Pixel Filter Mode
+  pixelFilterModeDescription: Color filtering mode when creating particles from pixels
+    in an image.
+  timeSimulation: Time Simulation
+  reset: Reset
+  editorLimits: Editor Limits
+  transitionTime: Transition Time
+  transitionType: Transition Type
+  findClosestPosition: Find Closest Position
+  transitionTimeMultiplier: Transition Time Multiplier
+  loadFromStart: Load From Start
+  setMaterialAfterTransition: Set Material After Transition
+  particleCount: Particle Count
+  particleLifetime: Particle Lifetime
+  particleRotation: Particle Rotation
+  particleSize: Particle Size
+  particleScale: Particle Scale
+  particleVelocity: Particle Velocity
+  particleColor: Particle Color
+  positionScale: Position Scale
+  particles: particles
+  colorStrength: Color Strength
+  sourceScatter: Source Scatter
+  deltaMovement: Delta Movement
+  deltaMovementStrength: Delta Movement Strength
+  damping: Damping
+  velocity: Velocity
+  velocityStrength: Velocity Strength
+  velocityScale: Velocity Scale
+  initialVelocity: Initial Velocity
+  initialLocalVelocity: Initial Local Velocity
+  initialRotation: Initial Rotation
+  stretchSpeed: Stretch Speed
+  collisionRadius: Collision Radius
+  mass: Mass
+  bounciness: Bounciness
+  depth: Depth
+  depth2D: Depth (2D)
+  color: Color
+  updateRate: Update Rate
+  renderSliders: Render Sliders
+  paintPositions: Paint Positions
+  brushSizeMin: Brush Size Min
+  brushSizeMax: Brush Size Max
+  eraserSizeMin: Eraser Size Min
+  eraserSizeMax: Eraser Size Max
+  paintSpacing: Paint Spacing
+  manipulatorSize: Manipulator Size
+  manipulatorStrength: Manipulator Strength
+  manipulatorZeroVelocityStrength: Zero Velocity Strength
+  manipulatorStrengthEffectors: Strength Effectors
+  trackParticles: Track Particles
+  sendBirthEvents: Send Birth Events
+  sendDeathEvents: Send Death Events
+  sendEnterEvents: Send Enter Events
+  sendExitEvents: Send Exit Events
+  sendCollisionEvents: Send Collision Events
+  smoothingEffect: Smoothing Effect
+  distanceEffect: Distance Effect
+  lifetimeFilter: Lifetime Filter
+  particleFilter: Particle Filter
+  inverseBounds: Inverse Bounds
+  propertyType: Property Type
+  onlyColorInRange: Only Color In Range
+  onlyPositionInRange: Only Position In Range
+  keepColorAlphas: Keep Color Alphas
+  sizeStrength: Size Strength
+  targetStrength: Target Strength
+  deathStrength: Death Strength
+  attractorStrength: Attractor Strength
+  gravitationalStrength: Gravitational Strength
+  repellentStrength: Repellent Strength
+  vortexStrength: Vortex Strength
+  turbulenceStrength: Turbulence Strength
+  meshTarget: Mesh Target
+  skinnedMeshTarget: Skinned Mesh Target
+  targetSorting: Target Sorting
+  mesh: Mesh
+  image: Image
+  lifetimeColor: Lifetime Color
+  paintMode: Paint Mode
+  dot: Dot
+  brush: Brush
+  eraser: Eraser
+  brushPresets: Brush Presets
+  brushShape: Brush Shape
+  brushScale: Brush Scale
+  detail: Detail
+  brushDistance: Brush Distance
+  useBrushColor: Use Brush Color
+  eraserRadius: Eraser Radius
+  paintCollisionType: Paint Collision Type
+  paint: Paint
+  paintMask: Paint Mask
+  maxPaintPositions: Max Paint Positions
+  exceedMaxStopsPaint: Exceed Max Stops Paint
+  exceededMaxPaint: You have exceeded max positions. No new paint positions are possible
+    when Exceed Max Stops Paint is enabled.
+  morePaintThanPositions: You have more paint positions than particles. Increase Particle
+    Count to see all painted positions.
+  start: Start
+  stop: Stop
+  clear: Clear
+  clearPaint: Clear Paint?
+  clearPaintText: Are you sure you want to remove all painted source positions?
+  playgroundPaint: Playground Paint
+  overflowMode: Overflow Mode
+  overflowModeDescription: The method to align the Overflow Offset by.
+  overflowOffset: Overflow Offset
+  loop: Loop
+  disableOnDone: Disable On Done
+  lifetimeSize: Lifetime Size
+  rotateTowardsDirection: Rotate Towards Direction
+  rotationNormal: Rotation Normal
+  lifetimeMethod: Lifetime Method
+  lifetime: Lifetime
+  lifetimeSorting: Lifetime Sorting
+  lifetimeSortingDescription: 'Determines how the particles are ordered on rebirth.
+
+    Scrambled: Randomly placed.
+
+    Scrambled Linear: Randomly placed but never at the same time.
+
+    Burst: Alfa and Omega.
+
+    Linear: Alfa to Omega.
+
+    Reversed: Omega to Alfa.
+
+    NearestNeighbor: Closest to furthest point.
+
+    NearestNeighborReversed: Furthest to closest point.
+
+    User: Specified by AnimationCurve'
+  sortOrigin: Sort Origin
+  customSorting: Custom Sorting
+  lifetimeOffset: Lifetime Offset
+  particleMask: Particle Mask
+  maskTime: Mask Time
+  maskSorting: Mask Sorting
+  off: Off
+  forceAnnihilation: Force Annihilation
+  onlySourcePositions: Only Source Positions
+  onlySourcePositionsDescription: Particles are bound to their source position during
+    their lifetime.
+  assignTransformDeltaMovement: Assign a transform to the active state to enable Delta
+    Movement.
+  lifetimePositioning: Lifetime Positioning
+  onlyLifetimePositioningDescription: Particle movement is bound to the lifetime positioning.
+  useSourceDirection: Use Source Normal Direction
+  axisConstraintsDescription: All forces are disabled as all axis constraints is applied.
+  lifetimeVelocity: Lifetime Velocity
+  initialLocalVelocityControlledByScript: Initial Local Velocity is controlled by
+    passed in velocity to Emit() in script mode.
+  assignTransformLocalVelocity: Assign a transform to the active state to enable Initial
+    Local Velocity.
+  initialVelocityShape: Initial Velocity Shape
+  velocityBending: Velocity Bending
+  bending: Bending
+  timeScale: Time Scale
+  lifetimeStrength: Lifetime Strength
+  gravity: Gravity
+  maxVelocity: Max Velocity
+  axisConstraints: Axis Constraints
+  threeDimensional: 3D
+  twoDimensional: 2D
+  collisionType: Collision Type
+  collisionMask: Collision Mask
+  collideWithRigidbodies: Collide With Rigidbodies
+  lifetimeLoss: Lifetime Loss
+  randomBounce: Random Bounce
+  collisionPlanes: Collision Planes
+  gizmoScale: Gizmo Scale
+  colorSource: Color Source
+  sourceUsesLifetimeAlpha: Source Uses Lifetime Alpha
+  renderMode: Render Mode
+  cameraScale: Camera Scale
+  speedScale: Speed Scale
+  lengthScale: Length Scale
+  startStretch: Start Stretch
+  lifetimeStretch: Lifetime Stretch
+  maxParticleSize: Max Particle Size
+  settingsAndParticles: Settings & Particles
+  settingsOnly: Settings Only
+  particlesOnly: Particles Only
+  simple: Simple
+  newSnapshotName: New Snapshot
+  simulationSpace: Simulation Space
+  localSpace: Local Space
+  globalSpace: Global Space
+  movementCompensation: Movement Compensation
+  movementCompensationLifetimeStrength: Compensation Lifetime Strength
+  rebirthOptions: Rebirth Options
+  randomLifetime: Random Lifetime
+  randomSize: Random Size
+  randomRotation: Random Rotation
+  randomScatter: Random Scatter
+  randomVelocity: Random Velocity
+  forceInitialColor: Force Initial Color
+  lockPosition: Lock Position
+  positionIsLocal: Position Is Local
+  lockRotation: Lock Rotation
+  rotationIsLocal: Rotation Is Local
+  lockScale: Lock Scale
+  syncParticlesToMainThread: Sync Particles To Main-Thread
+  multithreadedManipulators: Multithreaded Manipulators
+  autoPauseCalculation: Auto-Pause Calculation
+  particlePool: Particle Pool
+  broadcastType: Broadcast Type
+  broadcastTypeDescription: Set to broadcast to a Target and/or Event Listeners.
+  collisionThreshold: Collision Threshold
+  inheritancePosition: The inheritance for position.
+  inheritanceVelocity: The inheritance for velocity.
+  inheritanceColor: The inheritance for color.
+  velocityMultiplier: Velocity Multiplier
+  activeState: Active State
+  nameText: Name
+  stateMeshDescription: The source mesh to construct particles from vertices. When
+    a mesh is used the texture is used to color each vertex.
+  stateTextureDescription: The source texture to construct particles from pixels.
+    When a mesh is used this texture is used to color each vertex.
+  stateDepthmapDescription: The source texture to apply depthmap onto Texture's pixels.
+    Not compatible with meshes.
+  stateDepthmapStrengthDescription: How much the grayscale of the depthmap will affect
+    Z-value.
+  stateTransformDescription: The transform to parent this state.
+  stateScaleDescription: The scale of width-height ratio.
+  stateOffsetDescription: The offset from Particle System origin.
+  brushNameDescription: The name of this brush preset
+  brushShapeDescription: The texture to construct this Brush from
+  brushScaleDescription: The scale of this Brush (measured in Units)
+  brushDetail: Brush Detail
+  brushDetailDescription: The detail level of this brush
+  brushDistanceDescription: The distance the brush reaches
+  paintSpacingDescription: The required space between the last and current paint position
+  exceedMaxStopsPaintDescription: Should painting stop when paintPositions is equal
+    to maxPositions (if false paint positions will be removed from list when painting
+    new ones)
+  texture: Texture
+  depthmap: Depthmap
+  depthmapStrength: Depthmap Strength
+  offset: Offset
+  createState: Create State
+  projectionTexture: Projection Texture
+  liveUpdate: Live Update
+  originOffset: Origin Offset
+  projectionDistance: Projection Distance
+  projectionScale: Projection Scale
+  surfaceOffset: Surface Offset
+  projectionMask: Projection Mask
+  projectionCollisionType: Projection Collision Type
+  collisionDisabledDescription: Collisions are disabled due to your Force settings.
+  onlySizeInRange: Only Size In Range
+  sendToManager: Send To Manager
+  clearOnStop: Clear On Stop
+  multithreading: Multithreading
+  particleThreadMethod: Particle Thread Method
+  skinnedMeshThreadMethod: Skinned Mesh Thread Method
+  turbulenceThreadMethod: Turbulence Thread Method
+  threadMethodDescription: Determines which multithreading method should be used.
+  maxThreads: Max Threads
+  maxThreadsDescription: The maximum amount of threads that can be created. The amount
+    of created threads will never exceed available CPUs.
+  threadInfo01: No calculation threads will be created. This will in most cases have
+    a negative impact on performance as Particle Playground will calculate along all
+    other logic on the main-thread. Use this for debug purposes or if you know there's
+    no multi- or hyperthreading possibilities on your target platform.
+  threadInfo02: One calculation thread per particle system will be created. Use this
+    when having heavy particle systems in your scene. Note that this method will never
+    bundle calculation calls.
+  threadInfo03: One calculation thread for all particle systems will be created. Use
+    this if you have other multithreaded logic which has higher performance priority
+    than Particle Playground or your project demands strict use of garbage collection.
+  threadInfo04: Calculation threads will distribute evenly for all particle systems
+    in your scene. This will bundle calculation calls to match the platform's SystemInfo.processorCount.
+    This is the recommended and overall fastest method to calculate particle systems.
+  thread: Thread
+  assignATexture: You need to assign a texture.
+  useAnotherSourceTransform: Use another Source Transform than your particle system
+    to enable this effect.
+  activeThreads: active threads
+  processors: processors
+  prefabConnection: Prefab Connection
+  noAssetsFoundMessage: The Particle Playground assets couldn't be found in the specified
+    path. Please edit the paths to match your current project.
+  skinnedMeshOptimizeGameObjectsMessage: Consider to disable Optimize Game Objects
+    for the Import Settings of your skinned mesh. Having Optimize Game Objects enabled
+    will be a lot slower for a Particle Playground system to calculate as it must
+    extract the vertices each frame.
+  castShadows: Cast Shadows
+  receiveShadows: Receive Shadows
+  sorting: Sorting
+  sortMode: Sort Mode
+  sortingFudge: Sorting Fudge
+  textureSheetAnimation: Texture Sheet Animation
+  tiles: Tiles
+  animation: Animation
+  randomRow: Random Row
+  row: Row
+  animationMethod: Animation Method
+  frameOverTime: Frame Over Time
+  chromaKey: Chroma Key
+  spread: Spread
+  spline: Spline
+  splines: Splines
+  newSplineMessage: Assign an existing Playground Spline component from your scene
+    or press Create to start working with a new Playground Spline (will be parented
+    to this particle system). To edit a Playground Spline you select it in Hierarchy.
+  allSplinesMustBeAssignedMessage: All splines must be assigned and enabled.
+  treatAsOneSpline: Treat As One Spline
+  playgroundSpline: Playground Spline
+  selection: Selection
+  node: Node
+  nodes: Nodes
+  bezier: Bezier
+  selectedNode: Selected Node
+  selectedBezierHandle: Selected Bezier Handle
+  bezierMode: Bezier Mode
+  addNode: Add Node
+  removeSelectedNode: Remove Selected Node
+  usedBy: Used By
+  noUser: No User
+  easing: Easing
+  easingVelocity: Easing Velocity
+  timeOffset: Time Offset
+  positionOffset: Position Offset
+  reverse: Reverse
+  targetMethod: Target Method
+  overflowOffsetSplineMessage: Overflow Offset can't be applied when using Spline
+    as Source.
+  noSplineUserMessage: No Particle Playground system is using this spline.
+  removeUserTitle: Remove user?
+  removeUserMessage: Do you want to remove this spline from the Particle Playground
+    system?
+  convertAllToTransforms: Convert All To Transforms
+  convertAllToVector3: Convert All To Vector3
+  reverseAllNodes: Reverse All Nodes
+  velocityOnNewNode: Velocity On New Node
+  moveTransformsAsBeziers: Move Transforms As Beziers
+  exportWithNodeStructure: Export With Node Structure
+  drawSplinePreview: Spline Preview
+  drawSplinePreviewDescription: Draws the shape of a spline assigned to a particle
+    system when selected in Hierarchy.
+  newEmpty: New Empty
+  noSplinesCreated: No splines are created.
+  colorMethod: Color Method
+  arrayColor: Array Color
+  arrayAlpha: Array Alpha
+  applyArrayAlpha: Apply Array Alpha
+  collisionExclusion: Collision Exclusion
+  collisionExclusionMessage: No objects are excluded from collision.
+  treatAsOneTransform: Treat As One Transform
+  allTransformsMustBeAssignedMessage: All transforms must be assigned.
+  assignTransformMessage: Please assign a transform.
+  method: Method
+  range: Range
+  sectorA: Sector A
+  sectorB: Sector B
+  lifetimeEmission: Lifetime Emission
+  prewarm: Prewarm
+  prewarmLifetimeCycles: Prewarm Lifetime Cycles
+  prewarmCyclesResolution: Prewarm Cycles (Resolution)
+  inverseRigidbodyCollision: Inverse Rigidbody Collision
+  locks: Locks
+  onEnable: On Enable
+  misc: Misc
+  deltaPositionAdjustment: Delta Position Adjustment
+  arraySize: Array Size
+  sourcePoint: Source Point
+  emission: Emission
+  on: On
+  constantForce: Constant Force
+  initialGlobalVelocity: Initial Global Velocity
+  shadows: Shadows
+  collisionSettings: Collision Settings
+  sync: Sync
+  transitionBackToSource: Transition Back To Source
+  transitionAmount: Transition Amount
+  calculateManipulator: Calculate Manipulator
+  renderer: Renderer
+  hierarchyIcon: Hierarchy Icon
+  minimumShurikenLifetime: Minimum Shuriken Lifetime
+  calculationTrigger: Calculation Trigger
+  calculationTriggerSize: Calculation Trigger Size
+  calculationTriggerOffset: Calculation Trigger Offset
+  drawGizmo: Draw Gizmo
+  drawBezierGizmo: Draw Bezier Gizmo
+  bezierWidth: Bezier Width
+  outOfView: Out Of View
+  autoPause: Auto-Pause
+  forceUpdateOnMainThread: Force Update On Main-Thread
+  forceUpdateOnMainThreadDescription: Enable this to ensure that skinned meshes are
+    in absolute sync with their source positions. This may give a noticeable hit on
+    performance.
+  trackingMethod: Tracking Method
+  animationTimeMethod: Animation Time Method
+  upSymbol: "\u2191"
+  downSymbol: "\u2193"

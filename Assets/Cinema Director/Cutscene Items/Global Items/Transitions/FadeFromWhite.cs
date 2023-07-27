@@ -17,15 +17,15 @@ namespace CinemaDirector
         /// </summary>
         void Awake()
         {
-            if (guiTexture == null)
+            if (GetComponent<GUITexture>() == null)
             {
                 gameObject.transform.position = Vector3.zero;
                 gameObject.transform.localScale = new Vector3(100, 100, 100);
                 gameObject.AddComponent<GUITexture>();
-                guiTexture.enabled = false;
-                guiTexture.texture = new Texture2D(1, 1);
-                guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
-                guiTexture.color = Color.clear;
+                GetComponent<GUITexture>().enabled = false;
+                GetComponent<GUITexture>().texture = new Texture2D(1, 1);
+                GetComponent<GUITexture>().pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+                GetComponent<GUITexture>().color = Color.clear;
             }
         }
 
@@ -34,9 +34,9 @@ namespace CinemaDirector
         /// </summary>
         public override void Trigger()
         {
-            guiTexture.enabled = true;
-            guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
-            guiTexture.color = From;
+            GetComponent<GUITexture>().enabled = true;
+            GetComponent<GUITexture>().pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+            GetComponent<GUITexture>().color = From;
         }
 
         /// <summary>
@@ -67,12 +67,12 @@ namespace CinemaDirector
         {
             if (time >= 0 && time <= Duration)
             {
-                guiTexture.enabled = true;
+                GetComponent<GUITexture>().enabled = true;
                 UpdateTime(time, deltaTime);
             }
-            else if (guiTexture.enabled)
+            else if (GetComponent<GUITexture>().enabled)
             {
-                guiTexture.enabled = false;
+                GetComponent<GUITexture>().enabled = false;
             }
         }
 
@@ -81,7 +81,7 @@ namespace CinemaDirector
         /// </summary>
         public override void End()
         {
-            guiTexture.enabled = false;
+            GetComponent<GUITexture>().enabled = false;
         }
 
         /// <summary>
@@ -89,9 +89,9 @@ namespace CinemaDirector
         /// </summary>
         public override void ReverseEnd()
         {
-            guiTexture.enabled = true;
-            guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
-            guiTexture.color = To;
+            GetComponent<GUITexture>().enabled = true;
+            GetComponent<GUITexture>().pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+            GetComponent<GUITexture>().color = To;
         }
 
         /// <summary>
@@ -99,9 +99,9 @@ namespace CinemaDirector
         /// </summary>
         public override void Stop()
         {
-            if (guiTexture != null)
+            if (GetComponent<GUITexture>() != null)
             {
-                guiTexture.enabled = false;
+                GetComponent<GUITexture>().enabled = false;
             }
         }
 
@@ -113,7 +113,7 @@ namespace CinemaDirector
         /// <param name="transition">the Lerp transition value</param>
         private void FadeToColor(Color from, Color to, float transition)
         {
-            guiTexture.color = Color.Lerp(from, to, transition);
+            GetComponent<GUITexture>().color = Color.Lerp(from, to, transition);
         }
     }
 }

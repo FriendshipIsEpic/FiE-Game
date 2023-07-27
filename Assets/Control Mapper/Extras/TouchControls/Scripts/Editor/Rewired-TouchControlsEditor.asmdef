@@ -1,0 +1,12 @@
+{
+    "name": "Rewired-TouchControlsEditor",
+    "references": [
+        "Rewired"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

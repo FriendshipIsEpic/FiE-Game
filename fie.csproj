@@ -2266,6 +2266,56 @@
     <Compile Include="Assets\Highlighting System\Scripts\Internal\HighlightingBase.cs" />
     <Compile Include="Assets\Highlighting System\Scripts\Internal\RendererCache.cs" />
     <Compile Include="Assets\Highlighting System\Scripts\Internal\ShaderPropertyID.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Examples\ControlMapperDemo\Scripts\ControlMapperDemoMessage.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ButtonInfo.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CalibrationWindow.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CanvasScalerExt.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CanvasScalerFitter.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ControlMapper.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ControlMapper_Classes.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ControlMapper_Enums.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ControlMapper_InputGrid.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ControlMapper_WindowManager.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CustomButton.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CustomSlider.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\CustomToggle.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\Editor\ControlMapperInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\Editor\CustomButtonInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\Editor\CustomSliderInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\Editor\CustomToggleInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ICustomSelectable.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\InputBehaviorWindow.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\InputFieldInfo.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\InputRow.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\LanguageData.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ScrollbarVisibilityHelper.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ScrollRectSelectableChild.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ThemedElement.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ThemeSettings.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\ToggleInfo.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UIControl.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UIControlSet.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UIElementInfo.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UIGroup.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UIImageHelper.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UISelectionUtility.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UISliderControl.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\UITools.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\ControlMapper\Scripts\Window.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\TouchControls\Examples\TouchControls1\Scripts\TouchControls1_ManipulateCube.cs" />
+    <Compile Include="Assets\Control Mapper\Extras\TouchControls\Scripts\Editor\MenuCommands.cs" />
+    <Compile Include="Assets\Control Mapper\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\DataStorage\UserDataStore_PlayerPrefs.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\ControllerDataFilesInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\CustomInspector_External.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\HardwareJoystickMapInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\HardwareJoystickTemplateMapInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\InputManagerInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\CustomInspectors\UserDataStore_PlayerPrefsInspector.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Editor\UnityEditorBridge.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\InputManager.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Misc\ExternalTools.cs" />
+    <Compile Include="Assets\Control Mapper\Internal\Scripts\Platforms\Ouya\OuyaInputSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />
@@ -2321,6 +2371,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
     </Reference>
+    <Reference Include="Rewired_Editor">
+      <HintPath>Assets\Control Mapper\Internal\Libraries\Editor\Rewired_Editor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -2328,6 +2381,9 @@
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.XML" />
+    <Reference Include="UnityEditor.UI">
+      <HintPath>packages\UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>packages\UnityEngine.dll</HintPath>
     </Reference>

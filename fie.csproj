@@ -2259,6 +2259,13 @@
     <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundBrushPresetC.cs" />
     <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundPresetCircleShotC.cs" />
     <Compile Include="Assets\Particle Playground\Scripts\Presets\PlaygroundPresetLaserC.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Highlighter.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\HighlightingRenderer.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Internal\HighlighterInternal.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Internal\HighlighterManager.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Internal\HighlightingBase.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Internal\RendererCache.cs" />
+    <Compile Include="Assets\Highlighting System\Scripts\Internal\ShaderPropertyID.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitattributes" />

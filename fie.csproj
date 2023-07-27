@@ -2371,6 +2371,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
     </Reference>
+    <Reference Include="PKFx-Editor">
+      <HintPath>Assets\PopcornFX\Scripts\Editor\PKFx-Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PKFx-Helper">
+      <HintPath>Assets\PopcornFX\Scripts\PKFx-Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="PKFx-Runtime">
+      <HintPath>Assets\PopcornFX\Scripts\PKFx-Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PKFxManager">
+      <HintPath>Assets\PopcornFX\Scripts\PKFxManager.dll</HintPath>
+    </Reference>
     <Reference Include="Rewired_Editor">
       <HintPath>Assets\Control Mapper\Internal\Libraries\Editor\Rewired_Editor.dll</HintPath>
     </Reference>

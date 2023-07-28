@@ -1,0 +1,791 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0e429d9ea264321b2a0e5758212180, type: 3}
+  m_Name: Swedish
+  m_EditorClassIdentifier: 
+  languageNameSeenByEnglish: Swedish
+  languageName: Svenska
+  playgroundName: Particle Playground
+  newParticlePlaygroundSystem: Nytt Partikelsystem
+  playgroundWizard: Playgroundguiden
+  playgroundPresetWizard: "Playground F\xF6rinst\xE4llningsguide"
+  presetWizard: "F\xF6rinst\xE4llningsguiden"
+  playgroundCopyWizard: Playground Kopieringsguide
+  copyWizard: Kopieringsguiden
+  languageInstallWizard: "Spr\xE5kinstalleringsguide"
+  playgroundBrushWizard: Playground Penselguide
+  brushWizard: Penselguide
+  preset: "F\xF6rinst\xE4llning"
+  presets: "F\xF6rinst\xE4llningar"
+  publish: Publicera
+  all: Alla
+  user: "Anv\xE4ndare"
+  example: Exempel
+  examples: Exempel
+  assets: Assets
+  resources: Resources
+  icon: Ikon
+  icons: Ikoner
+  list: Lista
+  create: Skapa
+  createPreset: "Skapa F\xF6rinst\xE4llning"
+  convertTo: Konvertera till
+  edit: Redigera
+  export: Exportera
+  settings: "Inst\xE4llningar"
+  none: Ingen
+  fix: Fixa
+  save: Spara
+  load: Ladda
+  rebuild: Bygg om
+  refresh: Updatera
+  xml: Xml
+  asset: Asset
+  browse: Browse
+  category: Category
+  paths: "S\xF6kv\xE4gar"
+  playgroundPath: "Playground S\xF6kv\xE4g"
+  languagesPath: "Spr\xE5k S\xF6kv\xE4g"
+  resourcesPresetPath: Resources Preset Path
+  assetsPresetPath: Assets Preset Path
+  presetIconPath: "F\xF6rinst\xE4llningsikons\xF6kv\xE4g"
+  brushPath: "Pensels\xF6kv\xE4g"
+  scriptPath: "Skripts\xF6kv\xE4g"
+  updateUrl: Uppdaterings URL
+  extensionsUrl: "Till\xE4ggs URL"
+  extendYourPlayground: "Ut\xF6ka Playground"
+  officialSite: Officiell Webbplats
+  assetStore: Asset Store
+  manual: Manual
+  supportForum: Support Forum
+  mailSupport: E-post Till Support
+  updateAvailable: "Uppdatering Tillg\xE4nglig"
+  updateAvailableText: "\xE4r tillg\xE4nglig. V\xE4nligen bes\xF6k Unity Asset Store
+    f\xF6r att ladda hem den nya versionen."
+  unityAssetStore: Unity Asset Store
+  searchNoPresetFound: "Ingen f\xF6rinst\xE4llning hittad som inneh\xE5ller"
+  noPresetsFound: "Inga f\xF6rinst\xE4llningar hittade. Tryck p\xE5 \"Skapa\" f\xF6r
+    att skapa en ny f\xF6rinst\xE4llning."
+  noResourcesPresetsFound: "Inga f\xF6rinst\xE4llningar hittades i n\xE5gon \"Resources/Presets\"
+    mapp. Tryck p\xE5 \"Skapa\" f\xF6r att g\xF6ra ett nytt f\xF6rinst\xE4llt partikelsystem."
+  noAssetPresetsFound: "Inga 'asset'-f\xF6rinst\xE4llnigar hittades. Se till att dessa
+    \xE4r sparade i"
+  noPresetsFoundInProject: "Ingen f\xF6rinst\xE4llning funnen. Se till att s\xF6kv\xE4gen
+    till dina f\xF6rinst\xE4llningar \xE4r"
+  noSettingsFile: "Ingen inst\xE4llningsfil hittad. Du m\xE5ste ha en inst\xE4llningsfil
+    i"
+  noParticleSystems: Inga partikelsystem skapade.
+  noManipulators: Inga manipulerare skapade.
+  noProperties: Inga egenskaper skapade.
+  noTarget: "Inget m\xE5l"
+  noTargets: "Inga m\xE5l skapade."
+  noEvents: Inga event skapade.
+  noMesh: Ingen modell
+  noCollisionPlanes: Inga kollisionsplan skapade.
+  noSnapshots: "Inga partikel\xF6gonblick skapade."
+  noStates: "Inga tillst\xE5nd skapade."
+  allTargets: "Alla m\xE5l m\xE5ste vara tilldelade."
+  noPlaygroundManager: "Playground Hanteraren k\xF6r alla partikelsystem i scenen.
+    Du beh\xF6ver skapa en f\xF6r att komma ig\xE5ng."
+  missingTransform: Saknar Transform!
+  noAlphaColorInPaint: "Du har ingen alfa i f\xE4rgen. Inga partikelpositioner kommer
+    att m\xE5las ut."
+  noLifetimeColors: "Inga livsf\xE4rger skapade."
+  someFeaturesInScript: "Vissa inst\xE4llningar \xE4r inaktiverade eftersom detta
+    partikelsystem k\xF6rs i skript-l\xE4ge."
+  notSnapshot: "\xE4r inte ett partikel\xF6gonblick."
+  notSnapshotText: "Du kan bara tilldela partikel\xF6gonblick h\xE4r. Skapa f\xF6rst
+    ett partikel\xF6gonblick fr\xE5n det partikelsystem du vill ska tilldelas."
+  projectionOnlyWorldSpace: "Projektion kan bara k\xF6ras i v\xE4rldskoordinater."
+  particleSystemEventAssignErrorSelf: "Ett partikelsystem kan inte skicka data f\xF6r
+    emission till sig sj\xE4lv. V\xE4nligen v\xE4lj ett annat partikelsystem i din
+    scen."
+  particleSystemEventAssignErrorSnapshot: "Ett partikelsystem kan inte skicka data
+    f\xF6r emission till ett partikelsystem som \xE4r ett partikel\xF6gonblick. V\xE4nligen
+    v\xE4lj ett annat partikelsystem i din scen."
+  enableCollisionToSendEvents: "Du m\xE5ste sl\xE5 p\xE5 kollision f\xF6r detta partikelsystem
+    f\xF6r att skicka kollisionsdata."
+  couldNotReadTexture: "Kunde inte l\xE4sa importeringsinst\xE4llningarna f\xF6r den
+    valda texturen."
+  couldNotReadMesh: "Kunde inte l\xE4sa importeringsinst\xE4llningarna f\xF6r den
+    valda modellen."
+  notReadable: "\xE4r inte l\xE4sbar. V\xE4nligen \xE4ndra till L\xE4s/Skrivbar i
+    dess importeringsinst\xE4llning."
+  editFromHierarchyOnly: "Endast redigerbar fr\xE5n hierarkin."
+  localScaleWarning: "En skala annorlunda \xE4n Vector3 (1,1,1) kan resultera i att
+    partikelsystemet inte renderas."
+  rotationSimulationSpace: "Vill du simulera partikelsystemet i lokal rymd? Detta
+    till\xE5ter k\xE4llpositioner och krafters inst\xE4llning att appliceras med k\xE4llans
+    rotation."
+  setLocalSpaceSimulation: "S\xE4tt Simulering Till Lokal Rymd"
+  checkForUpdates: "S\xF6k Efter Uppdateringar"
+  language: "Spr\xE5k"
+  install: Installera
+  installType: Installationstyp
+  installText: "Spr\xE5kinstalleringsguiden till\xE5ter dig att installera nya spr\xE5k
+    till dina Playground inst\xE4llningar. N\xE4r du installerar som en Asset kr\xE4vs
+    det att du redan har importerat din inst\xE4llningsfil till ditt projekt."
+  languageFile: "Spr\xE5kfil"
+  languageLocation: "Spr\xE5ks\xF6kv\xE4g"
+  saveLanguage: "Spara spr\xE5k"
+  loadLanguage: "Ladda spr\xE5k"
+  noLanguageFound: "Inga spr\xE5k kunde hittas."
+  remove: Ta bort
+  removeAll: Ta bort alla
+  removeLanguage: "\xC4r du s\xE4ker p\xE5 att du vill ta bort spr\xE5ket"
+  removePreset: Ta bort denna preset permanent?
+  removePresetText: "kommer att tas bort. \xC4r du s\xE4ker?"
+  removeParticlePlaygroundSystem: "\xC4r du s\xE4ker p\xE5 att du vill ta bort detta
+    Particle Playground-system?"
+  removeManipulator: "\xC4r du s\xE4ker p\xE5 att du vill ta bort manipuleraren tilldelad"
+  removeEvent: "Ta bort event fr\xE5n"
+  removeEventsText1: "Alla event kopplade till detta partikelsystem fr\xE5n"
+  removeEventsText2: "kommer att tas bort. \xC4r du s\xE4ker p\xE5 att du vill ta
+    bort dem?"
+  removeEventInEventList: "\xC4r du s\xE4ker p\xE5 att du vill ta bort detta event?"
+  removeSnapshot: "\xC4r du s\xE4ker p\xE5 att du vill ta bort detta partikel\xF6gonblick?"
+  removeAllSnapshots: "Ta bort alla partikel\xF6gonblick?"
+  removeAllSnapshotsText: "\xC4r du s\xE4ker p\xE5 att du vill ta bort alla partikel\xF6gonblick?"
+  removeState: "\xC4r du s\xE4ker p\xE5 att du vill ta bort detta tillst\xE5nd?"
+  deleteBrush: Ta bort denna pensel permanent?
+  deleteBrushText: "kommer att tas bort fr\xE5n dina penslar. \xC4r du s\xE4ker?"
+  gameObjectIntact: (GameObject i scenen kommer att vara kvar)
+  switchToScriptMode: "Byt till skript-l\xE4ge?"
+  switchToScriptModeText1: "Event m\xE5let av"
+  switchToScriptModeText2: "k\xF6rs i"
+  switchToScriptModeText3: "l\xE4ge. Alla event m\xE5ste tas emot i skript-l\xE4ge."
+  yes: Ja
+  no: Nej
+  ok: Ok
+  switchText: Byt
+  cancel: Avbryt
+  openPlaygroundWizard: "\xD6ppna Playground-guiden"
+  playgroundParticles: Playground Partiklar
+  playgroundManager: Playgroundhanteraren
+  eventControlled: Kontrollerad av event
+  controlledByAnotherEvent: "Detta Particle Playground-system \xE4r kontrollerat av
+    event fr\xE5n ett annat partikelsystem."
+  controlledByScript: "Detta Particle Playground-system \xE4r kontrollerat av skript.
+    Du kan endast aktivera emission fr\xE5n skript genom PlaygroundParticlesC.Emit(position,
+    velocity, color) eller l\xE5ta ett annat partikelsystem g\xF6ra detta genom event.
+    V\xE4nligen se manualen f\xF6r vidare information."
+  emissionIndex: Emissions-index
+  emissionRate: "Emissionsm\xE4ngd"
+  emit: Emittera
+  emitParticles: Emittera partiklar
+  snapshot: "Partikel\xF6gonblick"
+  source: "K\xE4lla"
+  sourceDescription: "K\xE4llan \xE4r metoden som partiklar skapas fr\xE5n.\n\nTillst\xE5nd:
+    Skapa partiklar och dess f\xE4rger fr\xE5n en textur eller 3d-modell\n\nTransform:
+    Skapa partiklar fr\xE5n en Transform i scenen\n\nWorld Object: Skapa partiklar
+    fr\xE5n vertiser i en 3d-modell i scenen\n\nSkinnedWorldObject: Skapa partiklar
+    fr\xE5n vertiser i en animerad 3d-modell med benstruktur i scenen\n\nSkript: Partiklars
+    k\xE4lla \xE4r kontrollerad av skript\n\nM\xE5la: Skapa partiklar och dess f\xE4rger
+    fr\xE5n m\xE5lade positioner med pensel\n\nProjektion: Skapa partiklar och dess
+    f\xE4rg fr\xE5n en textur projicerad i scenen"
+  setParticleCount: "S\xE4tt Partikelantal"
+  proceduralOptions: "Inst\xE4llningar f\xF6r f\xF6r\xE4nderlig k\xE4lla"
+  meshVerticesUpdate: Uppdatera modellens vertiser
+  meshVerticesUpdateDescription: "Aktivera detta om modellens vertiser f\xF6r\xE4ndras
+    \xF6ver tid"
+  meshNormalsUpdate: Upddatera modellens normaler
+  meshNormalsUpdateDescription: "Aktivera detta om modellens normaler f\xF6r\xE4ndras
+    \xF6ver tid"
+  sourceDownResolution: "K\xE4lluppl\xF6sningsskala"
+  particleSettings: "Partikelinst\xE4llningar"
+  forces: Krafter
+  collision: Kollisioner
+  rendering: Rendering
+  sortingLayer: Sorteringslager
+  orderInLayer: Ordning i lagret
+  manipulator: Manipulerare
+  manipulators: Manipulerare
+  state: "Tillst\xE5nd"
+  states: "Tillst\xE5nd"
+  eventName: Event
+  events: Event
+  eventListener: Eventlyssnare
+  typeOfEvent: Typ av event
+  snapshots: "Partikel\xF6gonblick"
+  advanced: Avancerat
+  particleSystem: Partikelsystem
+  particleSystems: Partikelsystem
+  globalManipulators: Globala Manipulerare
+  target: "M\xE5l"
+  targets: "M\xE5l"
+  transition: "\xD6verg\xE5ng"
+  size: Storlek
+  strength: Styrka
+  shape: Form
+  sphere: "Sf\xE4r"
+  box: Box
+  bounds: "Gr\xE4ns"
+  nullName: Null
+  affects: "P\xE5verkar"
+  type: Typ
+  time: Tid
+  presetText: "Skapa en Particle Playground f\xF6rinst\xE4llning genom att v\xE4lja
+    ett partikelsystem och en ikon (ej n\xF6dv\xE4ndigt). Ikonen m\xE5ste vara i PNG-format
+    och 32x32 pixlar f\xF6r b\xE4sta presentation. Alla objekt kopplade till partikelsystemet
+    kommer att l\xE4ggas under dess hierarki."
+  publishPresetText: "F\xF6rbered dina partikelsystem f\xF6r paketering genom att
+    v\xE4lja dem i listan. Alla kopplade modeller, texturer och lagrade v\xE4rden
+    kommer att distribueras med dina Particle Playground-system. Ikonen kommer automatiskt
+    att inkluderas om s\xE5dan finns. V\xE4nligen se \xF6ver alla knutna tillg\xE5ngar
+    till ditt paket innan du distribuerar. Du \xF6verrensst\xE4mmer att Polyfied inte
+    kan h\xE5llas ansvarig f\xF6r kvalit\xE9n av inneh\xE5llet i det du distribuerar
+    n\xE4r du publicerar tillg\xE5ngar kopplade till Particle Playground."
+  publishingGuide: Publishing Guide
+  childConnected: "Gruppera objekt till f\xF6rinst\xE4llning"
+  presetWithSameNameFound: "F\xF6rinst\xE4llning med samma namn funnet!"
+  presetWithSameNameFoundText: "finns redan. Vill du ers\xE4tta den?"
+  gameObjectIsNotPlayground: "GameObject \xE4r inte ett Particle Playground-system"
+  brushWizardText: "Skapa en Particle Playground pensel genom att v\xE4lja en textur
+    och redigera penselns inst\xE4llningar. Texturen m\xE5ste vara skriv/l\xE4sbar
+    och anv\xE4nda True Color (okomprimerad) i dess importeringsinst\xE4llning."
+  brushTexture: Penseltextur
+  brushSameName: Pensel med samma namn funnet!
+  brushSameNameText: "finns redan. Vill du ers\xE4tta den?"
+  playgroundCopyWizardText: "Kopieringsguiden till\xE5ter dig att kopiera ett partikelsystem
+    till ett annat. Du kan beh\xF6va redigera ditt partikelsystem efter att du kopierat
+    en Shuriken-komponent."
+  from: "Fr\xE5n"
+  fromType: "Fr\xE5n Typ"
+  to: Till
+  copy: Kopiera
+  copyErrorMessageIsPlayground: "Du har specificerat en Shuriken-komponent fr\xE5n
+    ett Particle Playground system. Detta \xE4r inte till\xE5tet och kommer att resultera
+    i en korrupt kopia."
+  copyErrorMessageSameSystem: "Du har specificerat samma partikelsystem som k\xE4lla
+    och m\xE5l. Detta \xE4r en on\xF6dig process."
+  enabled: Aktiverad
+  transform: Transform
+  transforms: Transforms
+  vector3: Vector3
+  position: Position
+  localPosition: Lokal Position
+  rotation: Rotation
+  localRotation: Lokal Rotation
+  scale: Skala
+  distance: Distans
+  radius: Radie
+  points: Punkter
+  worldObject: World Object
+  skinnedWorldObject: Skinned World Object
+  material: Material
+  attractor: Attraherare
+  gravitational: Graviterare
+  repellent: "Bortst\xF6tare"
+  property: Egenskap
+  combined: Kombinerad
+  vortex: Virvel
+  turbulence: Turbulens
+  turbulenceType: Turbulence Type
+  calculateParticles: "Ber\xE4kna Partiklar"
+  calculateParticlesDescription: "Ber\xE4kna krafter p\xE5 PlaygroundParticles-objekt.
+    Inaktivering \xF6verskrider egna v\xE4rden och kommer att stoppa alla PlaygroundParticles-objekt."
+  groupAutomatically: Gruppera Automatiskt
+  groupAutomaticallyDescription: "Gruppera partikelsystem automatiskt till Playground-hanteraren
+    om den inte har n\xE5gon f\xF6r\xE4lder i hierarkin."
+  buildZeroAlphaPixels: Bygg Pixlar Med Noll Alpha
+  buildZeroAlphaPixelsDescription: "Anv\xE4nd detta om du vill att partikelsystem
+    bygger k\xE4llpositioner fr\xE5n pixlar med 0 alpha i texturen."
+  sceneGizmos: Scen Gizmos
+  sceneGizmosDescription: "Visa gizmos i scenvyn f\xF6r Playground-objekt."
+  sourcePositions: "K\xE4llpositioner"
+  sourcePositionsDescription: "Visa gizmos i scenvyn f\xF6r partiklars k\xE4llpositioner."
+  wireframes: "Tr\xE5dmodeller"
+  wireframesDescription: "Visa tr\xE5dmodeller runt partiklar i scenvyn."
+  paintToolbox: "Verktygsl\xE5da vid m\xE5lning"
+  paintToolboxDescription: "Visa verktygsl\xE5da f\xF6r m\xE5lning i scenvyn n\xE4r
+    k\xE4lla \xE4r satt till Paint"
+  showShuriken: Visa Shuriken
+  showShurikenDescription: Visa Shuriken-komponenten i Inspector.
+  advancedSnapshots: "Avancerade Partikel\xF6gonblick"
+  advancedSnapshotsDescription: "Visa partikel\xF6gonblick f\xF6r ett partikelsystem
+    i Hierarkin och exponera mer av dess inst\xE4llningar."
+  pixelFilterMode: Pixelfiltrering
+  pixelFilterModeDescription: "F\xE4rgfiltrering n\xE4r partiklar skapas fr\xE5n pixlar
+    i en bild."
+  timeSimulation: Tidssimulation
+  reset: "\xC5terst\xE4ll"
+  editorLimits: "Editor-begr\xE4nsningar"
+  transitionTime: "\xD6verg\xE5ngstid"
+  transitionType: "\xD6verg\xE5ngstyp"
+  findClosestPosition: "Hitta N\xE4rmaste Position"
+  transitionTimeMultiplier: "\xD6verg\xE5ngstidsmultiplicerare"
+  loadFromStart: "Ladda Fr\xE5n Start"
+  setMaterialAfterTransition: "S\xE4tt Material Efter \xD6verg\xE5ng"
+  particleCount: "Partikelm\xE4ngd"
+  particleLifetime: Partikellivstid
+  particleRotation: Partikelrotation
+  particleSize: Partikelstorlek
+  particleScale: Partikelskala
+  particleVelocity: Partikelhastighet
+  particleColor: "Partikelf\xE4rg"
+  positionScale: Positionsskala
+  particles: partiklar
+  colorStrength: "F\xE4rgstyrka"
+  sourceScatter: "K\xE4llspridning"
+  deltaMovement: "Skillnadsr\xF6relse"
+  deltaMovementStrength: "Skillnadsr\xF6relsestyrka"
+  damping: "Tr\xF6ghet"
+  velocity: Hastighet
+  velocityStrength: Hastighetsstyrka
+  velocityScale: Velocity Scale
+  initialVelocity: Initial Hastighet
+  initialLocalVelocity: Initial Lokal Hastighet
+  initialRotation: Initial Rotation
+  stretchSpeed: "Str\xE4ckningshastighet"
+  collisionRadius: Kollisionsradie
+  mass: Massa
+  bounciness: Studs
+  depth: Djup
+  depth2D: Djup (2D)
+  color: "F\xE4rg"
+  updateRate: Uppdateringsintervall
+  renderSliders: Renderingsreglage
+  paintPositions: "M\xE5lade positioner"
+  brushSizeMin: Penselstorlek min
+  brushSizeMax: Penselstorlek max
+  eraserSizeMin: Sudd min
+  eraserSizeMax: Sudd max
+  paintSpacing: "Mellanrum f\xF6r m\xE5lning"
+  manipulatorSize: Manipulerarstorlek
+  manipulatorStrength: Manipulerarstyrka
+  manipulatorZeroVelocityStrength: Nollkraftsstyrka
+  manipulatorStrengthEffectors: Effektstyrka
+  trackParticles: "Sp\xE5ra Partiklar"
+  sendBirthEvents: "Skicka F\xF6delseevent"
+  sendDeathEvents: "Skicka D\xF6dsevent"
+  sendEnterEvents: "Skicka Ing\xE5ngsevent"
+  sendExitEvents: "Skicka Utg\xE5ngsevent"
+  sendCollisionEvents: Skicka kollisionsevent
+  smoothingEffect: "Utj\xE4mningseffekt"
+  distanceEffect: Distanseffekt
+  lifetimeFilter: Livstidsfilter
+  particleFilter: Partikelfilter
+  inverseBounds: "Invertera Gr\xE4ns"
+  propertyType: Egenskapstyp
+  onlyColorInRange: "F\xE4rga Endast Inom Gr\xE4ns"
+  onlyPositionInRange: "Positionera Endast Inom Gr\xE4ns"
+  keepColorAlphas: "Beh\xE5ll F\xE4rg-alpha"
+  sizeStrength: Storleksstyrka
+  targetStrength: "M\xE5lstyrka"
+  deathStrength: "D\xF6dsstyrka"
+  attractorStrength: Attraheringsstyrka
+  gravitationalStrength: Gravitationsstyrka
+  repellentStrength: Repelleringsstyrka
+  vortexStrength: Virvelstyrka
+  turbulenceStrength: Turbulensstyrka
+  meshTarget: "Modellm\xE5l"
+  skinnedMeshTarget: "Animerad Modellm\xE5l"
+  targetSorting: "M\xE5lsortering"
+  mesh: Modell
+  image: Bild
+  lifetimeColor: "Livstidsf\xE4rg"
+  paintMode: "M\xE5lmetod"
+  dot: Punkt
+  brush: Pensel
+  eraser: Sudd
+  brushPresets: "Penself\xF6rinst\xE4llning"
+  brushShape: Penselform
+  brushScale: Penselskala
+  detail: Detalj
+  brushDistance: Penseldistans
+  useBrushColor: "Anv\xE4nd penself\xE4rg"
+  eraserRadius: Suddradie
+  paintCollisionType: "M\xE5lningskollisionstyp"
+  paint: "M\xE5la"
+  paintMask: "M\xE5lningsmask"
+  maxPaintPositions: "M\xE5lningspositioner (max)"
+  exceedMaxStopsPaint: "\xD6verstigning Av M\xE5lningscpositioner Stoppar"
+  exceededMaxPaint: "Du har \xF6verstigit maximala m\xE5lningspositioner. Inga nya
+    m\xE5lningspositioner \xE4r m\xF6jliga n\xE4r \xD6verstigning Av M\xE5lningscpositioner
+    Stoppar \xE4r p\xE5slaget."
+  morePaintThanPositions: "Du har fler m\xE5lningspositioner \xE4n partiklar. \xD6ka
+    partikelantalet f\xF6r att se alla m\xE5lade positioner."
+  start: Starta
+  stop: Stoppa
+  clear: Rensa
+  clearPaint: "Rensa m\xE5lning?"
+  clearPaintText: "\xC4r du s\xE4ker p\xE5 att du vill ta bort alla m\xE5lade k\xE4llpositioner?"
+  playgroundPaint: "Playground M\xE5lning"
+  overflowMode: "\xD6verfl\xF6desmetod"
+  overflowModeDescription: "Metoden att distribuera \xF6verfl\xF6de med."
+  overflowOffset: "\xD6verfl\xF6desutl\xF6pare"
+  loop: Upprepa
+  disableOnDone: Inaktivera Efter Emission
+  lifetimeSize: Livstidsstorlek
+  rotateTowardsDirection: Rotera Mot Riktning
+  rotationNormal: Rotationsnormalen
+  lifetimeMethod: Livstidsmetod
+  lifetime: Livstid
+  lifetimeSorting: Livstidssortering
+  lifetimeSortingDescription: "Best\xE4mmer hur partiklar \xE4r sorterade vid f\xF6dsel.\nScrambled:
+    Slumpm\xE4ssigt sorterade.\nScrambled Linear: Slumpm\xE4ssigt sorterade men aldrig
+    samtidigt.\nBurst: Alfa och Omega.\nLinear: Alfa till Omega.\nReversed: Omega
+    till Alfa.\nNearestNeighbor: N\xE4rmaste till punkt l\xE4ngst bort.\nNearestNeighborReversed:
+    L\xE4ngst bort till n\xE4rmaste punkt.\nUser: Best\xE4md av animationskurva"
+  sortOrigin: "Sorteringsk\xE4lla"
+  customSorting: Egen Sortering
+  lifetimeOffset: "Livstidsutl\xF6pare"
+  particleMask: Partikelmask
+  maskTime: Masktid
+  maskSorting: Masksortering
+  off: Av
+  forceAnnihilation: "Kraftd\xF6dare"
+  onlySourcePositions: "Endast K\xE4llpositioner"
+  onlySourcePositionsDescription: "Partiklar \xE4r bundna till dess k\xE4lla under
+    deras livstid."
+  assignTransformDeltaMovement: "Tilldela en Transform till det aktiva Tillst\xE5ndet
+    f\xF6r att aktivera Deltar\xF6relse."
+  lifetimePositioning: Livstidspositionering
+  onlyLifetimePositioningDescription: "Partiklars r\xF6relse \xE4r bundna till sin
+    livstidspositionering."
+  useSourceDirection: "Anv\xE4nd K\xE4llans Riktning"
+  axisConstraintsDescription: "Alla krafter \xE4r inaktiverade eftersom alla axelbegr\xE4nsningar
+    \xE4r p\xE5slagna."
+  lifetimeVelocity: Livstidskraft
+  initialLocalVelocityControlledByScript: "Initial Lokal Kraft \xE4r kontrollerad
+    av kraften skickad till Emit() i skriptl\xE4ge."
+  assignTransformLocalVelocity: "Tilldela en Transform till det aktiva tillst\xE5ndet
+    f\xF6r att aktivera Initial Lokal Kraft."
+  initialVelocityShape: Initial Kraft-form
+  velocityBending: "Kraftb\xF6jning"
+  bending: "B\xF6jning"
+  timeScale: Tidsskala
+  lifetimeStrength: Livstidsstyrka
+  particleLifetimeStrength: Particle Lifetime Strength
+  gravity: Gravitation
+  maxVelocity: Maximal Kraft
+  axisConstraints: "Axelbegr\xE4nsningar"
+  threeDimensional: 3D
+  twoDimensional: 2D
+  collisionType: Kollisionstyp
+  collisionMask: Kollisionsmask
+  collideWithRigidbodies: Kollidera Med Rigidbodies
+  lifetimeLoss: "Livstidsf\xF6rlust"
+  randomBounce: "Slumpm\xE4ssig Studs"
+  collisionPlanes: Kollisionsplan
+  sticky: "F\xE4st"
+  stickyMask: "F\xE4stmaskning"
+  collisionPrecision: Kollisionsprecision
+  forceCollisionCaching: Tvinga kollisionscache
+  gizmoScale: Gizmoskala
+  colorSource: "F\xE4rgk\xE4lla"
+  sourceUsesLifetimeAlpha: "K\xE4lla Anv\xE4nder Livstids-alfa"
+  renderMode: Renderingsmetod
+  cameraScale: Kameraskala
+  speedScale: Hastighetsskala
+  lengthScale: "L\xE4ngdskala"
+  startStretch: "Startstr\xE4ckning"
+  lifetimeStretch: "Livstidsstr\xE4ckning"
+  maxParticleSize: Partikelstorlek (max)
+  settingsAndParticles: "Inst\xE4llningar & Partiklar"
+  settingsOnly: "Inst\xE4llningar Endast"
+  particlesOnly: Partiklar Endast
+  simple: Simpel
+  newSnapshotName: "Nytt Partikel\xF6gonblick"
+  simulationSpace: Simulationsrymd
+  localSpace: Lokal Rymd
+  globalSpace: Global Rymd
+  movementCompensation: "R\xF6relsekompensation"
+  movementCompensationLifetimeStrength: "R\xF6relsekompensation Livstidsstyrka"
+  rebirthOptions: "F\xF6delseinst\xE4llningar"
+  randomLifetime: "Slumpm\xE4ssig Livstid"
+  randomSize: "Slumpm\xE4ssig Storlek"
+  randomRotation: "Slumpm\xE4ssig Rotation"
+  randomScatter: "Slumpm\xE4ssig Spridning"
+  randomVelocity: "Slumpm\xE4ssig Kraft"
+  forceInitialColor: "Tvinga Initial F\xE4rg"
+  lockPosition: "L\xE5s Position"
+  positionIsLocal: "Position \xC4r Lokal"
+  lockRotation: "L\xE5s Rotation"
+  rotationIsLocal: "Rotation \xC4r Lokal"
+  lockScale: "L\xE5s Skala"
+  syncParticlesToMainThread: "Synkronisera Partiklar Till Huvudtr\xE5den"
+  multithreadedManipulators: "Multitr\xE5dade Manipulatorer"
+  autoPauseCalculation: "Pausa Ber\xE4kning Automatiskt"
+  particlePool: Partikelpool
+  broadcastType: "S\xE4ndningstyp"
+  broadcastTypeDescription: "S\xE4tt f\xF6r att s\xE4nda till M\xE5l och/eller Eventlyssnare."
+  collisionThreshold: "Kollisionstr\xF6skel"
+  inheritancePosition: Positionsarv
+  inheritanceVelocity: Kraftarv
+  inheritanceColor: "F\xE4rgarv"
+  velocityMultiplier: Kraftmultiplicerare
+  activeState: "Aktivt Tillst\xE5nd"
+  nameText: Namn
+  stateMeshDescription: "K\xE4llmodellen att konstruera partiklar fr\xE5n vertiser.
+    N\xE4r en modell \xE4r vald kommer texturen att f\xE4rga varje vertisposition."
+  stateTextureDescription: "K\xE4lltexturen att konstruera partiklar fr\xE5n pixlar.
+    N\xE4r en modell \xE4r vald kommer texturen att f\xE4rga varje verisposition."
+  stateDepthmapDescription: "K\xE4lltexturen att applicera djup fr\xE5n. Ej kompatibel
+    med modeller."
+  stateDepthmapStrengthDescription: "Hur mycket gr\xE5skalan i djupbilden kommer att
+    p\xE5verka Z-v\xE4rdet."
+  stateTransformDescription: "Transform som styr detta Tillst\xE5nd"
+  stateScaleDescription: "Skalan av bredd-h\xF6jd ratio."
+  stateOffsetDescription: "Offset fr\xE5n position."
+  brushNameDescription: "Namnet av denna penself\xF6rinst\xE4llning."
+  brushShapeDescription: "Texturen att bygga denna pensel fr\xE5n."
+  brushScaleDescription: "Skalan av denna pensel (m\xE4tt i units)."
+  brushDetail: Penseldetalj
+  brushDetailDescription: "Detaljniv\xE5n av denna pensel."
+  brushDistanceDescription: "Distansen penseln n\xE5r."
+  paintSpacingDescription: "Till\xE5tet avst\xE5nd mellan tidigare och nym\xE5lad
+    k\xE4llposition"
+  exceedMaxStopsPaintDescription: "Ska m\xE5lning stoppas n\xE4r m\xE5lningspositioner
+    \xE4r lika med taket f\xF6r positioner (om inte kommer positioner att tas bort
+    fr\xE5n b\xF6rjan av listan vid m\xE5lning)."
+  texture: Textur
+  depthmap: Djupbild
+  depthmapStrength: Djupbildsstyrka
+  offset: Offset
+  createState: "Skapa Tillst\xE5nd"
+  projectionTexture: Projiceringstextur
+  liveUpdate: Realtidsuppdatering
+  originOffset: Urpsrungsoffset
+  projectionDistance: Projiceringsdistans
+  projectionScale: Projiceringsskala
+  surfaceOffset: "Offset Fr\xE5n Yta"
+  projectionMask: Projiceringsmask
+  projectionCollisionType: Projiceringskollisionstyp
+  collisionDisabledDescription: "Kollisioner har inaktiverats p\xE5 grund av kraftinst\xE4llningarna."
+  onlySizeInRange: "Storleks\xE4ndra endast inom radie"
+  sendToManager: Skicka Till Hanteraren
+  clearOnStop: Rensa Vid Stopp
+  multithreading: "Multitr\xE5dning"
+  particleThreadMethod: "Partikeltr\xE5dmetod"
+  skinnedMeshThreadMethod: "Animerade modellers tr\xE5dmetod"
+  turbulenceThreadMethod: "Turbulenstr\xE5dmetod"
+  threadMethodDescription: "Best\xE4mmer vilken multitr\xE5dad metod som skall anv\xE4ndas."
+  maxThreads: "Maximalt Antal Tr\xE5dar"
+  maxThreadsDescription: "Det maximala antalet tr\xE5dar som kan skapas. Inga fler
+    tr\xE5dar \xE4n tillg\xE4ngliga processork\xE4rnor kommer skapas."
+  threadInfo01: "Inga ber\xE4kningstr\xE5dar kommer att skapas. Detta kommer i de
+    flesta fall ha en negativ inverkan p\xE5 prestandan eftersom Particle Playground
+    ber\xE4knas med all annan logik p\xE5 huvud-tr\xE5den. Anv\xE4nd detta f\xF6r
+    fels\xF6kningssyfte."
+  threadInfo02: "En ber\xE4kningtr\xE5d per partikelsystem kommer att skapas. Anv\xE4nd
+    detta n\xE4r du har tunga partikelsystem i din scen. Observera att denna metod
+    inte kommer sl\xE5 samman ber\xE4kningar."
+  threadInfo03: "En ber\xE4kningtr\xE5d f\xF6r alla partikelsystem skapas. Anv\xE4nd
+    detta om du har annan flertr\xE5dad logik som har h\xF6gre prioritet f\xF6r prestanda
+    \xE4n Particle Playground eller ditt projekt kr\xE4ver strikt anv\xE4ndning av
+    minnesallokering."
+  threadInfo04: "L\xE5t ber\xE4kningstr\xE5dar f\xF6rdelas j\xE4mnt f\xF6r alla partikelsystem
+    i din scen. Detta kommer sl\xE5 samman ber\xE4kningar f\xF6r att matcha plattformens
+    SystemInfo.processorCount. Detta \xE4r den rekommenderade och \xF6verlag snabbaste
+    metoden f\xF6r att ber\xE4kna partikelsystem."
+  thread: "Tr\xE5d"
+  assignATexture: "Till\xE4mpa en textur."
+  useAnotherSourceTransform: "Anv\xE4nd en annan Transform som k\xE4lla f\xF6r att
+    aktivera denna effekt."
+  activeThreads: "aktiva tr\xE5dar"
+  threadPoolMethod: "Tr\xE5dpoolsmetod"
+  threadPoolMethodDescription: "Metoden som anv\xE4nds f\xF6r att \xE5teranv\xE4nda
+    CPU-tr\xE5dar."
+  processors: processorer
+  prefabConnection: "Kvarh\xE5ll Prefab-l\xE4nk"
+  noAssetsFoundMessage: "Particle Playground's filer kunde inte hittas i ditt projekt.
+    V\xE4nligen redigera s\xF6kv\xE4garna s\xE5 de st\xE4mmer med ditt projekt."
+  skinnedMeshOptimizeGameObjectsMessage: Consider to disable Optimize Game Objects
+    for the Import Settings of your skinned mesh. Having Optimize Game Objects enabled
+    will be a lot slower for a Particle Playground system to calculate as it must
+    extract the vertices each frame.
+  castShadows: Kasta skuggor
+  receiveShadows: "F\xE5nga skuggor"
+  sorting: Sortering
+  sortMode: Sorteringsmetod
+  sortingFudge: "Sorteringsf\xF6rvr\xE4ngning"
+  textureSheetAnimation: Texturarksanimation
+  tiles: Rutor
+  animation: Animation
+  randomRow: "Slumpm\xE4ssig rad"
+  row: Rad
+  animationMethod: Animationsmetod
+  frameOverTime: "Bildruta \xF6ver tid"
+  chromaKey: "Genomskinlig f\xE4rgnyckel"
+  spread: Spridning
+  spline: Spline
+  splines: Splines
+  newSplineMessage: "Tilldela en tillg\xE4nglig Playground Spline-komponent fr\xE5n
+    din scen eller tryck Skapa f\xF6r att b\xF6rja arbeta med en ny Playground Spline
+    (kommer att f\xE5 partikelsystemet som f\xF6r\xE4lder). F\xF6r att redigera en
+    Playground Spline markerar du den i hierarkin."
+  allSplinesMustBeAssignedMessage: "Alla Playground Splines m\xE5ste vara tillf\xF6rdelade
+    och p\xE5slagna."
+  treatAsOneSpline: Behandla som en kurva
+  playgroundSpline: Playground Spline
+  selection: Markering
+  node: Nod
+  nodes: Noder
+  bezier: Bezier
+  selectedNode: Markerad nod
+  selectedBezierHandle: Markerat bezierhandtag
+  bezierMode: Beziermetod
+  addNode: Skapa nod
+  removeSelectedNode: Ta bort markerad nod
+  usedBy: "Anv\xE4nd av"
+  noUser: "Inga anv\xE4ndare"
+  easing: Mjukhet
+  easingVelocity: Mjukhetshastighet
+  timeOffset: "Tidsf\xF6rskjutning"
+  positionOffset: "Positionsf\xF6rskjutning"
+  reverse: "Omv\xE4nd"
+  targetMethod: "M\xE5lmetod"
+  overflowOffsetSplineMessage: "Overflow Offset kan inte anv\xE4ndas tillsammans med
+    kurvor som k\xE4lla."
+  noSplineUserMessage: "Inget partikelsystem anv\xE4nder denna Playground Spline."
+  removeUserTitle: "Ta bort anv\xE4ndare?"
+  removeUserMessage: "Vill du ta bort denna Playground Spline fr\xE5n partikelsystemet?"
+  convertAllToTransforms: Konvertera alla till Transforms
+  convertAllToVector3: Konvertera alla till Vector3
+  reverseAllNodes: "Omv\xE4nd alla noder"
+  velocityOnNewNode: "Hastighet p\xE5 ny nod"
+  moveTransformsAsBeziers: Flytta Transforms som bezierhandtag
+  exportWithNodeStructure: Exportera med nodstruktur
+  repeatTimeModulus: Repeat Time (Modulus)
+  drawSplinePreview: "F\xF6rhandsvisning av spline"
+  drawSplinePreviewDescription: "Ritar formen av en Playground Spline i scenen n\xE4r
+    k\xE4ll-fliken \xE4r utf\xE4lld."
+  newEmpty: Ny tom
+  noSplinesCreated: "Inga splines \xE4r skapade"
+  colorMethod: "F\xE4rgmetod"
+  arrayColor: "Listf\xE4rg"
+  arrayAlpha: Listalpha
+  applyArrayAlpha: "Anv\xE4nd listalpha"
+  collisionExclusion: Kollisionsexklusion
+  collisionExclusionMessage: "Inga objekt \xE4r exkluderade."
+  bypassMaskedParticles: Bypass Masked Particles
+  treatAsOneTransform: Behandla som en Transform.
+  allTransformsMustBeAssignedMessage: "Alla Transforms m\xE5ste vara tillf\xF6rdelade."
+  assignTransformMessage: "Tillf\xF6rdela en Transform."
+  method: Metod
+  range: "Omf\xE5ng"
+  sectorA: Sektor A
+  sectorB: Sektor B
+  lifetimeEmission: "Livsl\xE4ngdsemission"
+  prewarm: "Uppv\xE4rmning"
+  prewarmLifetimeCycles: "Uppv\xE4rmning i livstidscykel"
+  prewarmCyclesResolution: "Uppv\xE4rmningscykler (detaljniv\xE5)"
+  inverseRigidbodyCollision: "Omv\xE4nd Rigidbody Kollision"
+  locks: "L\xE5s"
+  onEnable: On Enable
+  misc: "\xD6vrigt"
+  deltaPositionAdjustment: Deltapositionskorrigering
+  arraySize: Liststorlek
+  sourcePoint: "K\xE4llpunkt"
+  emission: Emission
+  on: "P\xE5"
+  constantForce: Konstant kraft
+  initialGlobalVelocity: Initial Global Kraft
+  shadows: Skuggor
+  collisionSettings: "Kollisionsinst\xE4llningar"
+  sync: Synk
+  transitionBackToSource: "\xC5terg\xE5 till k\xE4lla"
+  transitionAmount: "\xC5terg\xE5ngsstyrka"
+  calculateManipulator: "Ber\xE4kna manipulerare"
+  renderer: Renderare
+  hierarchyIcon: Hierarki-ikon
+  minimumShurikenLifetime: "Minimumlivstid f\xF6r Shuriken"
+  calculationTrigger: "Ber\xE4kningsutl\xF6sare"
+  calculationTriggerSize: "Ber\xE4kningsutl\xF6sares storlek"
+  calculationTriggerOffset: "Ber\xE4kningsutl\xF6sares offset"
+  drawGizmo: Visa gizmo
+  drawBezierGizmo: Visa bezier gizmo
+  bezierWidth: Bezierbredd
+  outOfView: "Bortom synh\xE5ll"
+  autoPause: Automatisk paus
+  forceUpdateOnMainThread: "Tvinga uppdatering p\xE5 huvudtr\xE5d"
+  forceUpdateOnMainThreadDescription: "Aktivera detta f\xF6r att s\xE4kerhetsst\xE4lla
+    att den animerade modellen uppdateras i synk med k\xE4llpositioner. Detta har
+    en m\xE4rkbar p\xE5verkan p\xE5 prestandan."
+  trackingMethod: "Sp\xE5rningsmetod"
+  animationTimeMethod: Animeringstidsmetod
+  upSymbol: "\u2191"
+  downSymbol: "\u2193"
+  playSymbol: Spela
+  pauseSymbol: Pausa
+  stopSymbol: Stoppa
+  recordSymbol: Spela In
+  trim: Trimma
+  trimInner: Trimma Inre
+  trimOuter: Trimma Yttre
+  trimMsg: "\xC4r du s\xE4ker att du vill ta bort bildrutor"
+  fadeIn: Tona In
+  sizeIn: Storlek In
+  skipInterpolationOnEndFrames: "Hoppa \xD6ver Interpolering P\xE5 Slutbilder"
+  playgroundRecorder: Playground Recorder
+  player: Spelare
+  playbackSpeed: Uppspelningshastighet
+  keyframeInterval: Nyckelintervall
+  playHeadPosition: Uppspelningsposition
+  clearRecording: Rensa Inspelning
+  clearRecordingMsg: "\xC4r du s\xE4ker att du vill ta bort alla inspelade bilder?"
+  missingParticleSystemWarning: "Inget Particle Playground-system \xE4r tilldelat."
+  newPlaygroundRecording: Ny Playgroundinspelning
+  newPlaygroundRecordingMsg: "V\xE4nligen v\xE4lj var du vill spara din Playgroundinspelning."
+  recorderData: Inspelningsdata
+  missingRecorderDataWarning: "Det finns ingen Playgroundinspelare tilldelad. Du beh\xF6ver
+    tilldela en f\xF6r att kunna lagra dina inspelningar \xF6ver sessioner."
+  createNew: Skapa Ny
+  playgroundComponents: Playgroundkomponenter
+  removeComponent: Ta bort komponent?
+  removeComponentMsg: "\xC4r du s\xE4ker p\xE5 att du vill ta bort komponenten?"
+  particleProperty: Partikelegenskap
+  clamp: "Begr\xE4nsa"
+  floor: "L\xE4gsta v\xE4rde"
+  ceil: "H\xF6gsta v\xE4rde"
+  value: "V\xE4rde"
+  rate: Hastighet
+  infinite: "O\xE4ndlig"
+  sourceParticleSystem: "K\xE4llpartikelsystem"
+  sourceBirthMethod: "K\xE4llf\xF6dselmetod"
+  scaleMethod: Skalningsmetod
+  globalTimeScale: Global Tidsskala
+  globalTimeScaleDescription: "Om Global Tidsskala \xE4r p\xE5slaget kommer Time.timeScale
+    p\xE5verka partikelsystemens simuleringstid."
+  extensionsDownloading: "H\xE4mtar lista med till\xE4gg..."
+  extensionsDownloadError: "Kunde inte h\xE4mta lista med till\xE4gg."
+  searchNoExtensionsFound: "Inga till\xE4gg kunde hittas med s\xF6kfrasen"
+  listHasBeenFilteredWith: Listan har filtrerats med
+  findPlaygroundSettings: "Hitta Playground-inst\xE4llningar"
+  findPlaygroundSettingsMsg: "Playground Settings.asset kunde inte hittas. Du kommer
+    inte kunna spara dina inst\xE4llningar \xF6ver editor sessioner. Det \xE4r rekommenderat
+    att du s\xF6ker efter Playground Settings.asset-filen."
+  playgroundTrails: Playground Trails
+  pointCreation: Point Creation
+  width: Bredd
+  timeWidth: Tidsbredd
+  widthScale: Breddskala
+  billboardTransform: Billboard Transform
+  customRenderScale: Egen Renderingsskala
+  minimumVertexDistance: Minsta Vertisdistans
+  maximumVertexDistance: "H\xF6gsta Vertisdistans"
+  maximumPathDeviation: "H\xF6gsta Avv\xE4jning"
+  maximumPoints: "H\xF6gsta Punkter"
+  createFirstPointOnParticleBirth: "Skapa F\xF6rsta Punkten Vid Partikelf\xF6dsel"
+  createLastPointOnParticleDeath: "Skapa Sista Punkten Vid Partikeld\xF6d"
+  createPointsOnCollision: Skapa Punkter Vid Kollision
+  colorMode: "F\xE4rgl\xE4ge"
+  uvMode: "Uv-l\xE4ge"
+  pointArrayAlpha: Punktlistalfa
+  playgroundFollow: Playground Follow
+  setLocalSpaceOnPlayback: "S\xE4tt Lokal Rymd Vid Uppspelning"
+  followers: "F\xF6ljare"
+  unassigned: Otilldelad
+  referenceObject: Referensobjekt
+  cacheSize: Cachningsstorlek
+  sendEvents: Skicka Event
+  multithreadedStartup: "Multitr\xE5dad Start"

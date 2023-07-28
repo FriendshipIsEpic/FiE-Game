@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 26dbc23a24afb434aa17cbc54f0d4e1b
+labels:
+- free
+- plugin
+- particles
+- FX
+- PopcornFX
+PluginImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  isOverridable: 0
+  platformData:
+    Any:
+      enabled: 1
+      settings: {}
+    Editor:
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+    WindowsStoreApps:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

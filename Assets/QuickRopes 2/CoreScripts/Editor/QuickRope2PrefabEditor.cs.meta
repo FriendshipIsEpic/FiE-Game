@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 29ce7380d5dcd4a488e9724179ff094d
+labels:
+- editor
+- physics
+- chain
+- string
+- cable
+- reverie
+- interactive
+- quickropes
+- gameplay
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

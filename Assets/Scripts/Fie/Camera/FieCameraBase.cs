@@ -57,11 +57,11 @@ namespace Fie.Camera
 			PostProcessingBehaviour component = GetComponent<PostProcessingBehaviour>();
 			AmplifyBloomEffect component2 = GetComponent<AmplifyBloomEffect>();
 			UltimateBloom component3 = GetComponent<UltimateBloom>();
-			SSREffect component4 = GetComponent<SSREffect>();
+			//SSREffect component4 = GetComponent<SSREffect>();
 			PKFxRenderingPlugin component5 = GetComponent<PKFxRenderingPlugin>();
 			SunShafts component6 = GetComponent<SunShafts>();
 			SEGI component7 = GetComponent<SEGI>();
-			VolumetricFog component8 = GetComponent<VolumetricFog>();
+			//VolumetricFog component8 = GetComponent<VolumetricFog>();
 			FieCommandBufferReflection component9 = GetComponent<FieCommandBufferReflection>();
 			switch (qualityLevel)
 			{
@@ -78,10 +78,10 @@ namespace Fie.Camera
 				{
 					component3.enabled = false;
 				}
-				if (component4 != null)
-				{
-					component4.enabled = false;
-				}
+				// if (component4 != null)
+				// {
+				// 	component4.enabled = false;
+				// }
 				if (component5 != null)
 				{
 					component5.m_EnableDistortion = false;
@@ -98,10 +98,10 @@ namespace Fie.Camera
 				{
 					component7.enabled = false;
 				}
-				if (component8 != null)
-				{
-					component8.enabled = false;
-				}
+				// if (component8 != null)
+				// {
+				// 	component8.enabled = false;
+				// }
 				if (component9 != null)
 				{
 					component9.enabled = false;
@@ -117,10 +117,10 @@ namespace Fie.Camera
 				{
 					component3.enabled = false;
 				}
-				if (component4 != null)
-				{
-					component4.enabled = false;
-				}
+				// if (component4 != null)
+				// {
+				// 	component4.enabled = false;
+				// }
 				if (component5 != null)
 				{
 					component5.m_EnableDistortion = false;
@@ -137,10 +137,10 @@ namespace Fie.Camera
 				{
 					component7.enabled = false;
 				}
-				if (component8 != null)
-				{
-					component8.enabled = false;
-				}
+				// if (component8 != null)
+				// {
+				// 	component8.enabled = false;
+				// }
 				if (component9 != null)
 				{
 					component9.enabled = false;
@@ -160,10 +160,10 @@ namespace Fie.Camera
 				{
 					component3.enabled = true;
 				}
-				if (component4 != null)
-				{
-					component4.enabled = false;
-				}
+				// if (component4 != null)
+				// {
+				// 	component4.enabled = false;
+				// }
 				if (component5 != null)
 				{
 					component5.m_EnableDistortion = true;
@@ -184,10 +184,10 @@ namespace Fie.Camera
 				{
 					component.profile = PostProcessingProfileForLev3;
 				}
-				if (component8 != null)
-				{
-					component8.enabled = false;
-				}
+				// if (component8 != null)
+				// {
+				// 	component8.enabled = false;
+				// }
 				if (component9 != null)
 				{
 					component9.enabled = true;
@@ -207,10 +207,10 @@ namespace Fie.Camera
 				{
 					component3.enabled = true;
 				}
-				if (component4 != null)
-				{
-					component4.enabled = true;
-				}
+				// if (component4 != null)
+				// {
+				// 	component4.enabled = true;
+				// }
 				if (component5 != null)
 				{
 					component5.m_EnableDistortion = true;
@@ -231,10 +231,10 @@ namespace Fie.Camera
 				{
 					component.profile = PostProcessingProfileForLev4;
 				}
-				if (component8 != null)
-				{
-					component8.enabled = true;
-				}
+				// if (component8 != null)
+				// {
+				// 	component8.enabled = true;
+				// }
 				if (component9 != null)
 				{
 					component9.enabled = true;
@@ -254,10 +254,10 @@ namespace Fie.Camera
 				{
 					component3.enabled = true;
 				}
-				if (component4 != null)
-				{
-					component4.enabled = true;
-				}
+				// if (component4 != null)
+				// {
+				// 	component4.enabled = true;
+				// }
 				if (component5 != null)
 				{
 					component5.m_EnableDistortion = true;
@@ -278,10 +278,10 @@ namespace Fie.Camera
 				{
 					component.profile = PostProcessingProfileForLev5;
 				}
-				if (component8 != null)
-				{
-					component8.enabled = true;
-				}
+				// if (component8 != null)
+				// {
+				// 	component8.enabled = true;
+				// }
 				if (component9 != null)
 				{
 					component9.enabled = true;

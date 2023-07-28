@@ -1,5 +1,5 @@
 using Fie.Manager;
-using MBS;
+//using MBS;
 using UnityEngine;
 
 namespace Fie.Title
@@ -15,8 +15,8 @@ namespace Fie.Title
 			UNNECESSARY
 		}
 
-		[SerializeField]
-		private WUUGLoginGUI _loginGUIComponent;
+		//[SerializeField]
+		//private WUUGLoginGUI _loginGUIComponent;
 
 		public event FinishedLoginProcessCallback finishedEvent;
 
@@ -26,14 +26,14 @@ namespace Fie.Title
 			{
 				return RecomendedLoginState.UNNECESSARY;
 			}
-			if (WULogin.logged_in)
-			{
-				if (!PhotonNetwork.connected)
-				{
-					return RecomendedLoginState.CONNECT_TO_MASTER;
-				}
-				return RecomendedLoginState.UNNECESSARY;
-			}
+			// if (WULogin.logged_in)
+			// {
+			// 	if (!PhotonNetwork.connected)
+			// 	{
+			// 		return RecomendedLoginState.CONNECT_TO_MASTER;
+			// 	}
+			// 	return RecomendedLoginState.UNNECESSARY;
+			// }
 			return RecomendedLoginState.AUTH;
 		}
 
@@ -42,9 +42,9 @@ namespace Fie.Title
 			switch (recomendedState)
 			{
 			case RecomendedLoginState.AUTH:
-				_loginGUIComponent.gameObject.SetActive(value: true);
-				_loginGUIComponent.InitWULoginGUI();
-				_loginGUIComponent.loginEvent += _loginGUIComponent_loginCallback;
+				// _loginGUIComponent.gameObject.SetActive(value: true);
+				// _loginGUIComponent.InitWULoginGUI();
+				// _loginGUIComponent.loginEvent += _loginGUIComponent_loginCallback;
 				break;
 			case RecomendedLoginState.CONNECT_TO_MASTER:
 				FieManagerBehaviour<FieNetworkManager>.I.connectedToMasterServerEvent += _connectedToMasterServerCallback;
